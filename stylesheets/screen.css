@@ -1,0 +1,202 @@
+body {
+  background: #fff;
+  font-family: Calibri,"Lucida Grande",Verdana,sans-serif;
+  line-height: 1.5;
+}
+
+.content {
+	font-family: "Century Gothic","Apple Gothic",sans-serif
+}
+
+#header {
+  background-color: #60F400 ;
+  color: #000000;
+  border-bottom: 1em solid #000000;
+  padding-left: 2em;
+  height: 80px;
+}
+  #header .title,
+  #header .subtitle {
+    float: left;
+  }
+  #header .subtitle {
+    font-size: 75%;
+    padding-left: 1em;
+    padding-top: 2em;
+  }
+  #header .portrait {
+    float: right;
+  }
+  
+  #header a:active,
+  #header a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  #header a:hover {
+    color: #60F400;
+  }
+
+  #header h1 {
+    color: #000000;
+/*    font-size: 350%;*/
+    vertical-align: bottom;
+  }
+  
+  #header p {
+    margin-top: 3em;
+    vertical-align: bottom;
+  }
+  
+#content {
+  float: left;
+  width: 70%;
+  margin: 1em 2em;
+}
+
+#navigation {
+  float: left;
+  width: 20%;
+  min-width: 100px;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+  #navigation ul {
+    list-style-type: none;
+  }
+    #navigation ul li {
+      padding-top: 0.25em;
+    }
+
+#footer {
+  background-color: #000000;
+  color: white;
+  clear: both;
+  text-align: center;
+  min-height: 2em;
+}
+  #footer p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  #footer a {
+    color: #60F400;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #000000;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {font-size:3em;}
+h2 {font-size:2em;}
+h3 {font-size:1.5em;}
+h4 {font-size:1.2em;}
+h5 {font-size:1em;}
+h6 {font-size:1em;}
+
+p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+a:link, a:active, a:visited {
+  color: #9F009F;
+}
+
+a:hover {
+  background-color: #000000;
+  color: #60F400;
+}
+
+pre {
+  background-color: black;
+  color: white;
+  padding: 0.25em 0.5em;
+  overflow: auto;
+}
+
+pre, code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height:1.5;
+}
+
+li, ol {
+  margin: 0.25em 0;
+}
+
+  li ul, li ol {
+    margin: 0 1.5em;
+  }
+
+ul, ol {
+  margin: 0.75em 1.5em;
+}
+
+ul {
+  list-style-type:disc;
+}
+
+ol {
+  list-style-type:decimal;
+}
+
+dl {
+  margin:0 0 1.5em 0;
+}
+
+  dl dt {
+    font-weight:bold;
+  }
+
+dd {
+  margin-left:1.5em;
+}
+
+.post .title {
+  margin-bottom: 0.25em;
+}
+
+  .post .title a:link,
+  .post .title a:active,
+  .post .title a:visited
+  {
+    color: #000000;
+  }
+  .post .title a:hover {
+    color: #60F400;
+  }
+
+.post .metadata {
+  padding-bottom: 1em;
+  font-size: 80%;
+  margin: 0.5em 1em;
+  font-style: italic;
+}
+
+.post .content,
+.post .metadata {
+  padding-left: 2em;
+}
+
+pre.terminal { background: #000; color: #f00; }
+  pre.terminal samp.prompt { color: #428bdd; }
+  pre.terminal samp { color: #eee; }
+  pre.terminal kbd { color: #fff; font-weight: bold; }
+  pre.terminal var { color: green; font-style: italic; }
+  
+.tag1 {
+  font-size: 100%;
+}
+.tag2 {
+  font-size: 140%;
+}
+.tag3 {
+  font-size: 220%;
+}
+.tag4 {
+  font-size: 250%;
+}
