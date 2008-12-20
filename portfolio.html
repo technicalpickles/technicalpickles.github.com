@@ -1,0 +1,132 @@
+---
+layout: default
+title: Portfolio
+---
+
+<p>
+  Here you can find some of my finest works, in the form of websites and presentations.
+</p>
+<div id='quicklinks'></div>
+<h2>Quick links</h2>
+<dl>
+  <dt>Websites</dt>
+
+  <dd><a href="/portfolio#technicalpickles">Technical Pickles</a></dd>
+  <dd><a href="/portfolio#bostonrb">Boston.rb</a></dd>
+  <dd><a href="/portfolio#sniftag">SNIF Tag</a></dd>
+  <dd><a href="/portfolio#flockup">FlockUp</a></dd>
+  <dt>Presentations</dt>
+  <dd><a href="/portfolio#git_presentation">git as a subversion replacement</a></dd>
+
+  <dd><a href="/portfolio#extracting_plugins_presentation">Extracting Plugins and Gems From Rails applications</a></dd>
+  <dd><a href="/portfolio#rails_rumble_2008_presentation">RailsRumble 2008 Retrospective</a></dd>
+  <dd><a href="/portfolio#rake_presentation">Rake: The Familiar Stranger</a></dd>
+</dl>
+<div id='websites'></div>
+<h2>Websites</h2>
+<div id='technicalpickles'>
+
+  <h3><a href="/posts">Technical Pickles</a></h3>
+  <div>
+    <p>You're looking at it!</p>
+    <p>One of the goals of this site is to be my central web presence. To that end, you can find my resume and portfolio, and link to my content on other sites.</p>
+    <p>This site is also my first Rails application deployed into production. Some noteworthy plugins and gems used:</p>
+    <ul>
+      <li><a href="http://haml.hamptoncatlin.com/">haml</a></li>
+
+      <li><a href="http://github.com/henrik/permalink_fu/tree/master">permalink_fu</a></li>
+      <li><a href="http://github.com/ntalbott/query_trace/tree/master">query_trace</a></li>
+      <li><a href="http://code.google.com/p/scope-out-rails/">scope_out</a></li>
+      <li><a href="http://github.com/mislav/will_paginate/tree/master">will_paginate</a></li>
+      <li><a href="http://thoughtbot.com/projects/shoulda">shoulda</a></li>
+    </ul>
+
+    <p>I host and deploy it myself on a self-managed <a href="http://slicehost.com">SliceHost</a> VPS. Here are some of the pieces in the deployment stack:</p>
+    <ul>
+      <li><a href="http://www.mysql.com">MySQL</a></li>
+      <li><a href="http://mongrel.rubyforge.org/">Mongrel</a></li>
+      <li><a href="http://nginx.net/">nginx</a></li>
+
+      <li><a href="http://www.shorewall.net/">ShoreWall</a></li>
+      <li><a href="http://rubyhitsquad.com/Vlad_the_Deployer.html">Vlad the Deployer</a></li>
+    </ul>
+    <p>For tracking hits and exposure, I use:</p>
+    <ul>
+      <li><a href="http://www.google.com/analytics/">Google Analytics</a></li>
+      <li><a href="http://www.feedburner.com/">FeedBurner</a></li>
+
+    </ul>
+    <p>I host the source for this on <a href="http://github.com">GitHub</a> in a private repository.</p>
+  </div>
+</div>
+<div id='bostonrb'>
+  <h3><a href="http://bostonrb.org">Boston.rb</a></h3>
+
+  <div>
+    <p>This site was built to serve as a portal for everything having to do with Ruby in the Boston area. Among other things, we currently provide:</p>
+    <ul>
+      <li>Event listings</li>
+      <li>Video recordings of meetings</li>
+      <li>Job postings</li>
+      <li>Projects built by Boston Rubyists</li>
+
+    </ul>
+    <p>It was created one night at a hackfest. Since then, <a href="http://dancroak.com">Dan Croak</a> and I have been continuing to improve and maintain it.</p>
+  </div>
+</div>
+<div id='sniftag'>
+  <h3><a href="http://sniftag.com">SNIF Tag</a></h3>
+
+  <p>I came onboard at <a href='http://sniflabs.com'>SNIF Labs</a> a few months before their big launch. A large portion of my work was preparing for this, usually in the form of improving the site's infrastructure and maintainability.</p>
+</div>
+<div id='flockup'>
+  <h3><a href="http://flockup.com">FlockUp</a></h3>
+  <p>FlockUp is a tool for helping connect users on <a href='http://twitter.com'>Twitter</a>. Twitter is a big place, so it can be hard to find the right people to associate with. FlockUp's goal is to help people find others with similiar interests.</p>
+
+  <p>FlockUp was built in 48 hours as part the <a href='http://2008.railsrumble.com'>RailsRumble 2008 competition</a>, collaborating with fellow Boston Rubyist and Twitterer <a href='http://twitter.com/explodingtrees'>Wyatt Greene</a>. We did all the interface design, feature planning, and general technical direction in the weeks before the competition. The 48 hours was used for graphic design, implementation, and deployment.</p>
+  <p>Some of the tools we used for development includes:</p>
+  <ul>
+    <li>rails</li>
+    <li>resources_controller</li>
+
+    <li>shoulda</li>
+    <li>factory_girl</li>
+    <li>ZenTest</li>
+    <li>twitter</li>
+    <li>starling</li>
+    <li>HAML</li>
+
+    <li>Blueprint CSS</li>
+  </ul>
+  <p>It was deployed to a Linode slice running nginx and MySQL on Gentoo Linux</p>
+</div>
+<div id='presentations'>
+  <h2>Presentations</h2>
+  <div id='git_presentation'>
+
+    <h3>git as a subversion replacement</h3>
+    <p>I gave this talk at the June 2008 Boston Ruby Group meeting. The slides are available:</p>
+    <div style="width:425px;text-align:left" id="__ss_461544"><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=git-as-a-subversion-replacement-1213205019180775-9"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=git-as-a-subversion-replacement-1213205019180775-9" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;"><a href="http://www.slideshare.net/?src=embed"><img src="http://static.slideshare.net/swf/logo_embd.png" style="border:0px none;margin-bottom:-5px" alt="SlideShare"/></a> | <a href="http://www.slideshare.net/technicalpickles/git-as-a-subversion-replacement?src=embed" title="View Git As A Subversion Replacement on SlideShare">View</a> | <a href="http://www.slideshare.net/upload?src=embed">Upload your own</a></div></div>
+    <p>It was also included on the 'featured' section of SlideShare on June 12th, 2008.</p>
+
+  </div>
+  <div id='extracting_plugins_presentation'>
+    <h3>Extracting Plugins and Gems from Rails application</h3>
+    <p>I gave this talk at the October 2008 Boston Ruby Group Meeting. The slides are available:</p>
+    <div style="width:425px;text-align:left" id="__ss_658828"><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=extracting-plugins-and-gems-from-rails-apps-1224042444095073-9&stripped_title=extracting-plugins-and-gems-from-rails-apps-presentation" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=extracting-plugins-and-gems-from-rails-apps-1224042444095073-9&stripped_title=extracting-plugins-and-gems-from-rails-apps-presentation" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object></div>
+  </div>
+  <div id='rails_rumble_2008_presentation'>
+    <h3>RailsRumble 2008 Retrospective</h3>
+
+    <p><a href='http://dancroak.com'>Dan Croak</a>, <a href='http://twitter.com/explodingtrees'>Wyatt Greene</a>, and myself gave this presentation at the November 2008 Bosotn Ruby Group Meeting.</p>
+  </div>
+  <div id='rake_presentation'>
+    <h3>Rake: The Familiar Stranger</h3>
+    <p>I gave this talk at the December 2008 Boston Ruby Group Meeting. The slides and video are available:</p>
+    <object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2496890&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=2496890&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object></p>
+
+    
+      <div style="width:425px;text-align:left" id="__ss_842204"><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=rake-the-familar-stranger-1229147864196419-1&stripped_title=rake-the-familiar-stranger-presentation" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=rake-the-familar-stranger-1229147864196419-1&stripped_title=rake-the-familiar-stranger-presentation" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object></div>
+  </div>
+</div>
+
