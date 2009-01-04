@@ -1,0 +1,12 @@
+--- 
+title: Meet Merb
+tags: 
+- merb
+- rails
+layout: default
+---
+[Merb](http://www.merbivore.com/) has been getting a good amount of attention lately as an alternative to rails. I've been playing with it a little since I've been playing around with [blerb](http://42squared.com/2007/12/2/blerb).
+
+One thing I've discovered is that some things are a bit underdocumented, both in terms of rdoc and more generalized documentation.
+
+As a result of this, I've decided to start a series of posts 'Meet merb', where I'll talk about some of the bits and pieces I've learned along the way.

@@ -1,0 +1,26 @@
+--- 
+title: "More git: links 2008-02-14"
+tags: 
+- git
+- merb
+- ruby
+layout: default
+---
+I've been using [git](http://git.or.cz/) a lot more since my [last set of git links](/posts/git-links-for-2007-01-05).
+
+
+ * [Cheat sheet](http://cheat.errtheblog.com/s/git/) from [Err the Blog](http://errtheblog.com).
+ * [Another cheat-sheet type deal](http://wincent.com/knowledge-base/Git_quickstart). Includes lots of useful alias and other configs.
+ * [Dealing with branches, remotes, and merging](http://blog.nanorails.com/articles/2008/2/7/git-branches-merges-and-remotes)
+ * [For when you have to change where your 'origin' repo lives](http://github.com/guides/changing-your-origin)
+
+There are hosting options available, even if you don't want to [setup something up yourself](/posts/gitosis-on-gentoo). I've only used GitHub myself, so I can't speak for the others
+
+ * [GitHub](http://github.com/): Currently in invite-beta mode (no, I don't have any more invites)
+ * [repo.or.cz](http://repo.or.cz/): provides public hosting
+ * [Gitorious](http://gitorious.org/): targets open source projects
+ 
+It seems like lots of Ruby projects have been switching to git recently. Here's is an example of people using and promoting development through the distributed magic of git:
+
+ * [Contributing to Merb (Part 1)](http://gweezlebur.com/2008/2/1/so-you-want-to-contribute-to-merb-core-part-1)
+ * [Contributing to Merb (Part 2)](http://gweezlebur.com/2008/2/9/contributing-to-merb-part-2)

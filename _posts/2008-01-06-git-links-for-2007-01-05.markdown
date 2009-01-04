@@ -1,0 +1,16 @@
+--- 
+title: "git: links for 2008-01-05"
+tags: 
+- git
+- gitosis
+- links
+- rails
+layout: default
+---
+Git seems to be getting a lot more attention lately. I started using it here and there, and I'm pretty enamored with it so far. Here are some links to get you started.
+
+ * [Peepcode's Git screencast](http://peepcode.com/products/git): I bought a 10-pack of peepcode screencasts several months ago. Definitely worth it. This one in particular is very informative and gives you a good walkthrough of doing your day-to-day type tasks.
+ * [Using Git to Manage and Deploy your Rails Apps (screencast)](http://jointheconversation.org/railsgit)
+ * [Setting up a new remote Git repository](http://toolmantim.com/article/2007/12/5/setting_up_a_new_remote_git_repository)
+ * [Hosting Git repositories the easy and secure way](http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way): Gives a walkthrough of managing repositories using [gitosis](http://eagain.net/gitweb/?p=gitosis.git)
+ * [Sharing Git repository via OS X's built in web sharing](http://toolmantim.com/article/2007/12/5/sharing_git_repositories_via_os_xs_built_in_web_sharing): For when you want to ad hocly host repositories, like if you're at a hackfest, for example.
