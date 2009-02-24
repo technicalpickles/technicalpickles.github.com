@@ -26,10 +26,10 @@ class Legislator
   end
   
   # Define on self, since it's  a class method
-  def self.method_missing(method_sym, *arguments, &amp;block)
+  def self.method_missing(method_sym, *arguments, &block)
     # the first argument is a Symbol, so you need to_s it if you want to pattern match
     if method_sym.to_s =~ /^find_by_(.*)$/
-      find($1.to_sym =&gt; arguments.first)
+      find($1.to_sym => arguments.first)
     else
       super
     end
@@ -81,10 +81,10 @@ class LegislatorDynamicFinderMatch
 end
 
 class Legislator
-  def self.method_missing(method_sym, *arguments, &amp;block)
+  def self.method_missing(method_sym, *arguments, &block)
     match = LegislatorDynamicFinderMatch.new(method_sym)
     if match.match?
-      find(match.attribute =&gt; arguments.first)
+      find(match.attribute => arguments.first)
     else
       super
     end
@@ -108,7 +108,7 @@ Another lesson we can take from is ActiveRecord is defining the method during `m
 
 {% highlight ruby %}
 class Legislator    
-  def self.method_missing(method_sym, *arguments, &amp;block)
+  def self.method_missing(method_sym, *arguments, &block)
     match = LegislatorDynamicFinderMatch.new(method_sym)
     if match.match?
       define_dynamic_finder(method_sym, match.attribute)
@@ -121,9 +121,9 @@ class Legislator
   protected
   
   def self.define_dynamic_finder(finder, attribute)
-    class_eval &lt;&lt;-RUBY
+    class_eval <<-RUBY
       def self.#{finder}(#{attribute})        # def self.find_by_first_name(first_name)
-        find(:#{attribute} =&gt; #{attribute})   #   find(:first_name =&gt; first_name)
+        find(:#{attribute} => #{attribute})   #   find(:first_name => first_name)
       end                                     # end
     RUBY
   end
@@ -172,8 +172,8 @@ If you are creating dynamic methods which are just syntactic sugar around anothe
 
 {% highlight ruby %}
 describe Legislator, 'dynamic find_by_first_name' do
-  it 'should call find(:first_name =&gt; first_name)' do
-    Legislator.should_receive(:find).with(:first_name =&gt; 'John')
+  it 'should call find(:first_name => first_name)' do
+    Legislator.should_receive(:find).with(:first_name => 'John')
     
     Legislator.find_by_first_name('John')
   end
