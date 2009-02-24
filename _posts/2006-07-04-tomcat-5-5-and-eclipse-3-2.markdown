@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/tomcat-5-5-and-eclipse-3-2
+permalink: /posts/tomcat-5-5-and-eclipse-3-2.html
 title: Tomcat 5.5 and Eclipse 3.2
 tags: 
 - eclipse

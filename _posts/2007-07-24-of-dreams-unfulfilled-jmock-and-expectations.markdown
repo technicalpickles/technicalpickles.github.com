@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/of-dreams-unfulfilled-jmock-and-expectations
+permalink: /posts/of-dreams-unfulfilled-jmock-and-expectations.html
 title: Of Dreams unfulfilled, JMock, and Expectations
 tags: 
 - java

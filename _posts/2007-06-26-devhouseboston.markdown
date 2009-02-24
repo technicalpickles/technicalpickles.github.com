@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/devhouseboston
+permalink: /posts/devhouseboston.html
 title: DevHouseBoston
 tags: 
 - boston

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/java-she-wanted-java-she-got
+permalink: /posts/java-she-wanted-java-she-got.html
 title: Java she wanted, Java she got
 tags: 
 - gentoo

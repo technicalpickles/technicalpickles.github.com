@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/an-experiment-links-for-08-03-2007
+permalink: /posts/an-experiment-links-for-08-03-2007.html
 title: "An Experiment: Links for 08-03-2007"
 tags: 
 - java

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/using-a-gentoo-prefixed-shell-as-your-login-shell
+permalink: /posts/using-a-gentoo-prefixed-shell-as-your-login-shell.html
 title: Using a Gentoo Prefixed shell as your login shell
 tags: 
 - gentoo

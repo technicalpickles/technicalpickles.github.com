@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/ensuring-you-get-credit-where-credit-is-due-with-creative-commons
+permalink: /posts/ensuring-you-get-credit-where-credit-is-due-with-creative-commons.html
 title: "Ensuring you get credit where credit is due with Creative Commons "
 tags: 
 - gentoo

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/update-the-new-java-hotness
+permalink: /posts/update-the-new-java-hotness.html
 title: "Update: The New Java Hotness"
 tags: 
 - gentoo

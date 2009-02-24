@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/refactoring-a-activerecord-callback
+permalink: /posts/refactoring-a-activerecord-callback.html
 title: Refactoring an ActiveRecord callback
 tags: 
 - activerecord

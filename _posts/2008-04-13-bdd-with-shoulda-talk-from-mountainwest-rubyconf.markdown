@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/bdd-with-shoulda-talk-from-mountainwest-rubyconf
+permalink: /posts/bdd-with-shoulda-talk-from-mountainwest-rubyconf.html
 title: BDD with Shoulda talk from MountainWest RubyConf
 tags: 
 - bdd

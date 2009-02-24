@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/rcov-for-almost-any-occasion
+permalink: /posts/rcov-for-almost-any-occasion.html
 title: RCov for almost any occasion
 tags: 
 - rcov

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/philadelphia-for-the-rest-of-the-week
+permalink: /posts/philadelphia-for-the-rest-of-the-week.html
 title: Philadelphia for the rest of the week
 tags: 
 - offtopic

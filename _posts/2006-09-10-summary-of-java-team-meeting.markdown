@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/summary-of-java-team-meeting
+permalink: /posts/summary-of-java-team-meeting.html
 title: Summary of Java team meeting
 tags: 
 - gentoo

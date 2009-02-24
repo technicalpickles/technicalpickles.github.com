@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/jruby-on-rails-on-gentoo
+permalink: /posts/jruby-on-rails-on-gentoo.html
 title: JRuby on Rails on Gentoo
 tags: 
 - gentoo

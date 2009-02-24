@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/how-to-raise-the-bar-for-contributing-to-your-open-source-project
+permalink: /posts/how-to-raise-the-bar-for-contributing-to-your-open-source-project.html
 title: How to raise the bar to contribute to your open source project
 tags: 
 - open source

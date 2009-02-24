@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/nfjs-thoughts-on-javaserver-faces-a-whirlwind-tour
+permalink: /posts/nfjs-thoughts-on-javaserver-faces-a-whirlwind-tour.html
 title: "NFJS: Thoughts on \"JavaServer Faces: A Whirlwind Tour\""
 tags: 
 - java

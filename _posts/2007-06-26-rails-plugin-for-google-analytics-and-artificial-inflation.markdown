@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/rails-plugin-for-google-analytics-and-artificial-inflation
+permalink: /posts/rails-plugin-for-google-analytics-and-artificial-inflation.html
 title: Rails plugin for Google Analytics and artificial inflation
 tags: 
 - google analytics

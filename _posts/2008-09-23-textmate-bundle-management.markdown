@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/textmate-bundle-management
+permalink: /posts/textmate-bundle-management.html
 title: TextMate Bundle Management
 tags: 
 - haml

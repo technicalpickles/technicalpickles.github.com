@@ -1,57 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+	curiously.green1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+	hope you enjoy it :)
+
+	-->
+
 <html>
-  <head>
-    <title>{{ page.title }} @ Technical Pickles</title>
-    <link href='http://feeds.feedburner.com/TechnicalPickles' rel='alternate' title='ATOM' type='application/atom+xml' />
-        <link href='http://openid.claimid.com/server' rel='openid.server' />
-        <link href='http://openid.claimid.com/josh-nichols' rel='openid.delegate' />
-    <link href="/stylesheets/reset.css?1229337704" media="screen" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/screen.css?1229337704" media="screen" rel="stylesheet" type="text/css" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>{{ page.title }} at technical.pickles</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/default.css" />
 
-    <link href="/stylesheets/print.css?1229337704" media="print" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/all.css?1229337704" media="all" rel="stylesheet" type="text/css" />
-    
-  </head>
-  <body>
-    <div id='header'>
-      <h1 class='title'><a href="/">Technical Pickles</a></h1>
-      <img class='portrait' src='/images/portrait-20081125.jpg' />
-      <p class='subtitle'>Josh on Technical Stuff</p>
+<body>
 
-    </div>
+<div id="header">
+	<div id="header_inner">
+		<h1><span>technical.</span>pickles</h1>
+		<div id="slogan">josh on technical stuff</div>
+	</div>
+</div>
+<div id="main">
 
-    <div id='content'>
+	<div id="lcol">
+		<div id="menu">
+			<ul>
+				<li><a href="/">My Blog<span></span></a></li>
+				<li><a href="/resume">Resume<span></span></a></li>
+				<li><a href="/portfolio">Portfolio<span></span></a></li>
+				<li><a href="/about">About Me<span></span></a></li>
+				<li><a href="/contact">Contact Me<span></span></a></li>
+			</ul>
+		</div>
+		<div id="menu_end"></div>
+
+		<div id="lcontent">
+			<h3 class="first">on the <span>web</span></h3>
+			<ul class="divided">
+				<li class="first"><a href="http://twitter.com/techpickles">Follow on Twitter</a></li>
+				<li><a href="http://github.com/technicalpickles">Follow on GitHub</a></li>
+				<li><a href="http://workingwithrails.com/person/10749-josh-nichols">Recommend on Working With Rails</a></li>
+			</ul>
+
+			<h3>Josh's.<span>Projects</span></h3>
+			<p><a href="#">Jeweler</a> is the GitHub recommended way to generating and maintaining RubyGem projects.</p>	
+			<div class="divider"></div>
+
+			<p><a href="#">Daywalker</a> is a Ruby library for accessing data about congressional districts and legislators using the <a href="#">Sunlight API</a>.</p>
+		</div>
+
+	</div>
+
+	<div id="rcol">
+		<div id="rcontent">
 			{{ content }}
-    </div>
+		</div>
+	</div>
 
-    <div id='navigation'>
-      <ul class='links'>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/resume">Resume</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li>
-          <a href="/">Blog</a>
-          <ul>
-            <!--<li><a href="/posts">Posts</a></li>-->
-            <li><a href="http://feeds.feedburner.com/TechnicalPickles">Subscribe</a></li>
-            <!--<li><a href="/posts/tags">Tags</a></li>-->
-          </ul>
-        </li>
+</div>
 
-        <li>
-          <a href='http://www.workingwithrails.com/recommendation/new/person/10749-josh-nichols'>
-            <img alt='Recommend Me' src='http://workingwithrails.com/images/tools/compact-small-button.jpg' />
-          </a>
-        </li>
-      </ul>
-      
-    </div>
-    <div id='footer'>
-      <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-Share Alike 3.0 United States License</a>.</p>
+<div id="footer">
+	&copy; 2009 Josh Nichols. All rights reserved. Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>.
+</div>
 
-    </div>
-  </body>
+</body>
 </html>
 <!-- vim: ts=2 sw=2
 -->

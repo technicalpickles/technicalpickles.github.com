@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/geeks-in-boston
+permalink: /posts/geeks-in-boston.html
 title: Geeks In Boston
 tags: 
 - devhouse

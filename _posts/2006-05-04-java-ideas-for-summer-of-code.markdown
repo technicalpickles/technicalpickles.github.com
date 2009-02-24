@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/java-ideas-for-summer-of-code
+permalink: /posts/java-ideas-for-summer-of-code.html
 title: Java ideas for Summer of Code
 tags: 
 - gentoo

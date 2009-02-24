@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/playing-with-heroku
+permalink: /posts/playing-with-heroku.html
 title: Playing with heroku
 tags: 
 - git

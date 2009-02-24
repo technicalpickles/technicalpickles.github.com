@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/shoulda-and-assert-2-0-make-swell-bedfellows
+permalink: /posts/shoulda-and-assert-2-0-make-swell-bedfellows.html
 title: Shoulda and assert{2.0} make swell bedfellows
 tags: 
 - assert2.0

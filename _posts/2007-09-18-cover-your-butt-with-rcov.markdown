@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/cover-your-butt-with-rcov
+permalink: /posts/cover-your-butt-with-rcov.html
 title: Cover your butt with rcov
 tags: 
 - coverage

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/github-forking-a-project
+permalink: /posts/github-forking-a-project.html
 title: "GitHub: Forking a project"
 tags: 
 - git

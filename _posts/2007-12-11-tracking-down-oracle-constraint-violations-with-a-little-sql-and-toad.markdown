@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/tracking-down-oracle-constraint-violations-with-a-little-sql-and-toad
+permalink: /posts/tracking-down-oracle-constraint-violations-with-a-little-sql-and-toad.html
 title: Tracking down Oracle constraint violations with a little SQL and Toad
 tags: 
 - oracle

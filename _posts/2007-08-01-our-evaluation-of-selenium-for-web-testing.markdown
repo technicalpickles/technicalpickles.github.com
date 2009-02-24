@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/our-evaluation-of-selenium-for-web-testing
+permalink: /posts/our-evaluation-of-selenium-for-web-testing.html
 title: Our evaluation of Selenium for web testing
 tags: 
 - ant

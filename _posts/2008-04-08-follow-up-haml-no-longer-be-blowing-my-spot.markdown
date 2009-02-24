@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/follow-up-haml-no-longer-be-blowing-my-spot
+permalink: /posts/follow-up-haml-no-longer-be-blowing-my-spot.html
 title: "Follow up: Haml no longer be blowing my spot"
 tags: 
 - haml

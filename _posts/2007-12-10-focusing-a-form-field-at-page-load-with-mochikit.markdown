@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/focusing-a-form-field-at-page-load-with-mochikit
+permalink: /posts/focusing-a-form-field-at-page-load-with-mochikit.html
 title: Focusing a form field at page load with MochiKit
 tags: 
 - forms

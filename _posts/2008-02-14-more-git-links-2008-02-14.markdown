@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/more-git-links-2008-02-14
+permalink: /posts/more-git-links-2008-02-14.html
 title: "More git: links 2008-02-14"
 tags: 
 - git

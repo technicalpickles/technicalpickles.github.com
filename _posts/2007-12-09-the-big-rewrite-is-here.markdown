@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/the-big-rewrite-is-here
+permalink: /posts/the-big-rewrite-is-here.html
 title: The Big Rewrite is Here
 tags: 
 - acts_as_taggable_on_steroids

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/introducing-flockup-find-similar-users-on-twitter
+permalink: /posts/introducing-flockup-find-similar-users-on-twitter.html
 title: "Introducing FlockUp : Find Similar Users on Twitter"
 tags: 
 - rails

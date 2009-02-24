@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/implementing-a-simple-logging-irc-bot
+permalink: /posts/implementing-a-simple-logging-irc-bot.html
 title: Implementing a simple logging IRC bot
 tags: 
 - chat

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/snowocalypse-boston-12-13-2007
+permalink: /posts/snowocalypse-boston-12-13-2007.html
 title: Snowocalypse Boston 12-13-2007
 tags: 
 - boston

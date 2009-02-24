@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/xfce-all-up-in-your-face
+permalink: /posts/xfce-all-up-in-your-face.html
 title: XFCE all up in your face
 tags: 
 - gentoo

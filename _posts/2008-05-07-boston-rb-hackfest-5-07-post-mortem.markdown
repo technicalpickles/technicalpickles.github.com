@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/boston-rb-hackfest-5-07-post-mortem
+permalink: /posts/boston-rb-hackfest-5-07-post-mortem.html
 title: Boston.rb Hackfest 5/07 Post Mortem
 tags: 
 - boston

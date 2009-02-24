@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/a-walk-through-of-test-driven-development-with-shoulda
+permalink: /posts/a-walk-through-of-test-driven-development-with-shoulda.html
 title: A walk through of test-driven development with shoulda
 tags: 
 - rails

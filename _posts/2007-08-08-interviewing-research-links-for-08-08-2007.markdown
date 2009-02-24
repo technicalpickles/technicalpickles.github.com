@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/interviewing-research-links-for-08-08-2007
+permalink: /posts/interviewing-research-links-for-08-08-2007.html
 title: "Interviewing Research: Links for 08-08-2007"
 tags: 
 - interviewing

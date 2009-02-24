@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/updated-java-system-and-java-1-5-unmasked
+permalink: /posts/updated-java-system-and-java-1-5-unmasked.html
 title: Updated Java System and Java 1.5 unmasked
 tags: 
 - gentoo

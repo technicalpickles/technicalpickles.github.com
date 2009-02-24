@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/gitosis-on-gentoo
+permalink: /posts/gitosis-on-gentoo.html
 title: Gitosis on Gentoo
 tags: 
 - gentoo

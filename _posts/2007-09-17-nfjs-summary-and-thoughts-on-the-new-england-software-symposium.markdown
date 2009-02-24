@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/nfjs-summary-and-thoughts-on-the-new-england-software-symposium
+permalink: /posts/nfjs-summary-and-thoughts-on-the-new-england-software-symposium.html
 title: "NFJS: Summary and thoughts on the New England Software Symposium"
 tags: 
 - annotations

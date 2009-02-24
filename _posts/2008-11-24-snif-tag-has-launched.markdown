@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/snif-tag-has-launched
+permalink: /posts/snif-tag-has-launched.html
 title: SNIF Tag has launched!
 tags: 
 - sniftag

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/musings-of-the-current-state-of-open-source-java
+permalink: /posts/musings-of-the-current-state-of-open-source-java.html
 title: Musings of the current state of open source Java
 tags: 
 - gentoo

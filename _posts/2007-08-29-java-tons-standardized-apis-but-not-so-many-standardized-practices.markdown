@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/java-tons-standardized-apis-but-not-so-many-standardized-practices
+permalink: /posts/java-tons-standardized-apis-but-not-so-many-standardized-practices.html
 title: "Java: Tons Standardized APIs, but not so many standardized practices"
 tags: 
 - gentoo

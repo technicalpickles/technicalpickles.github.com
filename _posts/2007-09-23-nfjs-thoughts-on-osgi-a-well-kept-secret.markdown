@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/nfjs-thoughts-on-osgi-a-well-kept-secret
+permalink: /posts/nfjs-thoughts-on-osgi-a-well-kept-secret.html
 title: "NFJS: Thoughts on \"OSGi: A Well Kept Secret\""
 tags: 
 - java

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/stale-etc-portage-package-unmask
+permalink: /posts/stale-etc-portage-package-unmask.html
 title: Stale /etc/portage/package.unmask
 tags: 
 - gentoo

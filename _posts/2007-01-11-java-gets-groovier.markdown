@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/java-gets-groovier
+permalink: /posts/java-gets-groovier.html
 title: Java gets Groovier
 tags: 
 - gentoo

@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/creating-a-svn-authorsfile-when-migrating-from-subversion-to-git
+permalink: /posts/creating-a-svn-authorsfile-when-migrating-from-subversion-to-git.html
 title: Creating a svn.authorsfile when migrating from subversion to git
 tags: 
 - git

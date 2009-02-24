@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/meet-merb
+permalink: /posts/meet-merb.html
 title: Meet Merb
 tags: 
 - merb

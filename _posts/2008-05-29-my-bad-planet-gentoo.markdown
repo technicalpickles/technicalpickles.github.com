@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/my-bad-planet-gentoo
+permalink: /posts/my-bad-planet-gentoo.html
 title: My bad, Planet Gentoo
 tags: 
 - gentoo

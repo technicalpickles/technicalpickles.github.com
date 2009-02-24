@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/name-your-routes-and-name-them-well
+permalink: /posts/name-your-routes-and-name-them-well.html
 title: Name your routes, and name them well
 tags: 
 - named routes

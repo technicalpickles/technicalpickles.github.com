@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/more-gentoo-development-links-than-you-probably-need
+permalink: /posts/more-gentoo-development-links-than-you-probably-need.html
 title: More Gentoo development links than you probably need
 tags: 
 - gentoo

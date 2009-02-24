@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/ebuild-protip-use-emerge-debug-to-figure-out-what-s-happening-2
+permalink: /posts/ebuild-protip-use-emerge-debug-to-figure-out-what-s-happening-2.html
 title: "Ebuild Protip: Use emerge --debug to figure out what's happening"
 tags: 
 - ebuild

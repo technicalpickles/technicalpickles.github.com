@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/presentation-rake-the-familiar-stranger
+permalink: /posts/presentation-rake-the-familiar-stranger.html
 title: "Presentation: Rake, The Familiar Stranger"
 tags: 
 - boston

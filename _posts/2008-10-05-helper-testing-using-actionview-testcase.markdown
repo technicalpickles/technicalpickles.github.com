@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/helper-testing-using-actionview-testcase
+permalink: /posts/helper-testing-using-actionview-testcase.html
 title: helper testing using ActionView::TestCase
 tags: 
 - helper

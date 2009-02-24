@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/shoulda-2-0-0-now-with-gem-power
+permalink: /posts/shoulda-2-0-0-now-with-gem-power.html
 title: shoulda 2.0.0, now with gem power
 tags: 
 - gem

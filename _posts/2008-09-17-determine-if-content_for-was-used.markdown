@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/determine-if-content_for-was-used
+permalink: /posts/determine-if-content_for-was-used.html
 title: Determine if content_for was used
 tags: 
 - content_for

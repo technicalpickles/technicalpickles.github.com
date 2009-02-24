@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/rails-special-sauce-test-unit-setup-and-teardown
+permalink: /posts/rails-special-sauce-test-unit-setup-and-teardown.html
 title: "Rails special sauce: Test::Unit setup and teardown"
 tags: 
 - activesupport

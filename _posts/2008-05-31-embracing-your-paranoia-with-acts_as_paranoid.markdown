@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/embracing-your-paranoia-with-acts_as_paranoid
+permalink: /posts/embracing-your-paranoia-with-acts_as_paranoid.html
 title: Embracing your paranoia with acts_as_paranoid
 tags: 
 - acts_as_paranoid

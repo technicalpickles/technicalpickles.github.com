@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/boston-ruby-group-meeting-june-2008-summary
+permalink: /posts/boston-ruby-group-meeting-june-2008-summary.html
 title: Boston Ruby Group Meeting June 2008 Summary
 tags: 
 - boston

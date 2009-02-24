@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/github-forking-versus-being-a-committer
+permalink: /posts/github-forking-versus-being-a-committer.html
 title: "GitHub: Forking versus being a committer"
 tags: 
 - git

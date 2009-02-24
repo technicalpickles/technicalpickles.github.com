@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/ensuring-proper-rails_env-in-production
+permalink: /posts/ensuring-proper-rails_env-in-production.html
 title: ensuring proper RAILS_ENV in production
 tags: 
 - gentoo

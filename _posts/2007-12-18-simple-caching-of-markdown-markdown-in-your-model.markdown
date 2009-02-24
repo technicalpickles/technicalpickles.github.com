@@ -1,5 +1,5 @@
 --- 
-permalink: /posts/simple-caching-of-markdown-markdown-in-your-model
+permalink: /posts/simple-caching-of-markdown-markdown-in-your-model.html
 title: Simple caching of markdown markdown in your model
 tags: 
 - markdown
