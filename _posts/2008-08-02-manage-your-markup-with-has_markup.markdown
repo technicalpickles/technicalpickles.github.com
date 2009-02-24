@@ -16,7 +16,8 @@ The first thing I tackled was generation of HTML from my `Post` model.
 
 Here's the starting point for my model:
 
-<pre><code class="ruby">class Post < ActiveRecord::Base
+{% highlight ruby %}
+class Post < ActiveRecord::Base
   # --- SNIP ---
 
   # TODO move into own file... and plugin?
@@ -40,16 +41,19 @@ Here's the starting point for my model:
   end
 
   # --- SNIP ---
-end</code></pre>
+end
+{% endhighlight %}
 
  * `validates_markdown` really doesn't belong here
  * Nothing particularly interesting is happening, but the lines of code start to add up
     
 Let's look at the partial for `Post`.
 
-<pre><code class="haml">%div{ :id => dom_id(post), :class => dom_class(post) }
+{% highlight haml %}
+%div{ :id => dom_id(post), :class => dom_class(post) }
   %h2.title= link_to(post.title, post)
-  .content~ post.cached_content</code></pre>
+  .content~ post.cached_content
+{% endhighlight %}
   
  * Eh, nothing particuarly interesting
  
@@ -66,19 +70,23 @@ I was able to extract the logic out of my model and hit all of these goals.
 
 The refactored model:
 
-<pre><code class="ruby">class Post < ActiveRecord::Base
+{% highlight ruby %}
+class Post < ActiveRecord::Base
   # --- SNIP ---
 
   has_markup :content, :required => true, :cache_html => true
 
   # --- SNIP ---
-end</pre></code>
+end
+{% endhighlight %}
     
 And the view is more or less the same:
 
-    %div{ :id => dom_id(post), :class => dom_class(post) }
-      %h2.title= link_to(post.title, post)
-      .content~ post.cached_content_html
+{% highlight haml %}
+%div{ :id => dom_id(post), :class => dom_class(post) }
+  %h2.title= link_to(post.title, post)
+  .content~ post.cached_content_html
+{% endhighlight %}
 
 ### Thoughts
 

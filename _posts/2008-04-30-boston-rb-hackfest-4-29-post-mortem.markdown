@@ -44,4 +44,4 @@ Some articles, resources, that came up while hacking away:
  * [Geokit, Geocoding plugin](http://geokit.rubyforge.org/)
  * [Difference between && and and](http://www.pjhyett.com/posts/201-using-or-and-in-ruby)
 
-The fruits of our labor have been pushed to [http://bostonrb.org](http://bostonrb.org), and the source can be found at [https://svn.thoughtbot.com/hackfest/boston_rb](https://svn.thoughtbot.com/hackfest/boston_rb).
+The fruits of our labor have been pushed to [http://bostonrb.org](http://bostonrb.org), and the source can be found at [https://svn.thoughtbot.com/hackfest/boston\_rb](https://svn.thoughtbot.com/hackfest/boston_rb).

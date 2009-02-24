@@ -16,7 +16,8 @@ It's nice and all to have a decent syntax for doing nested contexts, and declari
 
 Here's a fully shoulda-ified model test (from an example on the Shoulda website):
 
-<pre><code class="ruby">class PostTest < Test::Unit::TestCase
+{% highlight ruby %}
+class PostTest < Test::Unit::TestCase
   load_all_fixtures
 
   should_belong_to :user
@@ -26,7 +27,8 @@ Here's a fully shoulda-ified model test (from an example on the Shoulda website)
   should_require_attributes :body, :message => /wtf/
   should_require_attributes :title
   should_only_allow_numeric_values_for :user_id
-end</code></pre>
+end
+{% endhighlight %}
 
 Imagine how much more code you'd have if you were to do this by hand.
 
@@ -42,7 +44,8 @@ Here's the jist of what you do:
 
 As an example, here's something I wrote recently:
 
-<pre><code class="ruby">class Test::Unit::TestCase
+{% highlight ruby %}
+class Test::Unit::TestCase
   #snip
   def self.should_build_request_path(path)
     should "build request path of #{path}" do
@@ -50,15 +53,18 @@ As an example, here's something I wrote recently:
     end
   end
   # snip
-end</code></pre>
+end
+{% endhighlight %}
 
 Then in your tests, you can use it like:
 
-<pre><code class="ruby">class GetTagsCallTest < Test::Unit::TestCase
+{% highlight ruby %}
+class GetTagsCallTest < Test::Unit::TestCase
   # snip
   should_build_request_path '/v1/tags/get'
   # snip
-end</code></pre>
+end
+{% endhighlight ruby %}
 
 It's pretty straightforward stuff.
 

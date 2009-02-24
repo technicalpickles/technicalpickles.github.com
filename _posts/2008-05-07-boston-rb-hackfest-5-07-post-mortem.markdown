@@ -45,7 +45,8 @@ So, the journey for better Factories begins. The basic ideas/goals we settled on
  
 So we started out with a basic API that Dan Croak had outlined:
 
-<pre><code class="ruby">Factory.define do |factory|
+{% highlight ruby %}
+Factory.define do |factory|
   factory.add :project do |project|
     project.name {"factoryfu"}
     project.homepage_url {"http://factoryfu.rubyforge.org"}
@@ -62,13 +63,16 @@ So we started out with a basic API that Dan Croak had outlined:
     event.date {Time.now}
     event.description {"a cool hackfest"}
   end
-end</code></pre>
+end
+{% endhighlight %}
     
 As for usage of the factories, we had 3 possibilities:
 
-<pre><code class="ruby">Factory.create :project, :name => 'ambitious_sphinx'
+{% highlight ruby %}
+Factory.create :project, :name => 'ambitious_sphinx'
 Factory.create_project :name => 'ambitious_sphinx'
-create_project :name => 'ambitious_sphinx'</code></pre>
+create_project :name => 'ambitious_sphinx'
+{% endhighlight %}
 
 I'm not going to say much about these, aside from the first being the simplest to implement, the second being the most explicit about what you are doing, and the last is the most concise.
 
@@ -91,8 +95,8 @@ You can see the work we ended up in the [hackfest repository under 'boston\_rb']
 Of particular interest are:
 
  * [lib/factory.rb](https://svn.thoughtbot.com/hackfest/boston_rb/lib/factory.rb)
- * [test/test_helper](https://svn.thoughtbot.com/hackfest/boston_rb/test/test_helper.rb)
- * [test/unit/project_test.rb](https://svn.thoughtbot.com/hackfest/boston_rb/test/unit/project_test.rb)
+ * [test/test\_helper](https://svn.thoughtbot.com/hackfest/boston_rb/test/test_helper.rb)
+ * [test/unit/project\_test.rb](https://svn.thoughtbot.com/hackfest/boston_rb/test/unit/project_test.rb)
 
 So, I'm just go over a few of the more interesting bits of the implementation:
 
@@ -108,8 +112,10 @@ This is what you use to define how you the factory behaves.
 
 It takes a block which defines how to create new attributes. If you look at the snippet:
 
-<pre><code class="ruby">event.event_type {"Hackfest"}
-event.date {Time.now}</code></pre>
+{% highlight ruby %}
+event.event_type {"Hackfest"}
+event.date {Time.now}
+{% endhighlight %}
 
 Notice that `event.event_type` and `event.date` are actually taking blocks. This allows us to do `Time.now`, and have this not actually be invoked until object creation.
 
@@ -127,23 +133,30 @@ We provide three factory methods:
 
 You invoke them like:
 
-<pre><code class="ruby">Factory.valid_attributes :project
+{% highlight ruby %}
+Factory.valid_attributes :project
 Factory.new :project, :name => 'factoryfu', :homepage_url => 'http://somewhere.com'
-Factory.create :event, :hackfest, :date => 3.days.ago, :description => 'your looking at it'</code></pre>
+Factory.create :event, :hackfest, :date => 3.days.ago, :description => 'your looking at it'
+{% endhighlight %}
 
 The way we parse the arguments is a little tricky. Initially, we only supported the first 2 lines. This meant our method signature looked like:
 
-<pre><code class="ruby">def self.new(model, attributes = {})</code></pre>
+{% highlight ruby %}
+def self.new(model, attributes = {})
+{% endhighlight %}
 
 When we went to support the 3rd line, we thought to go like:
 
-<pre><code class="ruby">def self.new(model, kind = 'default', attributes = {})</code></pre>
+{% highlight ruby %}
+def self.new(model, kind = 'default', attributes = {})
+{% endhighlight %}
     
 By doing so, you break the 2nd line, because `kind` would get set to our `attributes`.
 
 activesupport provides a solution: [`Array#extract_options`](http://api.rubyonrails.org/classes/ActiveSupport/CoreExtensions/Array/ExtractOptions.html). Basically, it looks at the `Array`, and pops the last element off the end if it's a `Hash`. We use it like:
 
-<pre><code class="ruby">def self.valid_attributes(model, *args)
+{% highlight ruby %}
+def self.valid_attributes(model, *args)
   kind, attributes = parse_args(*args)
   # ...
 end
@@ -154,30 +167,37 @@ def self.parse_args(*args)
   attributes = args.extract_options!
   kind = args.first || 'default'
   [kind, attributes]
-end</code></pre>
+end
+{% endhighlight %}
 
 ### BlockfulHash
 
 We made a subclass of `Hash` which lets you define keys like:
 
-<pre><code class="ruby">event.date {Time.now}
-event.description {"This is going to be SICK!"}</code></pre>
+{% highlight ruby %}
+event.date {Time.now}
+event.description {"This is going to be SICK!"}
+{% endhighlight %}
 
 Such that it's equivalent to:
 
-<pre><code class="ruby">event[:date] = {Time.now}
-event[:description] = {"This is going to be SICK!"}</code></pre>
+{% highlight ruby %}
+event[:date] = {Time.now}
+event[:description] = {"This is going to be SICK!"}
+{% endhighlight ruby %}
 
 Here's the implementation:
 
-<pre><code class="ruby">class BlockfulHash < Hash
+{% highlight ruby %}
+class BlockfulHash < Hash
   def method_missing(method, *args)    
     # When Proc.new is given no arguments,
     # it returns a Proc for the block passed to the current method
     # Proc.new... yeah, it's officially a hackfest.
     self[method.to_sym] = Proc.new
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 This `BlockfulHash` is what gets passed to the block given to `Factory.add`.
 

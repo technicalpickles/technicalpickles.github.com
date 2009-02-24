@@ -8,25 +8,27 @@ layout: post
 ---
 Have you ever written a controller action like:
 
-<pre><code class="ruby">class PostsController < ApplicationController
+{% highlight ruby %}
+class PostsController < ApplicationController
   def create
     @post = Post.new(params[:post])
     @post.save
   end
 end
-</code></pre>
+{% endhighlight %}
 
 Notice how we yank something out of the request parameters? Wouldn't it be nice if you could just define that as an argument to the action method?
 
 Well, merb-action-args does exactly that.
 
-<pre><code class="ruby">class Posts < Application
+{% highlight ruby %}
+class Posts < Application
   def create(post)
     @post = Post.new(post)
     @post.save
   end
 end
-</code></pre>
+{% endhighlight %}
 
 Superficially, for this example, there isn't really much of a difference. But, I do feel like it shows your intent more clearly. It basically says, "The create method takes a post."
 
@@ -41,7 +43,8 @@ If you want to actually use it, you need to install it and add a bit to config/i
 
 Note: this is for merb-0.9.0, which is a 'developer-only' release so it's not available from rubyforge yet. See [Michael Ivey's post](http://gweezlebur.com/2008/2/14/merb-0-9-0-released-kinda) about how to install.
 
-<pre><code class="ruby">dependency "merb-action-args"
-</code></pre>
+{% highlight ruby %}
+dependency "merb-action-args"
+{% endhighlight %}
 
 If you want to hack on merb-action-args, it's  part of [merb-more](http://github.com/wycats/merb-more/tree/master), which is hosted on [GitHub](http://github.com)

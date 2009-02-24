@@ -11,7 +11,7 @@ layout: post
 ---
 Testing testing testing. We test our models, our controllers, and the integration between them. But how often do we pay attention to helpers? Not very often, if the test coverage of my current project's helpers is any indicator.
 
-There are a few tools out there for testing your controllers. There's a plugin called [helper_test](http://nubyonrails.com/articles/test-your-helpers). [ZenTest](zentest.rubyforge.org/) also provides [Test::Rails::HelperTestCase](http://zentest.rubyforge.org/ZenTest/classes/Test/Rails/HelperTestCase.html).
+There are a few tools out there for testing your controllers. There's a plugin called [helper\_test](http://nubyonrails.com/articles/test-your-helpers). [ZenTest](zentest.rubyforge.org/) also provides [Test::Rails::HelperTestCase](http://zentest.rubyforge.org/ZenTest/classes/Test/Rails/HelperTestCase.html).
 
 There's an even better way, and it's included with Rails itself since at least 2.1: [ActionView::TestCase](http://api.rubyonrails.org/classes/ActionView/TestCase.html). The name might be misleading, but it's intended for testing view helpers. It also is a kind of underdocumented.
 
@@ -19,19 +19,21 @@ You can [skip ahead to the summary](#helper_testing_summary) if you want the dir
 
 ### Your very first helper test
 
-The Rails test layout doesn't have an obvious place to put helper tests. I'll take a cue from helper_test, and say to put them in `test/unit/helpers`. That way, they will be run by `rake test:units`.
+The Rails test layout doesn't have an obvious place to put helper tests. I'll take a cue from helper\_test, and say to put them in `test/unit/helpers`. That way, they will be run by `rake test:units`.
 
 ### The skeleton test
 
 Let's start out with testing `ApplicationController`, in `test/unit/helper/application_helper_test.rb`:
 
-<pre><code class="ruby">require File.dirname(__FILE__) + '/../../test_helper'
+{% highlight ruby %}
+require File.dirname(__FILE__) + '/../../test_helper'
 require 'action_view/test_case'
 class ApplicationHelperTest < ActionView::TestCase
   def test_nothing
     assert true
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 Some notes:
 
@@ -55,25 +57,27 @@ You'd always be using the helper from a specific controller, so we'll have a par
 
 Now that we have some context, and some specifications, let's translate this into a [Shoulda](http://thoughtbot.com/projects/shoulda)'s terminology.
 
-<pre><code class="ruby">context &quot;creating a tab for 'events'&quot; do
+{% highlight ruby %}
+context "creating a tab for 'events'" do
   setup do
     @tab = tab_for('events')
   end
 
-  should &quot;list item with a link to events with 'current' class&quot; do
-    assert_dom_equal '&lt;li&gt;&lt;a href=&quot;/events&quot; class=&quot;current&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;', @tab
+  should "list item with a link to events with 'current' class" do
+    assert_dom_equal '<li><a href="/events" class="current">Events</a></li>', @tab
   end
 end
 
-context &quot;creating a tab for 'projects'&quot; do
+context "creating a tab for 'projects'" do
   setup do
     @tab = tab_for('projects')
   end
 
-  should &quot;list item with a link to projects without 'current' class&quot; do
-    assert_dom_equal '&lt;li&gt;&lt;a href=&quot;/projects&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;', @tab
+  should "list item with a link to projects without 'current' class" do
+    assert_dom_equal '<li><a href="/projects">Projects</a></li>', @tab
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 The parent context doesn't do anything yet, because we don't know any implementation details about how it's going to determine the current controller. `assert_dom_equal`, as the name implies, checks that the DOM of the given strings are equivalent. Presumably, this takes care of whitespace, casing, etc.
 
@@ -83,14 +87,16 @@ Let's run it the first time... RED, because we don't have any implementation.
 
 Let's try a first implementation:
 
-<pre><code class="ruby">module ApplicationHelper
+{% highlight ruby %}
+module ApplicationHelper
   def tab_for(name)
-    url = send(&quot;#{name.downcase}_path&quot;)
+    url = send("#{name.downcase}_path")
     content_tag :li do
       link_to(name.capitalize, url)
     end
   end
-end</code></pre>
+end
+{% endhighlight %}
     
 Briefly put:
 
@@ -106,24 +112,28 @@ Let's see how this fares... some GREEN, but still RED. Creating a tab for anothe
  
 I want to check the value of `controller.controller_name`. We can stub `controller` to return an actual `EventsController` using [mocha](http://mocha.rubyforge.org/):
 
-<pre><code class="ruby">context "When on the events controller" do
+{% highlight ruby %}
+context "When on the events controller" do
   setup do
     self.stubs(:controller).returns(EventsController.new)
   end
   # ...
-end</code></pre>
+end
+{% endhighlight %}
 
 
 And... we have the same failures. No wonder, because we didn't change the implementation. Now to give it another try:
 
-<pre><code class="ruby">def tab_for(name)
+{% highlight ruby %}
+def tab_for(name)
   url = send("#{name.downcase}_path")
   content_tag :li do
     attributes = {}
     attributes[:class] = 'current' if controller.controller_name == name
     link_to(name.capitalize, url, attributes)
   end
-end</code></pre>
+end
+{% endhighlight %}
     
 Wait for it, wait for it... GREEN!
 

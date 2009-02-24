@@ -12,7 +12,7 @@ Normally, when `emerge` or `ebuild` go to download files, they will try to downl
 Sometimes, you want to avoid this. There's two scenarios:
 
  * You're developing the ebuild, so the files won't be on the mirrors (yet), so you want to save yourself the time spent checking the mirrors
- * Something necessitates _always_ using the SRC_URI source explicitly.
+ * Something necessitates _always_ using the SRC\_URI source explicitly.
  
 ### First scenario
 

@@ -14,7 +14,8 @@ Being a fan of testing and all that, let me show you what I found while spelunki
 
 ### The revelation
 
-<pre><code class="ruby">module ActionMailer
+{% highlight ruby %}
+module ActionMailer
   class TestCase < ActiveSupport::TestCase
     setup :initialize_test_deliveries
     protected
@@ -23,7 +24,8 @@ Being a fan of testing and all that, let me show you what I found while spelunki
       end
     # ... snip ...
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 ### The shock
 
@@ -33,14 +35,16 @@ What the?!?! I thought you had to `def setup` for setup methods.... but here, it
 
 This reminds me of something...
 
-<pre><code class="ruby">class Subscription < ActiveRecord::Base
+{% highlight ruby %}
+class Subscription < ActiveRecord::Base
   before_create :record_signup
 
   private
     def record_signup
       self.signed_up_on = Date.today
     end
-end</code></pre>
+end
+{% endhighlight %}
 
 Shocking to say, but they are similar, because they both use [ActiveSupport::Callbacks](http://api.rubyonrails.org/classes/ActiveSupport/Callbacks.html). Basically, this allows us to specify setup and teardown blocks the same way we've been specifying [ActionController filters](http://api.rubyonrails.org/classes/ActionController/Filters/ClassMethods.html) and [ActiveRecord callbacks](http://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html):
 
@@ -55,7 +59,8 @@ Shocking to say, but they are similar, because they both use [ActiveSupport::Cal
 
 Let's try using these all together:
 
-<pre><code class="ruby">require 'rubygems'
+{% highlight ruby %}
+require 'rubygems'
 require 'active_support'
 require 'active_support/test_case'
 require 'test/unit'
@@ -89,7 +94,8 @@ class ExampleTest < Test::Unit::TestCase
   def never
     false
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 This outputs:
 

@@ -39,12 +39,14 @@ I've wanted to use rcov in three different settings. I'm sure there's more, but 
 
 You just need to update your `Rakefile` to include something like:
 
-<pre><code class="ruby">require 'rcov/rcovtask'
+{% highlight ruby %}
+require 'rcov/rcovtask'
 Rcov::RcovTask.new do |t|
   t.libs &lt;&lt; &quot;test&quot;
   t.test_files = FileList['test/*_test.rb']
   t.verbose = true
-end</code></pre>
+end
+{% endhighlight %}
 
 Now you can run `rake rcov` and then see the report at `coverage/index.html`.
 
@@ -52,19 +54,21 @@ Now you can run `rake rcov` and then see the report at `coverage/index.html`.
 
 Similarly, you just need to update your `Rakefile` to do:
 
-<pre><code class="ruby">require 'rspec/spec_task'
+{% highlight ruby %}
+require 'rspec/spec_task'
 Spec::Rake::SpecTask.new(&quot;rcov_spec&quot;) do |t|
   t.spec_files = FileList['spec/**/*_spec.rb']
   t.spec_opts = ['--color']
   t.rcov = true
   t.rcov_opts = ['--exclude', '^spec,/gems/']
-end</code></pre>
+end
+{% endhighlight %}
     
 Now you can run `rake rcov_spec` and then see the report at `coverage/index.html`.
 
 ### Rails Project 
 
-There's several ways out there of including coverage in your Rails app. I found the most direct was just to use the [metric_fu](http://github.com/jscruggs/metric_fu/tree/master) plugin.
+There's several ways out there of including coverage in your Rails app. I found the most direct was just to use the [metric\_fu](http://github.com/jscruggs/metric_fu/tree/master) plugin.
 
     script/plugin install git://github.com/jscruggs/metric_fu.git
     
@@ -74,6 +78,6 @@ After it's installed, among other things, you can run `rake metrics:coverage` an
 
 Had a few things pointed out:
 
- * Rcov::RcovTask is in 'rcov/rcovtask', not 'rcov/rcov_task'. Caught by hardbap.
+ * Rcov::RcovTask is in `rcov/rcovtask`, not `rcov/rcov_task`. Caught by hardbap.
  * The origin glob for that task only caught files in `test/*_test.rb`. `test/**/*_test.rb` would catch subdirectories too. Caught by fowlduck.
- * fowlduck found some problems when using metric_fu as a gem, and posted work arounds in the comments.
+ * fowlduck found some problems when using metric\_fu as a gem, and posted work arounds in the comments.

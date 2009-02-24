@@ -13,8 +13,10 @@ It's a well known fact that you should be [testing all the time](http://whendoit
 
 Enter [fakeweb](http://github.com/chrisk/fakeweb): it stops `Net::HTTP` dead. To get started, add this to your `test_helper.rb`:
 
-<pre><code class="ruby">require 'fakeweb'
-FakeWeb.allow_net_connect = false</code></pre>
+{% highlight ruby %}
+require 'fakeweb'
+FakeWeb.allow_net_connect = false
+{% endhighlight %}
 
 This loads fakeweb, and then prevents Net::HTTP from actually hitting the network. If you have any tests that use the Net::HTTP, you are going to see a lot of tests errored out. Here's an example backtrace:
 
@@ -31,19 +33,21 @@ At this point, you use `FakeWeb.register_uri` to record a URI and response. I fo
 
 Now we can use the saved response:
 
-<pre><code class="ruby">class GithubPartyTest &lt; Test::Unit::TestCase
-  context &quot;user lookup&quot; do
+{% highlight ruby %}
+class GithubPartyTest < Test::Unit::TestCase
+  context "user lookup" do
     setup do
-      FakeWeb.register_uri('http://github.com/api/v1/json/defunkt', :response =&gt; File.join(File.dirname(__FILE__), 'fixtures', 'user.json'))
+      FakeWeb.register_uri('http://github.com/api/v1/json/defunkt', :response => File.join(File.dirname(__FILE__), 'fixtures', 'user.json'))
       @user = GitHubParty.user('defunkt')
     end
     # tests go here
   end
-end</code></pre>
+end
+{% endhighlight %}
     
 Not only does this pass, but it runs faster and you can take it offline at your discretion.
 
-For my example, my code is using Net::HTTP, so it makes sense to use fakeweb to register allowed URIs. It gets more complicated if you are using a library which is making the Net::HTTP calls. Imagine something like [flickr_fu](http://github.com/commonthread/flickr_fu/tree/master) or [youtube-g](http://github.com/tmm1/youtube-g/tree/master). Registering the precise URIs the library uses would break encapsulation, not to mention being annoying and tedious.
+For my example, my code is using Net::HTTP, so it makes sense to use fakeweb to register allowed URIs. It gets more complicated if you are using a library which is making the Net::HTTP calls. Imagine something like [flickr\_fu](http://github.com/commonthread/flickr_fu/tree/master) or [youtube-g](http://github.com/tmm1/youtube-g/tree/master). Registering the precise URIs the library uses would break encapsulation, not to mention being annoying and tedious.
 
 I found a better approach is to capture the result of the library call to YAML and then use a mocking library, such as [mocha](http://mocha.rubyforge.org/), to return the deserialized YAML. [Dan Croak](http://dancroak.tumblr.com/) [wrote about this approach](http://giantrobots.thoughtbot.com/2008/12/23/script-console-tips) a few weeks ago, but now we add fakeweb to the mix.
 
@@ -55,23 +59,27 @@ To capture the output, open `script/console` or `irb`:
     
 To facilitate using this fixture, we can make a small helper in `test_helper.rb`:
 
-<pre><code class="ruby">def load_yaml_fixture(path)
-  adjusted_path = File.join File.dirname(__FILE__), &quot;fixtures&quot;, path
+{% highlight ruby %}
+def load_yaml_fixture(path)
+  adjusted_path = File.join File.dirname(__FILE__), "fixtures", path
   YAML::load_file adjusted_path
-end</code></pre>
+end
+{% endhighlight %}
     
 We can now reply the captured results using this helper and mocha:
 
-<pre><code class="ruby">class VideoTest &lt; ActiveSupport::TestCase
-  context &quot;Video.refresh\_for!(@topic)&quot; do
+{% highlight ruby %}
+class VideoTest < ActiveSupport::TestCase
+  context "Video.refresh_for!(@topic)" do
     setup do
-      @topic  = Factory(:topic, :name =&gt; &quot;Bruce Springsteen&quot;)
-      @videos = load\_yaml\_fixture &quot;you\_tube/bruce\_springsteen.yml&quot;
+      @topic  = Factory(:topic, :name => "Bruce Springsteen")
+      @videos = load_yaml_fixture "you_tube/bruce_springsteen.yml"
       YouTubeClient.stubs(:search).with(@topic.name).returns(@videos)
       Video.refresh_for! @topic
     end
     # tests go here
   end
-end</pre></code>
+end
+{% endhighlight %}
     
 Using fakeweb and these two methods, we should be all set for preventing any outgoing Net::HTTP connections. Be wary, though. Your tests will be faster and let you go offline, but they are just snapshots of a HTTP request or library call, so may change over time.

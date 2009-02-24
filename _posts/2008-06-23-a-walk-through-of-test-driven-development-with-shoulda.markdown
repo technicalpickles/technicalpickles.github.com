@@ -227,7 +227,8 @@ Oh, probably should migrate something.
 
 And we make it look like:
 
-<pre><code class="ruby">class PlaceEventRelationship &lt; ActiveRecord::Migration
+{% highlight ruby %}
+class PlaceEventRelationship &lt; ActiveRecord::Migration
   def self.up
     add_column :events, :place_id, :integer
   end
@@ -235,24 +236,27 @@ And we make it look like:
   def self.down
     remove_column :events, :place_id
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 Do a `rake db:migrate db:test:prepare`, and we're ready to run it again. Wait for it... wait for it...
 
-<pre><code class="ruby">$ ruby test/unit/place_test.rb 
-Loaded suite test/unit/place_test
-Started
-.......
-Finished in 0.159728 seconds.
-
-7 tests, 15 assertions, 0 failures, 0 errors</code></pre>
+    $ ruby test/unit/place_test.rb 
+    Loaded suite test/unit/place_test
+    Started
+    .......
+    Finished in 0.159728 seconds.
+    
+    7 tests, 15 assertions, 0 failures, 0 errors
 
 Let's add a test for the other side of the relationship:
 
-<pre><code class="ruby">class EventTest &lt; ActiveSupport::TestCase
+{% highlight ruby %}
+class EventTest < ActiveSupport::TestCase
   # ... snip ...
   should_belong_to :place
-end</code></pre>
+end
+{% endhighlight %}
 
 Failures, as expected.
 
@@ -268,9 +272,11 @@ Event does not have any relationship to place.
 
 And now we actually implement it...
 
-<pre><code class="ruby">class Event &lt; ActiveRecord::Base
+{% highlight ruby %}
+class Event < ActiveRecord::Base
   belongs_to :place
-end</code></pre>
+end
+{% endhighlight %}
 
 And guess what? They pass. We win at things that are winnable, like TDD.
 
@@ -288,7 +294,7 @@ It also demonstrates how shoulda lets tersely test things that can be written te
 
 ## Update
 
-The repository was renamed [shoulda_generator](http://github.com/technicalpickles/shoulda_generator/tree/master). It is also now installable as a gem:
+The repository was renamed [shoulda\_generator](http://github.com/technicalpickles/shoulda_generator/tree/master). It is also now installable as a gem:
 
     $ gem sources -a http://gems.github.com
     $ sudo gem install technicalpickles-shoulda_generator

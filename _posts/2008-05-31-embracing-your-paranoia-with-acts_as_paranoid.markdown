@@ -7,7 +7,7 @@ tags:
 - ruby
 layout: post
 ---
-According to their [RDoc](http://ar-paranoid.rubyforge.org/), "Overrides some basic methods for the current model so that calling destroy sets a 'deleted_at' field to the current timestamp. ActiveRecord is required."
+According to their [RDoc](http://ar-paranoid.rubyforge.org/), "Overrides some basic methods for the current model so that calling destroy sets a 'deleted\_at' field to the current timestamp. ActiveRecord is required."
 
 There doesn't seem to be really good up-to-date documentation on how to actually use it though. Let's take a stab at it.
 

@@ -32,7 +32,8 @@ Before we implement the callback, let's update our schema with a migration.
 
     $ script/generate migration AddCachedContent
     
-<pre><code class="ruby">class AddCachedContent < ActiveRecord::Migration
+{% highlight ruby %}
+class AddCachedContent < ActiveRecord::Migration
   def self.up
     add_column :posts, :cached_content, :text
   end
@@ -40,11 +41,12 @@ Before we implement the callback, let's update our schema with a migration.
   def self.down
     remove_column :posts, :cached_content
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 Hmm... one problem: we probably want to cache the content of all existing posts. So, let's add a method that will cache the content.
 
-<pre><code class="ruby_on_rails">
+{% highlight ruby %}
 class Post < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :content
@@ -53,11 +55,12 @@ class Post < ActiveRecord::Base
     self.cached_content = BlueCloth.new(self.content).to_html
   end
 end
-</code></pre>
+{% endhighlight %}
 
 Now we have the means to cache our markdown, we can update our migration to cache the content of each post and save it:
 
-<pre><code class="ruby">class AddCachedContent < ActiveRecord::Migration
+{% highlight ruby %}
+class AddCachedContent < ActiveRecord::Migration
   def self.up
     add_column :posts, :cached_content, :text
 
@@ -70,11 +73,13 @@ Now we have the means to cache our markdown, we can update our migration to cach
   def self.down
     remove_column :posts, :cached_content
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 We have everything in place to go ahead and actually add the callback:
 
-<pre><code class="ruby">class Post < ActiveRecord::Base
+{% highlight ruby %}
+class Post < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :content
   
@@ -82,6 +87,7 @@ We have everything in place to go ahead and actually add the callback:
   def cache_content
     self.cached_content = BlueCloth.new(self.content).to_html
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 We're just about done. All that remains is to update places in the view that generate html from markdown to just use the cached\_content instead.

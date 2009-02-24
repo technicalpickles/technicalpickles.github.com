@@ -40,11 +40,11 @@ You'll need to generate an ssh key, if you don't already have one. I also recomm
 
     you@urworkstation $ ssh-keygen -t rsa
 
-You will be prompted for a location to save the key, but I will assume you choose ~/.ssh/id\_rsa. This will create ~/.ssh/id\_rsa and ~/.ssh/id\_rsa.pub. Now you want to toss id_rsa.pub up on urserver using scp.
+You will be prompted for a location to save the key, but I will assume you choose `~/.ssh/id_rsa`. This will create `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`. Now you want to toss `id_rsa.pub` up on urserver using scp.
 
     you@urworkstation $ scp ~/.ssh/id_rsa.pub root@urserver:
     
-After you get id\_rsa.pub there, the following command switches to the git user, and kicks off gitosis-init using your ssh public key.
+After you get `id_rsa.pub` there, the following command switches to the git user, and kicks off gitosis-init using your ssh public key.
  
     root@urserver #  sudo -H -u git gitosis-init < id_rsa.pub
 

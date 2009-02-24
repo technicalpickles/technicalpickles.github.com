@@ -55,7 +55,7 @@ These are the plugins I'm using, and I'll include any tweaks or mappings I'm usi
 
 [endwise.vim](http://www.vim.org/scripts/script.php?script_id=2386): Kind of similar to autoclose, but more for structures you'd encounter while programming, such as if statements and class declarations.
 
-[fuzzyfinder_textmate](http://github.com/jamis/fuzzyfinder_textmate/tree/master): This is the texmate equivalent of 'Go to File'. Pull it up, and start typing a filename. I bind it to \t (command-t opens a tab in MacVim).
+[fuzzyfinder\_textmate](http://github.com/jamis/fuzzyfinder_textmate/tree/master): This is the texmate equivalent of 'Go to File'. Pull it up, and start typing a filename. I bind it to \t (command-t opens a tab in MacVim).
 
     " binds \ t to textmate-style fuzzy finder
     map <leader>t :FuzzyFinderTextMate<CR>
@@ -101,7 +101,7 @@ Insert hashrockets (`=>`) while in insert-mode, just like in TextMate:
     " bind control-l to hashrocket
     imap <C-l> <Space>=><Space>
 
-Indent and unident with command-[ and command-]:
+Indent and unident with `command-[` and `command-]`:
 
     " bind command-] to shift right
     nmap <D-]> >>
