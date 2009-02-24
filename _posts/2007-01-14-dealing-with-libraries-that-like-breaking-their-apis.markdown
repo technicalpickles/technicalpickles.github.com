@@ -22,14 +22,17 @@ layout: post
 <li>dev-java/groovy uses dev-java/asm-2.2</li>
 <li>dev-java/hibernate uses dev-java/cglib-2.1</li>
 <li>dev-java/rmock uses dev-java/cglib-2.1</li>
-<li>dev-java/cglib-2.1 uses dev-java/asm-1.5</li></ul>
+<li>dev-java/cglib-2.1 uses dev-java/asm-1.5</li>
+</ul>
 
 <p>The issue here is that asm apparently changed it's API quite a bit between 1.x and 2.x. This problem seems to have cropped up a few times at least according to google (search for 'NoClassDefFoundError: org/objectweb/asm/CodeVisitor').</p>
 
 <p>The asm tutorial even goes so far as to the changes... kind of. See <a href="http://asm.objectweb.org/doc/tutorial-asm-2.0.html">here</a> under the "Changes in the ASM 2.0 API Since ASM 1.x" section. A few things bother me about this.
-</p><ul>
+</p>
+<ul>
 <li>I don't see why the major changes, like renamed classes, and changed method signatures, couldn't have been deprecated at first, and do some twiddling to proxy calls to deprecated things to the newer ones.</li>
-<li>The line that goes like "In general, it would be a good idea to run tool like JDiff and review the differences between the ASM 1.x and 2.0 APIs." Maybe it's just me, but this seems a bit presumptious. I mean, while such a tool is probably useful, it is far from thorough. It might point out where the API changed, but would have no clue as to the significance of those changes, or how you would account for them.</li></ul>
+<li>The line that goes like "In general, it would be a good idea to run tool like JDiff and review the differences between the ASM 1.x and 2.0 APIs." Maybe it's just me, but this seems a bit presumptious. I mean, while such a tool is probably useful, it is far from thorough. It might point out where the API changed, but would have no clue as to the significance of those changes, or how you would account for them.</li>
+</ul>
 
 <p>A question that might come out is why would rmock expose this problem, when hibernate is using the same version of asm? Presumably it is because hibernate isn't exercising the parts of the cglib API that use the offending parts of asm, so I must have lucked out before now.</p>
 

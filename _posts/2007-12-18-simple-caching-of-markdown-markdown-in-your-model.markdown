@@ -12,17 +12,21 @@ As it turns out, it is really simple to cache this information.
 
 For a little background, here's the schema for my posts:
 
-<pre><code class="ruby">create_table "posts", :force => true do |t|
+{% highlight ruby %}
+create_table "posts", :force => true do |t|
   t.string   "title"
   t.text     "content"
-end</code></pre>
+end
+{% endhighlight %}
 
 And the model:
 
-<pre><code class="ruby">class Post < ActiveRecord::Base
+{% highlight ruby %}
+class Post < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :content
-end</code></pre>
+end
+{% endhighlight %}
 
 What I want to do is, before a post is saved, to generate html from the markdown and save it to the database. Then, instead of generating it at page render, use the saved html.
 

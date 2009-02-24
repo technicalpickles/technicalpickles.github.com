@@ -7,8 +7,9 @@ tags:
 layout: post
 ---
 
-			<p><i>Cross posted to gentoo-dev and gentoo-java mailing list.</i>
-</p><p>
+<p><i>Cross posted to gentoo-dev and gentoo-java mailing list.</i>
+</p>
+<p>
 Yesterday, the Java team held a meeting.
 The agenda for the meeting is available at <a href="http://overlays.gentoo.org/proj/java/wiki/September_2006_Meeting_Outline">here</a>.
 This summary follows the format of the agenda.

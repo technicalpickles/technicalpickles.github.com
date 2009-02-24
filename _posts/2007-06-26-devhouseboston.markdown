@@ -21,7 +21,7 @@ As it turned out, two other attendees were interested in hacking on this.
 
 Given that I've been into rails a lot lately, and rails is pretty good for getting something going pretty quickly, it was the obvious choice. And with the awesomeness of Google Maps API, that was a pretty obvious choice.
 
-After a bit of research, I found two plugins which helped us out quite a bit. The first was [ym4r_gm](http://thepochisuperstarmegashow.com/projects/#ym4r).   We used this to be able to programatically construct a map in Ruby, and used the helpers in the view to render it.
+After a bit of research, I found two plugins which helped us out quite a bit. The first was [ym4r\_gm](http://thepochisuperstarmegashow.com/projects/#ym4r).   We used this to be able to programatically construct a map in Ruby, and used the helpers in the view to render it.
 
 For example, we had a method that looked like
 

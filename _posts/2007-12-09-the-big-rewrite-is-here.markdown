@@ -33,6 +33,6 @@ So, here's a laundry list of what I've been using so far:
 
 I think I'm mostly feature complete, but the most significant missing piece is...
 
-Comments! I mostly need to find a good way of spam filtering. The original version was using [simple_captcha](http://agilewebdevelopment.com/plugins/simple_captcha), but I've been noticing spam has still been getting through. I'm considering trying [akismet](http://akismet.com/), which does have a few Rails plugins.
+Comments! I mostly need to find a good way of spam filtering. The original version was using [simple\_captcha](http://agilewebdevelopment.com/plugins/simple_captcha), but I've been noticing spam has still been getting through. I'm considering trying [akismet](http://akismet.com/), which does have a few Rails plugins.
 
 But yeah, that's it for now. I hope to pump out a few posts about this new stuff I'm using.

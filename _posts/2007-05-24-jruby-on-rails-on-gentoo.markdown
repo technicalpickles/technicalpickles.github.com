@@ -20,39 +20,46 @@ layout: post
 
 <p>First, we add need to add a bit to the <em>config/environment.rb</em>:</p>
 
-<blockquote><pre>def using_jruby?
+{% highlight ruby %}
+def using_jruby?
   RUBY_PLATFORM =~ /java/
 end
 
 if using_jruby? 
   require 'rubygems'
   RAILS_CONNECTION_ADAPTERS = %w(jdbc)
-end</pre>
-<p></p></blockquote><br>
+end
+{% endhighlight %}
+
 This can be placed after the <em>require File.join(File.dirname(__FILE__), 'boot')</em> line. If there's a better place <em>using_jruby?</em> should be defined, please let me know.
 
 <p>Now we wander over to <em>config/database.yml</em>. Here is what was originally there:</p>
 
-<blockquote><pre>development:
+{% highlight yaml %}
+development:
   adapter: mysql
   socket: /var/run/mysqld/mysqld.sock
   database: yourapp_development
   username: root
-  password:</pre><p></p></blockquote>
+  password:
+{% endhighlight %}
 
-<p>Now we update it to use:
-</p><blockquote><pre>development:
-  &lt;% if using_jruby? %&gt;
+<p>Now we update it to use:</p>
+
+{% highlight yaml %}
+development:
+  <% if using_jruby? %>
   adapter: jdbc
   driver: com.mysql.jdbc.Driver
   url: jdbc:mysql://localhost/yourapp_development
-  &lt;% else  %&gt;
+  <% else  %>
   adapter: mysql
   socket: /var/run/mysqld/mysqld.sock
-  &lt;% end %&gt;
+  <% end %>
   database: yourapp_development
   username: root
-  password:</pre><p></p></blockquote>
+  password:
+{% endhighlight %}
 
 <p>So, if we're using jruby, we use the JDBC adapter, with the appropriate driver, and point it at the right URL. Otherwise, it'll use what we had before.</p>
 
@@ -100,7 +107,8 @@ RuntimeError: The driver encountered an error: java.sql.SQLException: No suitabl
 </pre><p></p></blockquote>
 
 <p>Lastly, here are some resources that may be useful:
-</p><ul>
+</p>
+<ul>
   <li><a href="http://www.headius.com/jrubywiki/index.php/Main_Page">http://www.headius.com/jrubywiki/index.php/Main_Page</a></li>
   <li><a href="http://www.headius.com/jrubywiki/index.php/JRuby_on_Rails">http://www.headius.com/jrubywiki/index.php/JRuby_on_Rails</a></li>
-  <li><a href="http://www.headius.com/jrubywiki/index.php/Running_Rails_with_ActiveRecord-JDBC">http://www.headius.com/jrubywiki/index.php/Running_Rails_with_ActiveRecord-JDBC</a></li></ul>					
+  <li><a href="http://www.headius.com/jrubywiki/index.php/Running_Rails_with_ActiveRecord-JDBC">http://www.headius.com/jrubywiki/index.php/Running_Rails_with_ActiveRecord-JDBC</a></li></ul>

@@ -27,10 +27,12 @@ How do you manage your dependencies on third party libraries? Include every jar 
 <p>So for all the dependencies, we want to package the dependencies, and then package the dependencies' dependencies, and so on. Then we want to make the application use our copy of the dependency that we just packaged. Easy enough, right?</p>
 
 <p>Not quite. Here are a few of the many problems we come up against all too regularly:
-</p><ol>
+</p>
+<ol>
   <li>The API of the dependencies are unstable, as in, they break between minor revisions.</li>
   <li>The dependency has been patched in fun and exciting ways that are specific to the application.</li>
-  <li>The origin of the dependency is unknown, and no upstream can be found.</li></ol>
+  <li>The origin of the dependency is unknown, and no upstream can be found.</li>
+</ol>
 
 <p>Quite dreary, eh?</p>
 

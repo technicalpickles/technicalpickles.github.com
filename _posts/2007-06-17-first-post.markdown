@@ -5,4 +5,6 @@ tags: []
 
 layout: post
 ---
-<p>After much deliberation, the blog is finally ready to go!</p><p>&nbsp;</p><p>Real content coming soon...&nbsp;</p>
+After much deliberation, the blog is finally ready to go!
+
+Real content coming soon...
