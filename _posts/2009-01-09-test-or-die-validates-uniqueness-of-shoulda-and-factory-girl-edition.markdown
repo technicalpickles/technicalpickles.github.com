@@ -10,15 +10,15 @@ tags:
 - testordie
 layout: post
 ---
-[John Nunemaker](http://railstips.org) recently posted about [testing `validates_uniqueness_of` using test/unit and fixtures](http://railstips.org/2009/1/8/test-or-die-validates-uniqueness-of). I'm going to take his lead, but use [shoulda](http://thoughtbot.com/projects/shoulda) and [factory_girl](http://thoughtbot.com/projects/factory_girl) instead. I'm going to assume you've read his article.
+[John Nunemaker](http://railstips.org) recently posted about [testing `validates_uniqueness_of` using test/unit and fixtures](http://railstips.org/2009/1/8/test-or-die-validates-uniqueness-of). I'm going to take his lead, but use [shoulda](http://thoughtbot.com/projects/shoulda) and [factory\_girl](http://thoughtbot.com/projects/factory_girl) instead. I'm going to assume you've read his article.
 
 If you look at the code for testing `validates_uniqueness_of` of your model, and think about how often you might use it in your projects, it starts to be repetitive very quickly. John has this to say about this style of testing in his comments:
 
-> "_The thing that I have noticed when teaching people testing though is they have to learn this first. If they start with the macros, mocking and stubbing, they never quite understand the underpinnings. Also, when they start new project, I often watch them stumble, trying to do things with all the macros, but not having their test environment setup. I think it is good for people to see that they are repeating themselves and think, well, how can I fix this? I kind of think it is good to feel the repetition pain as it helps people understand why we switch to macros and start to stub and mock things so that you don’t require hitting the database or using fixtures._"
+> "_The thing that I have noticed when teaching people testing though is they have to learn this first. If they start with the macros, mocking and stubbing, they never quite understand the underpinnings. Also, when they start new project, I often watch them stumble, trying to do things with all the macros, but not having their test environment setup. I think it is good for people to see that they are repeating themselves and think, well, how can I fix this? I kind of think it is good to feel the repetition pain as it helps people understand why we switch to macros and start to stub and mock things so that you don't require hitting the database or using fixtures._"
 
 Now, I'm assuming you've learned these valuable lessons, and want to more succinctly test your code.
 
-Before starting, you'll need to install should and factory\_girl. I also created [shoulda\_generator](http://github.com/technicalpickles/shoulda_generator/tree/master) for shouldaified and factory_girlied generators.
+Before starting, you'll need to install should and factory\_girl. I also created [shoulda\_generator](http://github.com/technicalpickles/shoulda_generator/tree/master) for shouldaified and factory\_girlied generators.
 
 You can either install shoulda and factory\_girl as plugins by running:
 
@@ -27,12 +27,14 @@ You can either install shoulda and factory\_girl as plugins by running:
     
 ... or as gems by adding this to `config/environment.rb` (although some might argue it belongs in `config/environments/test.rb`):
 
-<pre><code class="ruby">config.gem 'thoughtbot-shoulda', 
-  :lib    =&gt; 'shoulda',
-  :source =&gt; 'http://gems.github.com'
+{% highlight ruby %}
+config.gem 'thoughtbot-shoulda', 
+  :lib    => 'shoulda',
+  :source => 'http://gems.github.com'
 config.gem 'thoughtbot-factory_girl', 
-  :lib    =&gt; 'factory_girl', 
-  :source =&gt; 'http://gems.github.com'</code></pre>
+  :lib    => 'factory_girl', 
+  :source => 'http://gems.github.com'
+{% endhighlight %}
       
 shoulda\_generator can be installed as a gem:
 
@@ -48,17 +50,19 @@ We can now proceed:
 
 Shoulda provides the `should_require_unique_attributes` macro for testing uniqueness. It requires an existing record though, so we need to use `factory_girl` to create one in a context. Together, this would look like:
 
-<pre><code class="ruby">require File.dirname(__FILE__) + '/../test_helper'
+{% highlight ruby %}
+require File.dirname(__FILE__) + '/../test_helper'
 
-class CategoryTest &lt; ActiveSupport::TestCase
-  context &quot;an existing category&quot; do
+class CategoryTest < ActiveSupport::TestCase
+  context "an existing category" do
     setup do
       @category = Factory(:category)
     end
 
     should_require_unique_attributes :name
   end
-end</code></pre>
+end
+{% endhighlight %}
     
 If we run `rake test`, we'll see it fails because we haven't declared name to be unique:
 
@@ -81,9 +85,11 @@ If we run `rake test`, we'll see it fails because we haven't declared name to be
 
 Now add the `validates_uniqueness_of`:
 
-<pre><code class="ruby">class Category &lt; ActiveRecord::Base
+{% highlight ruby %}
+class Category < ActiveRecord::Base
   validates_uniqueness_of :name
-end</code></pre>
+end
+{% endhighlight %}
 
 And running `rake test` now yields much success:
 
