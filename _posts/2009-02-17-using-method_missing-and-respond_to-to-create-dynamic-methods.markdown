@@ -19,7 +19,8 @@ To have a consistent API when using `method_missing`, it's important to implemen
 
 Imagine we have a `Legislator` class. We want a dynamic finder that will translate `find_by_first_name('John')` to `find(:first_name => 'John')`. Here's a first pass:
 
-<pre><code class="ruby">class Legislator
+{% highlight ruby %}
+class Legislator
   # Pretend this is a real implementation
   def find(conditions = {})
   end
@@ -33,11 +34,13 @@ Imagine we have a `Legislator` class. We want a dynamic finder that will transla
       super
     end
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 That seems to do the trick. But `Legislator.respond_to?(:find_by_first_name)` would return `false`. Let's add `respond_to?` to fix it.
 
-<pre><code class="ruby">class Legislator
+{% highlight ruby %}
+class Legislator
   # ommitted
   
   # It's important to know Object defines respond_to to take two parameters: the method to check, and whether to include private methods
@@ -49,7 +52,8 @@ That seems to do the trick. But `Legislator.respond_to?(:find_by_first_name)` wo
       super
     end
   end
-end</code></pre>
+end
+{% endhighlight %}
     
 As commented, `respond_to?` takes two parameters. If you don't do this, there's a chance some library may expect to be able to invoke `respond_to?` with 2 parameters, resulting in an `ArgumentError`. In particular, the RSpec mocking library does this exactly this, and caused me a bit of befuddlement until I turned on full backtraces.
 
@@ -62,7 +66,8 @@ You might notice it's not very DRY. We use the same pattern matching twice. This
 We can again look to ActiveRecord for inspiration. It encapsulates the logic in [ActiveRecord::DynamicFinderMatch](http://api.rubyonrails.org/classes/ActiveRecord/DynamicFinderMatch.html), to avoid repetition between `method_missing` and `respond_to?`, in addition to simplifying the methods.
 
 
-<pre><code class="ruby">class LegislatorDynamicFinderMatch
+{% highlight ruby %}
+class LegislatorDynamicFinderMatch
   attr_accessor :attribute
   def initialize(method_sym)
     if method_sym.to_s =~ /^find_by_(.*)$/
@@ -84,7 +89,7 @@ class Legislator
       super
     end
   end
-  
+
   def self.respond_to?(method_sym, include_private = false)
     if LegislatorDynamicFinderMatch.new(method_sym).match?
       true
@@ -92,7 +97,8 @@ class Legislator
       super
     end
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 #### Caching `method_missing`
 
@@ -100,7 +106,8 @@ Always passing through `method_missing` [can be slow](http://www.jroller.com/dsc
 
 Another lesson we can take from is ActiveRecord is defining the method during `method_missing`, and then `send` to the now-defined method.
 
-<pre><code class="ruby">class Legislator    
+{% highlight ruby %}
+class Legislator    
   def self.method_missing(method_sym, *arguments, &amp;block)
     match = LegislatorDynamicFinderMatch.new(method_sym)
     if match.match?
@@ -120,7 +127,8 @@ Another lesson we can take from is ActiveRecord is defining the method during `m
       end                                     # end
     RUBY
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 ### Testing
 
@@ -128,7 +136,8 @@ Being the test-minded individual that I am, no code would be complete without so
 
 Creating the `LegislatorDynamicFinderMatch` makes it straight forward to test your matching logic. An example using RSpec could look like:
 
-<pre><code class="ruby">describe LegislatorDynamicFinderMatch do
+{% highlight ruby %}
+describe LegislatorDynamicFinderMatch do
   describe 'find_by_first_name' do
     before do
       @match = LegislatorDynamicFinderMatch.new(:find_by_first_name)
@@ -156,17 +165,20 @@ Creating the `LegislatorDynamicFinderMatch` makes it straight forward to test yo
       @match.should_not be_a_match
     end
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 If you are creating dynamic methods which are just syntactic sugar around another method, like our finder, I think it is sufficient to use mocking to ensure the main method gets called with the correct arguments. Here's an RSpec example:
 
-<pre><code class="ruby">describe Legislator, 'dynamic find_by_first_name' do
+{% highlight ruby %}
+describe Legislator, 'dynamic find_by_first_name' do
   it 'should call find(:first_name =&gt; first_name)' do
     Legislator.should_receive(:find).with(:first_name =&gt; 'John')
     
     Legislator.find_by_first_name('John')
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 ### Summary
 
