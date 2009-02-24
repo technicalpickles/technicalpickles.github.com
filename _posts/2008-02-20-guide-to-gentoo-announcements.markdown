@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/guide-to-gentoo-announcements
 title: Guide to Gentoo Announcements
 tags: 
 - announcements
 - gentoo
 - pr
 - writing
-layout: default
+layout: post
 ---
 You've probably noticed that there have been a lot more announcements lately if you subscribe to [gentoo.org](gentoo.org)'s or [planet.gentoo.org](planet.gentoo.org)'s feed. You can largely thank [Donnie](http://spyderous.livejournal.com/) for this improvement.
 

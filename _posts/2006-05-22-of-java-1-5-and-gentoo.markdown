@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/of-java-1-5-and-gentoo
 title: Of Java 1.5 and Gentoo
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>The road to unmasking Java 1.5 has been long and arduous. There have been enough issues to warrant it's own <a href="http://www.gentoo.org/proj/en/java/tiger-faq.xml">FAQ</a> and an entire redesign of the way we handle Java packages.</p>

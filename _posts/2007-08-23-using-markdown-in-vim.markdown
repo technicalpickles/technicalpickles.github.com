@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/using-markdown-in-vim
 title: Using Markdown in vim
 tags: 
 - bluecloth
 - markdown
 - rails
 - vim
-layout: default
+layout: post
 ---
 My posts are written in [Markdown](http://daringfireball.net/projects/markdown/), by using the wonderful [BlueCloth](http://www.deveiate.org/projects/BlueCloth) library, as I discussed in [this earlier post](/blog/permalink/switched-templating-engine-to-bluecloth.html).
 

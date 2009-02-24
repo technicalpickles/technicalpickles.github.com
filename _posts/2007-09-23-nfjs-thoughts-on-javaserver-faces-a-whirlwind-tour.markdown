@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/nfjs-thoughts-on-javaserver-faces-a-whirlwind-tour
 title: "NFJS: Thoughts on \"JavaServer Faces: A Whirlwind Tour\""
 tags: 
 - java
@@ -8,7 +9,7 @@ tags:
 - stripes
 - struts
 - tapestry
-layout: default
+layout: post
 ---
 The first presentation I attended was "JavaServer Faces: A Whirlwind Tour" by [David Geary](http://jroller.com/dgeary/).
 

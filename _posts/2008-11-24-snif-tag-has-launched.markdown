@@ -1,8 +1,9 @@
 --- 
+permalink: /posts/snif-tag-has-launched
 title: SNIF Tag has launched!
 tags: 
 - sniftag
-layout: default
+layout: post
 ---
 If it has been quiet around this blog, it is because of this: [SNIF Tag](http://sniftag.com) has launched!
 

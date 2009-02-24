@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/rails-heavy-links-for-08-07-2007
 title: "Rails Heavy: Links for 08-07-2007"
 tags: 
 - del.icio.us
 - links
 - rails
-layout: default
+layout: post
 ---
 Here's you latest dose of link action. I have been told that del.icio.us and other services provide a handy way of doing these kind of things in an automated fashion (Thanks [Donnie](http://spyderous.livejournal.com/tag/gentoo)!). I don't really dig that, as a) I'm not sure it will integrate with my blog easily and b) I always cringe when I see other people's daily del.icio.us links. They just feel too impersonal, and I think you deserve better than that.
 

@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/manage-your-markup-with-has_markup
 title: Manage your markup with has_markup
 tags: 
 - markdown
 - plugin
 - rails
 - ruby
-layout: default
+layout: post
 ---
 I recently decided to extract some plugins, in an effort to clean up the codebase for my blog.
 

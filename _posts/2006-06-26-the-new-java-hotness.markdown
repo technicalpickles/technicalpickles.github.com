@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/the-new-java-hotness
 title: The New Java Hotness
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>I'm pleased to announce that the new Java hotness has finally hit the tree <img src="http://planet.gentoo.org/developers/rsc/smilies/icon_smile.gif" alt=":)" class="middle"> It's currently in package.mask, but I expect to unmask it in the next few days.</p>

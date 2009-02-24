@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/ebuild-protip-only-fetch-from-src_uri
 title: "Ebuild Protip: Only fetch from SRC_URI "
 tags: 
 - ebuild
 - ebuild protip
 - gentoo
-layout: default
+layout: post
 ---
 Normally, when `emerge` or `ebuild` go to download files, they will try to download from the [Gentoo mirrors](http://www.gentoo.org/main/en/mirrors2.xml) first.
 

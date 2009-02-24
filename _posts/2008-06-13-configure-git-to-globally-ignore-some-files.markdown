@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/configure-git-to-globally-ignore-some-files
 title: Configure git to globally ignore some files
 tags: 
 - gentoo
 - git
-layout: default
+layout: post
 ---
 If you think about it, there are always going to be some files you don't care about keeping under version control. Immediately come to my mind are:
 

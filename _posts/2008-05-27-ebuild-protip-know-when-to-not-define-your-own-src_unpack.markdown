@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/ebuild-protip-know-when-to-not-define-your-own-src_unpack
 title: "Ebuild Protip: Know when to NOT define your own src_unpack"
 tags: 
 - ebuild
 - ebuild protip
 - gentoo
-layout: default
+layout: post
 ---
 I've often seen people submit ebuilds with `src_unpack()` like:
 

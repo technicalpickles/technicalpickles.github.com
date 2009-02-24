@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/helper-testing-using-actionview-testcase
 title: helper testing using ActionView::TestCase
 tags: 
 - helper
@@ -6,7 +7,7 @@ tags:
 - ruby
 - shoulda
 - testing
-layout: default
+layout: post
 ---
 Testing testing testing. We test our models, our controllers, and the integration between them. But how often do we pay attention to helpers? Not very often, if the test coverage of my current project's helpers is any indicator.
 

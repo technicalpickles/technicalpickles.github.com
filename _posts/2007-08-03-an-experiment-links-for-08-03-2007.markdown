@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/an-experiment-links-for-08-03-2007
 title: "An Experiment: Links for 08-03-2007"
 tags: 
 - java
@@ -9,7 +10,7 @@ tags:
 - rails
 - ruby
 - web frameworks
-layout: default
+layout: post
 ---
 I've decided to try a daily (or near daily) roundup of links I've come across. The intent, for now, is to fill in gaps between days when I don't get to write up a real post.
 

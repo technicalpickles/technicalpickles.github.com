@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/java-gets-groovier
 title: Java gets Groovier
 tags: 
 - gentoo
 - groovy
 - java
-layout: default
+layout: post
 ---
 
 			<p>This news is a bit belated by a few days but.... over the weekend, I spent some time getting the recently released <a href="http://groovy.codehaus.org">Groovy 1.0</a> into the tree.</p>

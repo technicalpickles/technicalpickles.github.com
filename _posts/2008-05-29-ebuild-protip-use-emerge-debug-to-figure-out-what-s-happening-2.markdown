@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/ebuild-protip-use-emerge-debug-to-figure-out-what-s-happening-2
 title: "Ebuild Protip: Use emerge --debug to figure out what's happening"
 tags: 
 - ebuild
 - ebuild protip
 - gentoo
-layout: default
+layout: post
 ---
 Often enough, something unthinkable will happen while your trying to build an ebuild. Something that is beyond reason. It just doesn't make sense. You could have SWORN you were in the correct directory...
 

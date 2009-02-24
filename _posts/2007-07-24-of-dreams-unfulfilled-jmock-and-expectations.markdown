@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/of-dreams-unfulfilled-jmock-and-expectations
 title: Of Dreams unfulfilled, JMock, and Expectations
 tags: 
 - java
 - jmock
 - testing
-layout: default
+layout: post
 ---
 I just had an observation about the pattern of setting up expectations 
 of our [jmock](http://www.jmock.org/) tests. So here's a typical code block for setting it up:

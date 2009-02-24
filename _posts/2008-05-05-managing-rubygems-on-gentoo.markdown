@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/managing-rubygems-on-gentoo
 title: Managing RubyGems on Gentoo
 tags: 
 - gems
 - gentoo
 - rails
 - ruby
-layout: default
+layout: post
 ---
 For Ruby on Gentoo, it has been asked how one should go about managing [RubyGems](http://www.rubygems.org/). You have a few options:
 

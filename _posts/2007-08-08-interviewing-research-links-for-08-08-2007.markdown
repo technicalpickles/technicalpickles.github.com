@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/interviewing-research-links-for-08-08-2007
 title: "Interviewing Research: Links for 08-08-2007"
 tags: 
 - interviewing
 - links
-layout: default
+layout: post
 ---
 Today, it was my first time being involved with the interview process. Being the go-getter that I am, I of course tried to do a bit of research on the interwebs. Here is what I found:
 

@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/shoulda-macros-allows-you-to-embrace-your-inner-slacker
 title: Shoulda macros allows you to embrace your inner slacker
 tags: 
 - rails
 - ruby
 - shoulda
 - testing
-layout: default
+layout: post
 ---
 So I think I've discovered [Shoulda](http://thoughtbot.com/projects/shoulda)'s secret sauce, the reason why you should use it.
 

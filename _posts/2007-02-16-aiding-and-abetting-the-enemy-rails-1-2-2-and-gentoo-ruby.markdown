@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/aiding-and-abetting-the-enemy-rails-1-2-2-and-gentoo-ruby
 title: "Aiding and abetting the enemy, rails 1.2.2, and #gentoo-ruby"
 tags: 
 - gentoo
 - rails
 - ruby
-layout: default
+layout: post
 ---
 <p>I must admit, I've been experimenting with Ruby on Rails with increased frequency of late. Being heavily invested both in Java on the Gentoo and professional fronts, this seems almost like... treachery <img src="http://planet.gentoo.org/developers/rsc/smilies/icon_twisted.gif" alt=":&gt;" class="middle"></p>
 

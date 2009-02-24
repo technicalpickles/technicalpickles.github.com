@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/devhouseboston
 title: DevHouseBoston
 tags: 
 - boston
@@ -6,7 +7,7 @@ tags:
 - google maps
 - rails
 - where2go
-layout: default
+layout: post
 ---
 This past Sunday, I had the pleasure of attending [DevHouseBoston](http://devboston.pbwiki.com/).
 

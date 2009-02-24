@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/dead-easy-nginx-configuration-on-gentoo
 title: Dead easy nginx configuration on Gentoo
 tags: 
 - gentoo
 - nginx
 - rails
 - ruby
-layout: default
+layout: post
 ---
 Considering the hype about [nginx](http://nginx.net/) in the Rails community, I figured it was about time to try it out.
 

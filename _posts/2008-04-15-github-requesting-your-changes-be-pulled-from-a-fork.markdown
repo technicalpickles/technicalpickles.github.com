@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/github-requesting-your-changes-be-pulled-from-a-fork
 title: "GitHub: Requesting your changes be pulled from a fork"
 tags: 
 - git
 - ruby
 - shoulda
-layout: default
+layout: post
 ---
 After [forking](/posts/github-forking-a-project) the recently gitified [Shoulda](http://thoughtbot.com/projects/shoulda), I started poking around. First thing I noticed is tests were failing because some directories were missing. Presumably, this is because git ignores empty directories.
 

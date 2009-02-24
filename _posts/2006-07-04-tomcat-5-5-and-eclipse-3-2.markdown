@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/tomcat-5-5-and-eclipse-3-2
 title: Tomcat 5.5 and Eclipse 3.2
 tags: 
 - eclipse
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>I'm pleased to announce that www-servers/tomcat-5.5 and dev-util/eclipse-sdk-3.2_rc7 have been added to portage over the long weekend.</p>

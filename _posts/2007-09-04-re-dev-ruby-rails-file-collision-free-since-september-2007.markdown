@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/re-dev-ruby-rails-file-collision-free-since-september-2007
 title: "RE: dev-ruby/rails: File Collision Free Since September 2007!"
 tags: 
 - eselect
 - gentoo
 - rails
-layout: default
+layout: post
 ---
 I wrote earlier about our ebuilds for Rails being [file collision free](/blog/permalink/dev-ruby-rails-file-collision-free-since-september-2007.html).
 

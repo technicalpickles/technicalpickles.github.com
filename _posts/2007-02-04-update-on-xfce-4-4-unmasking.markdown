@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/update-on-xfce-4-4-unmasking
 title: Update on Xfce 4.4 unmasking
 tags: 
 - gentoo
 - xfce
-layout: default
+layout: post
 ---
 
 			<p>To follow up my previous post about unmasking Xfce 4.4...</p>

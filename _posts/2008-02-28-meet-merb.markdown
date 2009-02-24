@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/meet-merb
 title: Meet Merb
 tags: 
 - merb
 - rails
-layout: default
+layout: post
 ---
 [Merb](http://www.merbivore.com/) has been getting a good amount of attention lately as an alternative to rails. I've been playing with it a little since I've been playing around with [blerb](http://42squared.com/2007/12/2/blerb).
 

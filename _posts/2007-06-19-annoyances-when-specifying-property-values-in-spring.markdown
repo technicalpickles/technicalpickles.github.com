@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/annoyances-when-specifying-property-values-in-spring
 title: Annoyances when specifying property values in Spring
 tags: 
 - acegi
 - spring
-layout: default
+layout: post
 ---
 Can you spot any issues with specifying a value like this:
 

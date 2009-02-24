@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/how-to-raise-the-bar-for-contributing-to-your-open-source-project
 title: How to raise the bar to contribute to your open source project
 tags: 
 - open source
 - ruby
-layout: default
+layout: post
 ---
 I've been doing quite a bit of Ruby development lately, not going to lie.
 

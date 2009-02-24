@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/dev-ruby-rails-file-collision-free-since-september-2007
 title: "dev-ruby/rails: File Collision Free Since September 2007!"
 tags: 
 - eselect
 - gentoo
 - rails
-layout: default
+layout: post
 ---
 For some time now, there has been a [file collision](https://bugs.gentoo.org/show_bug.cgi?id=156092) between rails 1.1.x and rails 1.2.x, because it is a) slotted so both can be installed at the same time and b) both install /usr/bin/rails.
 

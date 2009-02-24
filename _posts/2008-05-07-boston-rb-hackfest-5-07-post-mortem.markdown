@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/boston-rb-hackfest-5-07-post-mortem
 title: Boston.rb Hackfest 5/07 Post Mortem
 tags: 
 - boston
@@ -6,7 +7,7 @@ tags:
 - rails
 - ruby
 - testing
-layout: default
+layout: post
 ---
 By now, I think it's a running joke that we'd work on the recommendable plugin we started a month or so ago.
 

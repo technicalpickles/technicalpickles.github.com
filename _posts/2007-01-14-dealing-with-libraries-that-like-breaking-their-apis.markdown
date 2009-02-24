@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/dealing-with-libraries-that-like-breaking-their-apis
 title: Dealing with libraries that like breaking their APIs
 tags: 
 - groovy
 - hibernate
 - java
-layout: default
+layout: post
 ---
 
 			<p>I'm currently working on making use of a <a href="http://groovy.codehaus.org/">Groovy</a> on a project of mine which uses <a href="http://www.hibernate.org">Hibernate</a> and <a href="http://www.springframework.org">Spring</a> among other things.</p>

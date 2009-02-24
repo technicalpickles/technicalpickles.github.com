@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/textmate-bundle-management
 title: TextMate Bundle Management
 tags: 
 - haml
@@ -8,7 +9,7 @@ tags:
 - ruby
 - shoulda
 - textmate
-layout: default
+layout: post
 ---
 Installing and managing [TextMate](http://macromates.com/) bundles has always been a pain. You have to check it out from source, figure out where in the filesystem it goes, and restart TextMate.
 

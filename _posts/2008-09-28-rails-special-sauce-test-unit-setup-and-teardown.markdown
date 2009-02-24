@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/rails-special-sauce-test-unit-setup-and-teardown
 title: "Rails special sauce: Test::Unit setup and teardown"
 tags: 
 - activesupport
 - rails
 - ruby
 - testing
-layout: default
+layout: post
 ---
 Rails adds plenty of special sauce to Ruby standard library.
 

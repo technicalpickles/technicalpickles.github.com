@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/ensuring-you-get-credit-where-credit-is-due-with-creative-commons
 title: "Ensuring you get credit where credit is due with Creative Commons "
 tags: 
 - gentoo
 - licensing
-layout: default
+layout: post
 ---
 So one day I was bored, and decided to some self googling. After writing my [previous post on Git on Gentoo](/posts/gitosis-on-gentoo), I decided poking searching for 'nichoj git'.
 

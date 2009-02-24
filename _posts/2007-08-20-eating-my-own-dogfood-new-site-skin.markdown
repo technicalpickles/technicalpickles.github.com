@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/eating-my-own-dogfood-new-site-skin
 title: "Eating My Own Dogfood: New Site Skin"
 tags: 
 - css
 - yui
-layout: default
+layout: post
 ---
 When I first did the skin for this site, I only was using [YUI](http://developer.yahoo.com/yui/)'s [reset](http://developer.yahoo.com/yui/reset/) and [fonts](http://developer.yahoo.com/yui/fonts/) libraries. I'm not even why I didn't use the [grids](http://developer.yahoo.com/yui/grids/) library, but I opted to do it myself (well, almost myself, I yanked a lot of the markup from another project I had been working on at the time). This was also before the [base] library had been released.
 

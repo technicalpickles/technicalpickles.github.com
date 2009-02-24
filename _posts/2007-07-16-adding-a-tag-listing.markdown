@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/adding-a-tag-listing
 title: Adding a tag listing
 tags: 
 - acts_as_taggable_on_steroids
 - rails
 - tags
-layout: default
+layout: post
 ---
 My next move was to be able to have a page listing all the known tags in the system. I first refactored the `tags` action to `by_tag`, so that it reads a bit better, and so I could use `tags` action for my tag list action.
 

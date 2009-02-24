@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/don-t-repeat-yourself-with-with_options
 title: Don't Repeat Yourself with with_options
 tags: 
 - named routes
 - rails
 - with_options
-layout: default
+layout: post
 ---
 After entering the loving embrace of [named routes](/blog/permalink/name-your-routes-and-name-them-well.html), I found myself with the following routes:
 

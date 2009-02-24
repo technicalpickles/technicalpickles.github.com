@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/nfjs-thoughts-on-osgi-a-well-kept-secret
 title: "NFJS: Thoughts on \"OSGi: A Well Kept Secret\""
 tags: 
 - java
 - nfjs
 - osgi
-layout: default
+layout: post
 ---
 The next talk I attended was "OSGi: A Well Kept Secret" by [Venkat Subramaniam](http://agiledeveloper.com/blog).
 

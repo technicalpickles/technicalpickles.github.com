@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/gentoo-prefix-as-an-alternative-to-macports-fink
 title: Gentoo Prefix as an alternative to MacPorts, Fink
 tags: 
 - cvs
@@ -7,7 +8,7 @@ tags:
 - gentoo-prefix
 - git
 - java
-layout: default
+layout: post
 ---
 I don't think many people are aware of it, but [Gentoo Prefix](http://www.gentoo.org/proj/en/gentoo-alt/prefix/index.xml) is a valid alternative to [MacPorts](http://www.macports.org/) and [Fink](http://www.finkproject.org/) for installing unix-y type software on Mac OS X.
 

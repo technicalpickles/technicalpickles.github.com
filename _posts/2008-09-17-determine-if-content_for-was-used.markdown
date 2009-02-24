@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/determine-if-content_for-was-used
 title: Determine if content_for was used
 tags: 
 - content_for
 - html
 - rails
 - ruby
-layout: default
+layout: post
 ---
 One of those common things to do is have a sidebar with content, which is dynamic based on where you are in the app. The common solution uses `content_for :sidebar`, and `yield :sidebar`. In practice, this looks like:
 

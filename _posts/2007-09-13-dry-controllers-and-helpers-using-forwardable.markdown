@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/dry-controllers-and-helpers-using-forwardable
 title: DRY Controllers and Helpers using Forwardable
 tags: 
 - authentication
@@ -6,7 +7,7 @@ tags:
 - dry
 - forwardable
 - rails
-layout: default
+layout: post
 ---
 I don't know about you, but I've found myself wanting the same methods available in both a controller and a view. In my case, I had an 'authorized?' method for determining if a user is logged in.
 

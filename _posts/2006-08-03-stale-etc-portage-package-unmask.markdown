@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/stale-etc-portage-package-unmask
 title: Stale /etc/portage/package.unmask
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>As a recommendation to people who use /etc/portage/package.unmask regularly: You really ought to keep tabs on the thing that you're unmasking... and once it has been unmasked, you should remove the entries from package.unmask.</p>

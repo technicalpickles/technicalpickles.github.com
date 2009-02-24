@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/boston-ruby-group-meeting-june-2008-summary
 title: Boston Ruby Group Meeting June 2008 Summary
 tags: 
 - boston
@@ -6,7 +7,7 @@ tags:
 - rails
 - ruby
 - testing
-layout: default
+layout: post
 ---
 Yours truly gave a presentation last night titled 'git as a subversion replacement'. I put the slides up on [SlideShare](http://www.slideshare.net/) for anyone interested.
 

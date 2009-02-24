@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/nfjs-summary-and-thoughts-on-the-new-england-software-symposium
 title: "NFJS: Summary and thoughts on the New England Software Symposium"
 tags: 
 - annotations
@@ -14,7 +15,7 @@ tags:
 - osgi
 - rest
 - ruby
-layout: default
+layout: post
 ---
 Today marked the concussion of [No Fluff, Just Stuff](http://www.nofluffjuststuff.com) for the Boston Fall 2007 event. To put it simply: it was a truly amazing experience.
 

@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/bdd-with-shoulda-talk-from-mountainwest-rubyconf
 title: BDD with Shoulda talk from MountainWest RubyConf
 tags: 
 - bdd
 - ruby
 - shoulda
-layout: default
+layout: post
 ---
 I've been using [Shoulda](http://thoughtbot.com/projects/shoulda) on a few projects recently, and have done a [few](/posts/shoulda-and-assert-2-0-make-swell-bedfellows) [posts](/posts/shoulda-macros-allows-you-to-embrace-your-inner-slacker) on it as well.
 

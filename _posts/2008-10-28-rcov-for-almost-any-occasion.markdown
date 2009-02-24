@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/rcov-for-almost-any-occasion
 title: RCov for almost any occasion
 tags: 
 - rcov
 - ruby
 - testing
-layout: default
+layout: post
 ---
 I hope I don't have to tell you why it's awesome to be testing. I'll take that as a given.
 

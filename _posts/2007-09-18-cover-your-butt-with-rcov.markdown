@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/cover-your-butt-with-rcov
 title: Cover your butt with rcov
 tags: 
 - coverage
@@ -6,7 +7,7 @@ tags:
 - rails
 - ruby
 - testing
-layout: default
+layout: post
 ---
 We all know that test coverage is a good thing, right? Right. In Ruby land, the most common way to do this is to use [rcov](http://eigenclass.org/hiki.rb?rcov). I'll be covering getting rcov installed, and how to start using it with your Rails project.
 

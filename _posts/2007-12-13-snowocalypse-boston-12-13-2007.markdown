@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/snowocalypse-boston-12-13-2007
 title: Snowocalypse Boston 12-13-2007
 tags: 
 - boston
@@ -6,7 +7,7 @@ tags:
 - iphone
 - nontechnical
 - snow
-layout: default
+layout: post
 ---
 If you're in the northeast, I'm sure you're aware that it's snowing just a bit, some places more than others. Boston is getting hit pretty hard right now. Most offices and schools should have closed early by now.
 

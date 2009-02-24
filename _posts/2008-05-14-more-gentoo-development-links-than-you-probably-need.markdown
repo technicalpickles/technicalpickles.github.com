@@ -1,8 +1,9 @@
 --- 
+permalink: /posts/more-gentoo-development-links-than-you-probably-need
 title: More Gentoo development links than you probably need
 tags: 
 - gentoo
-layout: default
+layout: post
 ---
 Since I've been less active packaging for Gentoo recently, I've been trying to at least lurk in [#gentoo-dev-help](irc://irc.freenode.net/gentoo-dev-help) and give a helping hand with packaging. If I can't help them directly, at least I try to give them a gentle shove towards something that can.
 

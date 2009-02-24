@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/our-evaluation-of-selenium-for-web-testing
 title: Our evaluation of Selenium for web testing
 tags: 
 - ant
@@ -9,7 +10,7 @@ tags:
 - testing
 - web development
 - web testing
-layout: default
+layout: post
 ---
 Like the good little code monkeys we are, it is time for us to adopt some form of web testing. There is only so much unit and integration testing can help you, before you need a fuller solution.
 

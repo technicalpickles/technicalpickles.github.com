@@ -1,8 +1,9 @@
 --- 
+permalink: /posts/my-bad-planet-gentoo
 title: My bad, Planet Gentoo
 tags: 
 - gentoo
-layout: default
+layout: post
 ---
 My bad, [Planet Gentoo](http://planet.gentoo.org).
 

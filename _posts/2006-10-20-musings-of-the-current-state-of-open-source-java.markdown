@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/musings-of-the-current-state-of-open-source-java
 title: Musings of the current state of open source Java
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>[Note: I'm actually referring to open source Java software and libraries, not Java itself]</p>

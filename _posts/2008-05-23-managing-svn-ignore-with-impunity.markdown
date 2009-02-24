@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/managing-svn-ignore-with-impunity
 title: Managing svn:ignore with impunity
 tags: 
 - rails
 - rake
 - ruby
 - subversion
-layout: default
+layout: post
 ---
 Managing `svn:ignore` has always annoyed me. After using git for the past few months, it bugs me even __more__ now.
 

@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/updated-java-system-and-java-1-5-unmasked
 title: Updated Java System and Java 1.5 unmasked
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>The Gentoo/Java Team is proud to announce the release of the updated Java system. This means that Java 1.5 is finally unmasked.</p>

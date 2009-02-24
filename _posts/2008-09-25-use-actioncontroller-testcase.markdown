@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/use-actioncontroller-testcase
 title: Use ActionController::TestCase
 tags: 
 - rails
 - ruby
 - testing
-layout: default
+layout: post
 ---
 I've been coming across a lot of Rails functional tests that look like this: 
 

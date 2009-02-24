@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/java-she-wanted-java-she-got
 title: Java she wanted, Java she got
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>It is with great pride that I am able to announce the 'new' Java system is now stable on all archs where we support Java! That means amd64, ia64, ppc, ppc64, and x86.</p>

@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/the-big-rewrite-is-here
 title: The Big Rewrite is Here
 tags: 
 - acts_as_taggable_on_steroids
@@ -8,7 +9,7 @@ tags:
 - rspec
 - ultraviolet
 - vlad
-layout: default
+layout: post
 ---
 When I first started this blog, it was my very first Rails project. I was young. I was naive. I didn't do automated testing.
 

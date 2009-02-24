@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/creating-a-svn-authorsfile-when-migrating-from-subversion-to-git
 title: Creating a svn.authorsfile when migrating from subversion to git
 tags: 
 - git
 - subversion
 - svn
-layout: default
+layout: post
 ---
 There are plenty of tutorials already out there on how to migrate a subversion repository to git. This is the first one I found, and it seems pretty good: [Cleanly Migrate Your Subversion Repository To a GIT Repository](http://www.simplisticcomplexity.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/)
 

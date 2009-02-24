@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/making-factory_girl-even-easier-on-rails
 title: Making factory_girl even easier on Rails
 tags: 
 - factories
@@ -7,7 +8,7 @@ tags:
 - rails
 - ruby
 - testing
-layout: default
+layout: post
 ---
 [factory_girl](http://thoughtbot.com/projects/factory_girl) is pretty sweet. I'm not going over to rehash its awesomeness, but you can check out [its website](http://thoughtbot.com/projects/factory_girl).
 

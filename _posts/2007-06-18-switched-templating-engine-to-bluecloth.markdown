@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/switched-templating-engine-to-bluecloth
 title: Switched templating engine to BlueCloth
 tags: 
 - bluecloth
@@ -6,7 +7,7 @@ tags:
 - redcloth
 - tinymce
 - ultraviolet
-layout: default
+layout: post
 ---
 Originally, I had implemented the main data entry using [TinyMCE](http://tinymce.moxiecode.com/). TinyMCE itself is a pretty cool piece of software. I mean, it gives you a full WYSIWYG (mostly) form, and the output is actual HTML. But in the end, it felt like a bit too much
 

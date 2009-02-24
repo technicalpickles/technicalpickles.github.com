@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/implementing-a-simple-logging-irc-bot
 title: Implementing a simple logging IRC bot
 tags: 
 - chat
 - irc
 - ruby
-layout: default
+layout: post
 ---
 For [Boston.rb](http://bostonrb.org), we've been using a public [Campfire](http://www.campfirenow.com/) provided by [thoughtbot](http://thoughtbot.com) as a backchannel during meetings. It's nice and all, except it doesn't provide proper logging. For example:
 

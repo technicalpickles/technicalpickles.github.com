@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/it-s-been-quiet-here-i-blame-halo-3
 title: It's been quiet here... I blame Halo 3
 tags: 
 - gaming
 - update
-layout: default
+layout: post
 ---
 It's been way to quiet around here. I personally blame [Halo 3](http://www.gamefaqs.com/console/xbox360/data/926632.html)... and before that, [Metroid Prime 3: Corruption](http://www.gamefaqs.com/console/wii/data/928517.html).
 

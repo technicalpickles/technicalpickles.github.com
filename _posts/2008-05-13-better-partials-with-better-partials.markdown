@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/better-partials-with-better-partials
 title: Better partials with better-partials
 tags: 
 - better-partials
 - haml
 - rails
-layout: default
+layout: post
 ---
 The other week, [Dan Croak](http://dancroak.com) pointed out [better-partials](http://www.railsjedi.com/posts/22-Better-Partials-Plugin-for-Ruby-on-Rails) to me. Hadn't gotten a chance to play it until now.
 

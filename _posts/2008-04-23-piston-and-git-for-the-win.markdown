@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/piston-and-git-for-the-win
 title: piston and git for the win
 tags: 
 - git
 - piston
 - rails
 - ruby
-layout: default
+layout: post
 ---
 [Piston](http://piston.rubyforge.org/) has had [support for git](http://blog.teksol.info/2008/3/17/piston-1-9-0-official-preview-release) (both importing from, and into) for a little over a month.
 

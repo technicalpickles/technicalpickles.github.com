@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/notes-from-barcampboston3
 title: Notes from BarCampBoston3
 tags: 
 - barcamp
@@ -7,7 +8,7 @@ tags:
 - git
 - ruby
 - talks
-layout: default
+layout: post
 ---
 This past weekend I attended [BarCampBoston3](http://2008.barcampboston.org/), my first unconference ever. Overall, I'd saw it was an amazing experience.
 

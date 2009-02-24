@@ -1,8 +1,9 @@
 --- 
+permalink: /posts/github-forking-versus-being-a-committer
 title: "GitHub: Forking versus being a committer"
 tags: 
 - git
-layout: default
+layout: post
 ---
 Git changes the game when it comes to how you collaborate. [GitHub](http://github.com) even more so.
 

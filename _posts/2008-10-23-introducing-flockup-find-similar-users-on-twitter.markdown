@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/introducing-flockup-find-similar-users-on-twitter
 title: "Introducing FlockUp : Find Similar Users on Twitter"
 tags: 
 - rails
 - railsrumble
 - ruby
 - twitter
-layout: default
+layout: post
 ---
 This past weekend, [Wyatt Greene](http://twitter.com/explodingtrees) and [I](http://twitter.com/techpickles) participated in [Rails Rumble 2008](http://railsrumble.com/). If you're not familar with it, here's a quick summary:
 

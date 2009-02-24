@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/getting-back-to-my-vim-roots-with-macvim
 title: Getting back to my vim roots with MacVim
 tags: 
 - macvim
 - rails
 - ruby
 - vim
-layout: default
+layout: post
 ---
 Back when I got my MacBook last fall, I chose to go with [TextMate](http://macromates.com/) for Ruby and [Rails](http://www.rubyonrails.org) development, despite being a long vim user.
 

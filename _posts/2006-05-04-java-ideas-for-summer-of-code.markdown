@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/java-ideas-for-summer-of-code
 title: Java ideas for Summer of Code
 tags: 
 - gentoo
 - google
 - java
-layout: default
+layout: post
 ---
 
 			<p>As has been previously announced, we are officially part of Google's Summer of Code. I've decided to step up to be a mentor, and in particular, to mentor projects related to Java on Linux.</p>

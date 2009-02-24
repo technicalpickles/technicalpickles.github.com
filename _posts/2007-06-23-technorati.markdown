@@ -1,8 +1,9 @@
 --- 
+permalink: /posts/technorati
 title: Technorati
 tags: 
 - technorati
-layout: default
+layout: post
 ---
 Just signed up for [technorati](http://technorati.com). Here's my attempt to associate with my account:
 

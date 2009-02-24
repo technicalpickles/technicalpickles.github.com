@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/focusing-a-form-field-at-page-load-with-mochikit
 title: Focusing a form field at page load with MochiKit
 tags: 
 - forms
 - html
 - javascript
 - mochikit
-layout: default
+layout: post
 ---
 As far as I can tell, the only way to make a form field be focused by default at page load is by using Javascript.
 

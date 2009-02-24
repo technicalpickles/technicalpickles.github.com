@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/boston-rb-hackfest-4-29-post-mortem
 title: Boston.rb Hackfest 4/29 Post Mortem
 tags: 
 - boston
@@ -10,7 +11,7 @@ tags:
 - rails
 - ruby
 - sass
-layout: default
+layout: post
 ---
 So, we were just kidding about working on the recommendable plugin. We actually worked on the bostonrb.org website some more.
 

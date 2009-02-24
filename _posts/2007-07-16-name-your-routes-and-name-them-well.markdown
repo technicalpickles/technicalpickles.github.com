@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/name-your-routes-and-name-them-well
 title: Name your routes, and name them well
 tags: 
 - named routes
 - rails
-layout: default
+layout: post
 ---
 In my [last installment](/blog/permalink/adding-a-tag-listing.html), I added a tag listing. For this listing, we links that look like:
 

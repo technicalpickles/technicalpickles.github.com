@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/hello-world
 title: Hello World
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 Well, I got this blog setup the other week, so figured I should kick this thing off properly.
 

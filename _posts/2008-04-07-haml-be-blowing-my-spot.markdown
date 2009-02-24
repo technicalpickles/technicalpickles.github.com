@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/haml-be-blowing-my-spot
 title: Haml be blowing my spot
 tags: 
 - haml
 - rails
 - ruby
-layout: default
+layout: post
 ---
 I've heard of the awesome that is [Haml](http://haml.hamptoncatlin.com/) before. I've had friends rave about it. But it was only recently that I broke down to actually use it.
 

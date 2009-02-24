@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/java-tons-standardized-apis-but-not-so-many-standardized-practices
 title: "Java: Tons Standardized APIs, but not so many standardized practices"
 tags: 
 - gentoo
 - java
 - practices
 - tools
-layout: default
+layout: post
 ---
 Java has more standardized APIs than you can shake a stick at. Servlets, JSP, EJB, JPA, and the number is always growing as people put together new JSRs. There's even more defacto standards, like [Spring](http://springframework.org/), [Ant](http://ant.apache.org/), [Maven](http://maven.apache.org/), etc.
 

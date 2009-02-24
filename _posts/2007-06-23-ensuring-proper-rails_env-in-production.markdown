@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/ensuring-proper-rails_env-in-production
 title: ensuring proper RAILS_ENV in production
 tags: 
 - gentoo
 - rails
-layout: default
+layout: post
 ---
 When you're on your production machine, you probably want to always use the production environment. I've found myself often launching `script/console` only to accidentally start using it while in the development environment.
 

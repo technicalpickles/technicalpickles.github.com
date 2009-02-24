@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/rails-plugin-for-google-analytics-and-artificial-inflation
 title: Rails plugin for Google Analytics and artificial inflation
 tags: 
 - google analytics
 - rails
-layout: default
+layout: post
 ---
 Being the budding webmaster / blogger that I am, it comes natural to want to gather as much information about the traffic coming to my site. The obvious response to this is, duh, [Google Analytics](http://google.com/analytics).
 

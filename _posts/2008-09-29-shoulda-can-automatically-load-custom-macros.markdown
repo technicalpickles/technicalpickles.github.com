@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/shoulda-can-automatically-load-custom-macros
 title: Shoulda can automatically load custom macros
 tags: 
 - rails
 - ruby
 - shoulda
 - testing
-layout: default
+layout: post
 ---
 I wrote about [creating your own shoulda macros awhile back](/posts/shoulda-macros-allows-you-to-embrace-your-inner-slacker). At that point, I was suggesting to place these in your `test/test_helper.rb`.
 

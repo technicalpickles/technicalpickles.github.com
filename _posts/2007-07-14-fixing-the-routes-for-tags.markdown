@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/fixing-the-routes-for-tags
 title: Fixing the routes for tags
 tags: 
 - acts_as_taggable_on_steroids
 - rails
 - tags
-layout: default
+layout: post
 ---
 After my first forray into [tags](/blog/permalink/that-s-a-lot-of-tags.html), I felt like I needed to further refine and enhance my usage of them.
 

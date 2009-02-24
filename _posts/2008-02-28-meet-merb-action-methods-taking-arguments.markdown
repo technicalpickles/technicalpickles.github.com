@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/meet-merb-action-methods-taking-arguments
 title: "Meet Merb: Action methods taking arguments"
 tags: 
 - merb
 - ruby
-layout: default
+layout: post
 ---
 Have you ever written a controller action like:
 

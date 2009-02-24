@@ -1,0 +1,23 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<link href="/posts.atom" rel="self" type="application/atom+xml"/>
+	<link href="/posts.html" type="text/html"/>
+	<id>tag:technicalpickles.com,2005:/posts</id>
+	<author>
+		<name>Josh Nichols</name>
+		<email>josh@technicalpickles.com</email>
+	</author>
+
+	{% for post in site.posts %}
+	<entry>
+		<id>http://technicalpickles.com{{post.id}}</id>
+		<updated>{{ post.date | date_to_xml_schema }}</updated>
+		<link href="http://technicalpickles.com{{post.url}}" rel="self" type="text/html"/>
+		<title>{{ post.title }}</title>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>
+	{% endfor %}
+</feed>

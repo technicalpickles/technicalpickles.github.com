@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/unmask-teh-xfce-one
 title: unmask teh Xfce!!!one
 tags: 
 - gentoo
 - xfce
-layout: default
+layout: post
 ---
 
 			<p>The question of when Xfce 4.4 will be unmasked has been coming up with increasing frequency.</p>

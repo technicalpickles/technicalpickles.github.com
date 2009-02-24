@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/pidgin-idle-time
 title: Pidgin idle time
 tags: 
 - gentoo
 - pidgin
 - ubuntu
 - use flags
-layout: default
+layout: post
 ---
 So I'd like [Pidgin](http://pidgin.im) to report idle time sanely on my [Gentoo](http://www.gentoo.org) box.
 

@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/java_home-pointing-to-generation-1-system-vm
 title: JAVA_HOME pointing to generation-1 system vm
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>So, one of the issues that has come up on occaision is that JAVA_HOME ends up pointing at, for instance, /opt/blackdown-jdk-1.4.2.03, instead of the shiny, recently unmasked Java 1.5 you installed and set as your VM of choice.</p>

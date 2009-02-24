@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/update-the-new-java-hotness
 title: "Update: The New Java Hotness"
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>Just to keep people updated about how the new Java stuff is going... it's going pretty good :-D</p>

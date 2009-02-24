@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/simple-caching-of-markdown-markdown-in-your-model
 title: Simple caching of markdown markdown in your model
 tags: 
 - markdown
 - rails
-layout: default
+layout: post
 ---
 As I've written about it [before](/posts/using-markdown-in-vim), I'm using [markdown](http://daringfireball.net/projects/markdown/) for [this blog](http://technicalpickles.com). Originally, I would do the translation from markdown to html every time a page is rendered. Seems pretty inefficient, right? Yeah, not so much.
 

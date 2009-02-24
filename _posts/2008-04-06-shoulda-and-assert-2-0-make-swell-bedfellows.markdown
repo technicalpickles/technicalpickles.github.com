@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/shoulda-and-assert-2-0-make-swell-bedfellows
 title: Shoulda and assert{2.0} make swell bedfellows
 tags: 
 - assert2.0
 - rspec
 - ruby
 - shoulda
-layout: default
+layout: post
 ---
 I have been generally using [RSpec](http://rspec.info/) for my testing needs, but I've recently been persuaded to use [Shoulda](http://thoughtbot.com/projects/shoulda) on a few projects.
 

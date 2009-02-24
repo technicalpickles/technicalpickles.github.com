@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/summary-of-java-team-meeting
 title: Summary of Java team meeting
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p><i>Cross posted to gentoo-dev and gentoo-java mailing list.</i>

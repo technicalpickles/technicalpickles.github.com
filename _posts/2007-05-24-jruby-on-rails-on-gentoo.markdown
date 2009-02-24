@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/jruby-on-rails-on-gentoo
 title: JRuby on Rails on Gentoo
 tags: 
 - gentoo
 - jruby
 - rails
 - ruby
-layout: default
+layout: post
 ---
 <p>After adding <a href="http://jruby.codehaus.org">JRuby</a> 1.0.0 RC2 to the tree, I began poking around using it to run a little blog I've been writing in rails. Surprisingly, the process was quite easy. I just had to package the JDBC wrapper for ActiveRecord.</p>
 

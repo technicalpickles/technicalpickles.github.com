@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/using-a-gentoo-prefixed-shell-as-your-login-shell
 title: Using a Gentoo Prefixed shell as your login shell
 tags: 
 - gentoo
 - mac
 - prefix
-layout: default
+layout: post
 ---
 One thing that kind of annoyed me about Gentoo Prefix is that you always needed to do a little work to enter the prefix:
 

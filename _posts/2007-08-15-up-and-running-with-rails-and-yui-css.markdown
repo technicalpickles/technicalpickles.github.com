@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/up-and-running-with-rails-and-yui-css
 title: Up and running with Rails and YUI CSS
 tags: 
 - css
 - rails
 - xhtml
 - yui
-layout: default
+layout: post
 ---
 I've found myself a big fan of the [Yahoo UI](http://developer.yahoo.com/yui/) library recently. I think when most people think Yahoo UI, they imagine the Javascript widgets, like a [degradable Javascript menu](http://developer.yahoo.com/yui/menu/), or [sortable tables](http://developer.yahoo.com/yui/datatable/).
 

@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/tell-hoe-what-tests-to-run
 title: Tell Hoe what tests to run
 tags: 
 - hoe
 - rake
 - ruby
 - rubygem
-layout: default
+layout: post
 ---
 I've been recently playing around with a Ruby frontend to the [del.ico.us API](http://del.icio.us/help/api/). I decided to use [Hoe](http://seattlerb.rubyforge.org/hoe/) to get things rolling with a proper project layout.
 

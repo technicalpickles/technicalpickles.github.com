@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/shoulda-2-0-0-now-with-gem-power
 title: shoulda 2.0.0, now with gem power
 tags: 
 - gem
@@ -7,7 +8,7 @@ tags:
 - ruby
 - shoulda
 - testing
-layout: default
+layout: post
 ---
 [Shoulda](http://thoughtbot.com/projects/shoulda) has long been available as a plugin. It's core was yanked out at some point, and made available as a gem. Unfortunately, the codebases diverged, with main development occurring in the plugin.
 

@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/refactoring-a-activerecord-callback
 title: Refactoring an ActiveRecord callback
 tags: 
 - activerecord
 - rails
 - refactoring
 - ruby
-layout: default
+layout: post
 ---
 Inspired by a few articles and pesentations ([1](http://giantrobots.thoughtbot.com/2008/1/2/designing-without-ifs) [2](http://giantrobots.thoughtbot.com/2007/5/1/coding-without-ifs) [3](http://giantrobots.thoughtbot.com/2008/2/15/when-rails-plugin) [4](http://giantrobots.thoughtbot.com/2008/6/2/slides-from-railsconf)), I decided it was time to cleanup some of the logic in my `Post` model related to a particular [ActiveRecord callback](http://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html). The fact that I needed some comments to explain what it is doing should be a red flag.
 

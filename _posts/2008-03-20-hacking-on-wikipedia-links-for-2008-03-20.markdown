@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/hacking-on-wikipedia-links-for-2008-03-20
 title: "Hacking on Wikipedia: links for 2008-03-20"
 tags: 
 - api
 - links
 - ruby
 - wikipedia
-layout: default
+layout: post
 ---
 I was recently talking to a [friend](http://dancroak.com) about writing to screen-scraping tool for [wikipedia](http://wikipedia).
 

@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/geeks-in-boston
 title: Geeks In Boston
 tags: 
 - devhouse
 - geeksinboston
-layout: default
+layout: post
 ---
 Shortly after attending [DevHouse earlier this summer](/blog/permalink/devhouseboston.html), I managed to come across [geeksinboston](http://geeksinboston.com), a blog dedicated towards keeping tabs on the various tech events and meetings in the area.
 

@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/aspect-oriented-programming-links-for-2007-10-19
 title: "Aspect Oriented Programming: Links for 2007-10-19"
 tags: 
 - aop
@@ -6,7 +7,7 @@ tags:
 - java
 - nfjs
 - spring
-layout: default
+layout: post
 ---
 After attending a few sessions that talked about aspect oriented programming at [NFJS](/blog/2007/9/17/nfjs-summary-and-thoughts-on-the-new-england-software-symposium.html) this past weekend, I've been itching for a place to use it in our project. We're going to need to do some domain-level auditing at some point, so this seems like an appropriate place to do it.
 

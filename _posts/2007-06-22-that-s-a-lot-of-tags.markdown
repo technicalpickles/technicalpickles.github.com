@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/that-s-a-lot-of-tags
 title: That's a lot of tags!!
 tags: 
 - acts_as_taggable_on_steroids
 - rails
 - tags
-layout: default
+layout: post
 ---
 With the help of [acts_as_taggable_on_steroids](http://agilewebdevelopment.com/plugins/acts_as_taggable_on_steroids) I now have taggable blog posts!
 

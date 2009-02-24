@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/a-walk-through-of-test-driven-development-with-shoulda
 title: A walk through of test-driven development with shoulda
 tags: 
 - rails
@@ -6,7 +7,7 @@ tags:
 - shoulda
 - shoulda-generators
 - testing
-layout: default
+layout: post
 ---
 I'm not sure if you've heard, but [shoulda](http://thoughtbot.com/projects/shoulda) makes [test-driven development](http://en.wikipedia.org/wiki/Test-driven_development) really simple.
 

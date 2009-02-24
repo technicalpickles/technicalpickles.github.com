@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/capistrano-2-0-0-on-gentoo-at-last
 title: Capistrano 2.0.0 on Gentoo at last
 tags: 
 - capistrano
 - gentoo
 - rails
-layout: default
+layout: post
 ---
 [Capistrano 2.0.0](http://www.capify.org) has been released for just over a month, but there hadn't been much activity for it on the [Gentoo front](https://bugs.gentoo.org/show_bug.cgi?id=187490).
 

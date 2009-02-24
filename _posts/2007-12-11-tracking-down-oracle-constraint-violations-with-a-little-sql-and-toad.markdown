@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/tracking-down-oracle-constraint-violations-with-a-little-sql-and-toad
 title: Tracking down Oracle constraint violations with a little SQL and Toad
 tags: 
 - oracle
 - sql
 - toad
-layout: default
+layout: post
 ---
 I really hate stack traces that look like:
 

@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/java-1-4-do-we-still-need-it
 title: "Java 1.4: Do we still need it?"
 tags: 
 - gentoo
 - java
-layout: default
+layout: post
 ---
 
 			<p>The answer, as of this moment, is most definitely. There are two reasons for this at the moment.</p>

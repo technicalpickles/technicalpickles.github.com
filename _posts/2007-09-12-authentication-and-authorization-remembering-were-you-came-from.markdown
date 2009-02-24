@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/authentication-and-authorization-remembering-were-you-came-from
 title: "Authentication and authorization: Remembering were you came from"
 tags: 
 - authentication
 - authorization
 - rails
 - users
-layout: default
+layout: post
 ---
 Most webapps need authorization and authentication of some sort, right?
 

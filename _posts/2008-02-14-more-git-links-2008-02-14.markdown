@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/more-git-links-2008-02-14
 title: "More git: links 2008-02-14"
 tags: 
 - git
 - merb
 - ruby
-layout: default
+layout: post
 ---
 I've been using [git](http://git.or.cz/) a lot more since my [last set of git links](/posts/git-links-for-2007-01-05).
 

@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/philadelphia-for-the-rest-of-the-week
 title: Philadelphia for the rest of the week
 tags: 
 - offtopic
 - wedding
-layout: default
+layout: post
 ---
 I'm leaving tomorrow morning (a short five hours away...) for Philadelphia for a wedding of two very awesome people (Congratulations Jim & Chelsea!).
 

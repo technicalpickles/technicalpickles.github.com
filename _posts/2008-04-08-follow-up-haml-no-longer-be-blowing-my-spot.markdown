@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/follow-up-haml-no-longer-be-blowing-my-spot
 title: "Follow up: Haml no longer be blowing my spot"
 tags: 
 - haml
 - rails
 - ruby
-layout: default
+layout: post
 ---
 I just barely posted about [Haml blowin my spot](/posts/haml-be-blowing-my-spot). Thanks to the kindness of a reader, [Haml](http://haml.hamptoncatlin.com/) is no longer blowin my spot.
 

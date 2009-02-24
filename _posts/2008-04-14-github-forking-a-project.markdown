@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/github-forking-a-project
 title: "GitHub: Forking a project"
 tags: 
 - git
 - ruby
 - shoulda
-layout: default
+layout: post
 ---
 If you hadn't heard, [GitHub](http://github.com) went [officially live](http://github.com/blog/40-we-launched) last week.
 

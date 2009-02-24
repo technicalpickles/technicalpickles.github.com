@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/gitosis-on-gentoo
 title: Gitosis on Gentoo
 tags: 
 - gentoo
 - git
 - gitosis
-layout: default
+layout: post
 ---
 In my [last post](/posts/git-links-for-2007-01-05), I was making [Git](http://git.or.cz/) out to be kind of a big deal. One of the links talked about setting up [gitosis](http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way) for managing repositories. It's an excellent walkthrough, but it's pretty generic. This post hopes to provide a Gentooified version of it.
 

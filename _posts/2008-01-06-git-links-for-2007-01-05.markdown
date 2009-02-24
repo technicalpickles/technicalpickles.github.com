@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/git-links-for-2007-01-05
 title: "git: links for 2008-01-05"
 tags: 
 - git
 - gitosis
 - links
 - rails
-layout: default
+layout: post
 ---
 Git seems to be getting a lot more attention lately. I started using it here and there, and I'm pretty enamored with it so far. Here are some links to get you started.
 

@@ -1,8 +1,9 @@
 --- 
+permalink: /posts/site-updates
 title: Site updates
 tags: []
 
-layout: default
+layout: post
 ---
 I sat down to work on this site for the first time in quite a while (aside from posts writing). Added a few things which I've been meaning to:
 

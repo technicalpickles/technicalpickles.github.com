@@ -1,11 +1,12 @@
 --- 
+permalink: /posts/playing-with-heroku
 title: Playing with heroku
 tags: 
 - git
 - heroku
 - rails
 - ruby
-layout: default
+layout: post
 ---
 If you've been following things in the Ruby sphere, you might have heard of [heroku](http://heroku.com/). In my mind, it provides two major things:
 

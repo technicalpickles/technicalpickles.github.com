@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/boston-rb-hackfest-4-15-post-mortem
 title: Boston.rb Hackfest 4/15 Post Mortem
 tags: 
 - boston
@@ -7,7 +8,7 @@ tags:
 - rails
 - ruby
 - shoulda
-layout: default
+layout: post
 ---
 Last Tuesday, we had a small, but dedicated showing at the [Hackfest](http://upcoming.yahoo.com/event/473163/):
 

@@ -1,9 +1,10 @@
 --- 
+permalink: /posts/xfce-all-up-in-your-face
 title: XFCE all up in your face
 tags: 
 - gentoo
 - xfce
-layout: default
+layout: post
 ---
 <p>After being in beta and release candidates for several months, XFCE 4.4 is finally released. Not only that, but ebuilds for them are willing and ready to go. woot.</p>
 

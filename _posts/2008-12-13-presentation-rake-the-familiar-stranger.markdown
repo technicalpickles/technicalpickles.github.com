@@ -1,4 +1,5 @@
 --- 
+permalink: /posts/presentation-rake-the-familiar-stranger
 title: "Presentation: Rake, The Familiar Stranger"
 tags: 
 - boston
@@ -8,7 +9,7 @@ tags:
 - rails
 - rake
 - ruby
-layout: default
+layout: post
 ---
 This past [Boston Ruby Group](http://bostonrb.org/events/55) meeting I gave a presentation entitled "Rake: The Familiar Stranger". You are in luck, because I started recording our meetings, with a little help from a shiny new [Flip Video Mino HD](http://www.google.com/url?sa=t&source=web&ct=res&cd=4&url=http%3A%2F%2Fwww.theflip.com%2Fproducts_flip_mino.shtml&ei=R1JDSZnqEaHYeffPxOgI&usg=AFQjCNGGUNDkHjit5iP8Bc33p0gqYwsyEA&sig2=HAUwNPVSndWKlRb6ta5qzg) and a tripod. 
 

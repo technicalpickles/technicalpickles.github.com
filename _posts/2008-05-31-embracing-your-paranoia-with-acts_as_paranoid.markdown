@@ -1,10 +1,11 @@
 --- 
+permalink: /posts/embracing-your-paranoia-with-acts_as_paranoid
 title: Embracing your paranoia with acts_as_paranoid
 tags: 
 - acts_as_paranoid
 - rails
 - ruby
-layout: default
+layout: post
 ---
 According to their [RDoc](http://ar-paranoid.rubyforge.org/), "Overrides some basic methods for the current model so that calling destroy sets a 'deleted_at' field to the current timestamp. ActiveRecord is required."
 
