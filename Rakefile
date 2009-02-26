@@ -8,42 +8,30 @@ Jekyll::Tasks.new do |jekyll|
 end
 
 
-def current_release
-  Dir["pkg/*"].map {|f| File.basename(f) }.select {|f| f =~ /^\d*$/}.sort.last
-end
+require 'vlad'
 
-pkg_path = '_pkg'
-server_user = 'deploy'
-server_host = 'technicalpickles.com'
-deploy_to = '/u/sites/technicalpickles'
-current_path = File.join(deploy_to, 'current')
-releases_path = File.join(deploy_to, 'releases')
+set :domain,  'deploy@technicalpickles.com'
+set :deploy_to,  '/u/sites/technicalpickles'
+set :pkg_dir, '_pkg'
 
-def ssh(server_user, server_host, command)
-  full_command = "ssh #{server_user}@#{server_host} #{command}"
-  puts full_command
-  sh full_command
-end
+namespace :jekyll do
+  desc "Publish Jekyll site"
+  remote_task :publish do
+    mkdir_p '_pkg'
+    cp_r "_site", "_pkg/#{release_name}"
+    wd = Dir.getwd
+    begin
+      Dir.chdir '_pkg'
+      sh "tar jcf #{release_name}.tar.bz2 #{release_name}"
+    ensure
+      Dir.chdir wd
+    end
 
-task :package do
-  mkdir_p pkg_path
+    remote_tarball = "#{releases_path}/#{release_name}.tar.bz2"
 
-  datestamp = Time.now.utc.strftime("%Y%m%d%H%M%S")
-  cp_r '_site', "#{pkg_path}/#{datestamp}"
-
-  wd = Dir.getwd
-  begin
-    Dir.chdir pkg_path
-    sh "tar jcf #{datestamp}.tar.bz2 #{datestamp}"
-  ensure
-    Dir.chdir wd
+    rsync "_pkg/#{release_name}.tar.bz2", releases_path
+    run "tar xf #{remote_tarball} -C #{releases_path}"
+    run "rm -f #{remote_tarball}"
+    run "rm -f #{current_path} && ln -s #{releases_path}/#{release_name} #{current_path}"
   end
-end
-
-task :release do
-  tarball = "#{current_release}.tar.bz2"
-  sh "scp #{pkg_path}/#{tarball} #{server_user}@#{server_host}:#{releases_path}"
-  ssh server_user, server_host, "tar xf #{releases_path}/#{tarball} -C #{releases_path}"
-  ssh server_user, server_host, "rm -f #{current_path}"
-  ssh server_user, server_host, "ln -sf #{releases_path}/#{current_release} #{current_path}"
 end
