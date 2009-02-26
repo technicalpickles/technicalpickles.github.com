@@ -1,3 +1,33 @@
-#stripe, #header, #footer, #navigation {
-	display: none;
+#header, #lcol, #footer, #printable_notice {
+display: none;
+}
+
+#rcol {
+margin-left: 0;
+width: 100%;
+background-image: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+abbr {
+	text-decoration: none;
+}
+
+h3 {
+	background: none;
+	height: auto;
+}
+
+ul {
+	list-style-image: none;
+	list-style-type: circle;
+}
+li {
+	background: none;
+}
+p {
+	text-align: left;
 }
