@@ -7,7 +7,6 @@ Jekyll::Tasks.new do |jekyll|
   jekyll.pygments = true
 end
 
-
 require 'vlad'
 
 set :domain,  'deploy@technicalpickles.com'

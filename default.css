@@ -175,7 +175,7 @@ font-size: 14px;
 
 h3
 {
-margin-top: 30px;
+margin-top: 15px;
 background: inherit;
 color: #50514D;
 font-size: 15px;
@@ -193,6 +193,10 @@ color: #85AC1E;
 h3.first
 {
 margin-top: 0px;
+}
+
+h4 {
+	margin-top: 12px
 }
 
 #lcol
@@ -245,8 +249,12 @@ margin-bottom: 6px;
 margin-top: 6px;
 }
 
+dt {
+font-weight: bold;
+}
+
 dd {
-	margin-left: 6px;
+margin-left: 6px;
 }
 
 p
@@ -372,3 +380,9 @@ padding-top: 10px;
 text-align: center;
 text-transform: lowercase;
 }
+
+ul.comma-separated { list-style: none; margin: 0; padding: 0; }
+ul.comma-separated li { display: inline; background: none; padding-left: 0}
+ul.comma-separated li:after { content: ","; } 
+ul.comma-separated li:last-child:after { content: ""; }
+ul.comma-separated li:last-child:after { content: "."; }
