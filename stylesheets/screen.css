@@ -22,7 +22,7 @@ a:hover
 {
 text-decoration: none;
 color: #fff;
-background: #D3E378 url('images/bbg1.gif') repeat-x;
+background: #D3E378 url('/images/bbg1.gif') repeat-x;
 }
 
 strong
@@ -36,7 +36,7 @@ color: #50514D;
 width: 100%;
 height: 104px;
 background-color: #4d4d4d;
-background: url('images/a1.gif') repeat-x;
+background: url('/images/a1.gif') repeat-x;
 color: #ffffff;
 }
 
@@ -109,7 +109,7 @@ height: 27px;
 margin-bottom: 1px;
 text-decoration: none;
 background: inherit;
-background-image: url('images/bbg0.gif');
+background-image: url('/images/bbg0.gif');
 padding-left: 17px;
 padding-top: 11px;
 color: #636363;
@@ -125,7 +125,7 @@ margin-top: 5px;
 margin-right: 15px;
 width: 7px;
 height: 7px;
-background: url('images/x1.gif') no-repeat; 
+background: url('/images/x1.gif') no-repeat; 
 }
 
 #menu a:hover span
@@ -136,20 +136,20 @@ margin-top: 5px;
 margin-right: 15px;
 width: 7px;
 height: 7px;
-background: url('images/x2.gif') no-repeat;
+background: url('/images/x2.gif') no-repeat;
 }
 
 #menu a:hover
 {
 background: inherit;
 color: #fff;
-background-image: url('images/bbg1.gif');
+background-image: url('/images/bbg1.gif');
 }
 
 #menu_end
 {
 height: 30px;
-background-image: url('images/a2.gif');
+background-image: url('/images/a2.gif');
 }
 
 h1
@@ -181,7 +181,7 @@ color: #50514D;
 font-size: 15px;
 text-transform: lowercase;
 height: 34px;
-background: url('images/a3.gif') repeat-x 0px 17px;
+background: url('/images/a3.gif') repeat-x 0px 17px;
 }
 
 h3 span
@@ -235,7 +235,7 @@ list-style: none;
 
 li
 {
-background: url('images/x1.gif') no-repeat 0px 5px;
+background: url('/images/x1.gif') no-repeat 0px 5px;
 padding-left: 15px;
 }
 
@@ -307,7 +307,7 @@ background-position: 0px 5px;
 position: relative;
 margin-left: 190px;
 width: 485px;
-background-image: url('images/a2.gif');
+background-image: url('/images/a2.gif');
 background-repeat: repeat-x;
 }
 
@@ -348,7 +348,7 @@ margin: 0px;
 {
 border: solid 1px #fff;
 padding: 15px;
-background: #FFFFE9 url('images/a4.gif') repeat-x;
+background: #FFFFE9 url('/images/a4.gif') repeat-x;
 color: inherit;
 }
 
@@ -371,7 +371,7 @@ left: 0px;
 #footer
 {
 clear: both;
-background: url('images/a2.gif') repeat-x;
+background: url('/images/a2.gif') repeat-x;
 width: 680px;
 margin: 0px auto;
 margin-top: 25px;
@@ -379,4 +379,9 @@ margin-bottom: 25px;
 padding-top: 10px;
 text-align: center;
 text-transform: lowercase;
+}
+
+ul.comma-separated li {
+padding-left: 0px;
+background: none;
 }

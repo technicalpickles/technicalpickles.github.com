@@ -14,6 +14,7 @@ a {
 }
 abbr {
 	text-decoration: none;
+	border-bottom: 0;
 }
 
 h3 {
@@ -30,4 +31,49 @@ li {
 }
 p {
 	text-align: left;
+}
+
+body#resume {
+	width: 8in;
+	font-size: 75%;
+}
+
+
+body#resume a:link, body#resume a:visited {
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+}
+
+body#resume h3 a:link, body#resume h3 a:visited,
+body#resume h4 a:link, body#resume h4 a:visited
+{
+	font-weight: bold;
+}
+body#resume a:link:after, body#resume a:visited:after {
+	content: "";
+}
+
+p {
+	margin: 0.06em;
+}
+
+body#resume h1,
+body#resume h2,
+body#resume h3,
+body#resume h4 {
+	margin: 0.125em;
+}
+
+body#resume ul,
+body#resume dl {
+	margin-top: 0.125em;
+}
+
+body#resume .role h4,
+body#resume .role p {
+  margin-left: 0.75em;
+}
+body#resume .role ul {
+  margin-left: 2em;
 }
