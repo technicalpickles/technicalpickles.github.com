@@ -4,14 +4,16 @@ layout: default
 <div id="post">
 	<h2 class="title"><a href="{{ page.url | strip_html_suffix }}">{{ page.title }}</a></h2>
 	<div class="metadata">
+		{% if page.tags %}
 		<div class="tags">
 			Tagged with
 			{% for tag in page.tags %}
 			{{ tag }}
 			{% endfor %}
 		</div>
+		{% endif %}
 
-		<div class="published_at">Published on {{page.date | date: '%B %d, %Y'}}</div>
+		<div class="published_at">Published on {{ page.date | date: '%B %d, %Y'}}</div>
 
 		<a href="{{ page.url | strip_html_suffix }}#disqus_thread">View Comments</a>
 	</div>
