@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Home
+title: home
 ---
 {% assign first_post = site.posts.first %}
 <h1>Latest post</h1>
 <div class="post">
-	<h2><a href="{{ first_post.url | strip_html_suffix }}">Latest post: {{ first_post.title}}</a></h2>
+	<h2><a href="{{ first_post.url | strip_html_suffix }}">{{ first_post.title}}</a></h2>
 	<div class="content">
 		{{ first_post.content }}
 	</div>
