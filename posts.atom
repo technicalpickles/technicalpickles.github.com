@@ -11,7 +11,7 @@ layout: nil
 		<email>josh@technicalpickles.com</email>
 	</author>
 
-	{% for post in site.posts %}
+	{% for post in site.rss_posts %}
 	<entry>
 		<id>http://technicalpickles.com{{post.id}}</id>
 		<updated>{{ post.date | date_to_xml_schema }}</updated>
