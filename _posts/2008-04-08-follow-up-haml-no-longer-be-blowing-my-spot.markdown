@@ -13,9 +13,11 @@ I just barely posted about [Haml blowin my spot](/posts/haml-be-blowing-my-spot)
 
 Imagine we have the following snippet:
 
-<pre><code class="haml">%div{ :id => "post_#{ post.id }" }
+{% highlight haml %}
+%div{ :id => "post_#{ post.id }" }
   %h2{:class => 'post_title'}= post.title
-  .post_content= post.cached_content</code></pre>
+  .post_content= post.cached_content
+{% endhighlight %}
   
 This `post.cached_content` contains some `<pre>` tags. As a result, the contents get kind of skewed.
 
@@ -23,9 +25,11 @@ This `post.cached_content` contains some `<pre>` tags. As a result, the contents
 
 So, it seems you can do something like:
 
-<pre><code class="haml">%div{ :id => "post_#{ post.id }" }
+{% highlight haml %}
+%div{ :id => "post_#{ post.id }" }
   %h2{:class => 'post_title'}= post.title
-  .post_content~ post.cached_content</code></pre>
+  .post_content~ post.cached_content
+{% endhighlight %}
 
 
 The key here is that we use `~` instead of `=` to output stuff. Apparently this is an alias for [Haml::Helpers.find\_and\_preserve](http://haml.hamptoncatlin.com/docs/rdoc/classes/Haml/Helpers.html#M000004). I actually didn't see any documentation about this alias though.

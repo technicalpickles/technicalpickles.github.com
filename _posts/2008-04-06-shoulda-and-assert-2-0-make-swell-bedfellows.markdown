@@ -14,17 +14,23 @@ For most things, they seem about on par.
 
 One thing I missed in particular was the 'should' syntax of RSpec, like:
 
-<pre><code class="ruby">x.should == 42</code></pre>
+{% highlight ruby %}
+x.should == 42
+{% endhighlight %}
 
 As opposed to using test-unit's:
 
-<pre><code class="ruby">assertEqual 42, x</code></pre>
+{% highlight ruby %}
+assertEqual 42, x
+{% endhighlight %}
 
 I haven't been able to entirely quantify why I prefer the former syntax, but I think it has to do with more succinctly expressing the assertion.
 
 While I haven't found quite to replace that style syntax, I do have something that fits my craving: [assert {2.0}](http://www.oreillynet.com/ruby/blog/2008/02/assert2.html). This gives us something like:
 
-<pre><code class="ruby">assert {x == 42}</code></pre>
+{% highlight ruby %}
+assert {x == 42}
+{% endhighlight %}
 
 I think I'm actually digging this over the other two styles, because:
 

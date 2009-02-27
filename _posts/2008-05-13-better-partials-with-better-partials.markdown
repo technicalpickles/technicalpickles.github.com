@@ -13,13 +13,17 @@ The gist of better-partials is that it's a syntactical sugar for `render :partia
 
 Here's a typical haml snippet using a partial:
 
-<pre><code class="haml">- form_for(@video) do |form|
-  = render :partial => '/videos/form', :locals => { :form => form }</code></pre>
+{% highlight ruby %}
+- form_for(@video) do |form|
+  = render :partial => '/videos/form', :locals => { :form => form }
+{% endhighlight %}
 
 With better-partials, we can refactor it to:
 
-<pre><code class="haml">- form_for(@video) do |form|
-  = partial 'videos/form', :form => form</code></pre>
+{% highlight ruby %}
+- form_for(@video) do |form|
+  = partial 'videos/form', :form => form
+{% endhighlight %}
 
 This saves a little typing, and makes it a bit more clearer:
 

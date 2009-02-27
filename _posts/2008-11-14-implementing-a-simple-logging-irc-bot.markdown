@@ -21,7 +21,8 @@ I came across one such library, [isaac](http://github.com/ichverstehe/isaac/tree
 
 Within 15 minutes of finding this library, I managed to whip up a simple bot which just sits in a channel, and logs it to a file. Check it:
 
-<pre><code class="ruby">require 'rubygems'
+{% highlight ruby %}
+require 'rubygems'
 require 'isaac'
 
 config do |c|
@@ -42,6 +43,7 @@ on :channel, /.*/ do
   end
 
   puts "#{channel}: #{nick}: #{message}"
-end</code></pre>
+end
+{% endhighlight %}
 
 For our user group, I plan on moving our back I plan on just running this bot during our meetings, and then emailing the log out afterwards. I could automate more, but this is a really simple first pass.

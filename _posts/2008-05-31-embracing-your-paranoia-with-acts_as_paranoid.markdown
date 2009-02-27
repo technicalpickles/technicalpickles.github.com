@@ -27,9 +27,11 @@ INFO main: Checked out "git://github.com/technoweenie/acts_as_paranoid.git" 1e91
 
 We now can define a model class to be paranoid:
 
-<pre><code class="ruby">class Event &lt; ActiveRecord::Base  
+{% highlight ruby %}
+class Event < ActiveRecord::Base  
   acts_as_paranoid
-end</code></pre>
+end
+{% endhighlight %}
 
 Internally, acts\_as\_paranoid uses the `deleted_at` column to track if something is deleted or not. So, we need to make a migration for it:
 
@@ -39,7 +41,8 @@ Internally, acts\_as\_paranoid uses the `deleted_at` column to track if somethin
 
 It should look something like:
 
-<pre><code class="ruby">class MakeEventParanoid &lt; ActiveRecord::Migration
+{% highlight ruby %}
+class MakeEventParanoid &lt; ActiveRecord::Migration
   def self.up
     add_column :events, :deleted_at, :datetime
   end
@@ -47,7 +50,8 @@ It should look something like:
   def self.down
     remove_column :events, :deleted_at
   end
-end</code></pre>
+end
+{% endhighlight %}
 
 You can now migrate:
 

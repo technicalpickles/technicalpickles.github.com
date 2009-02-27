@@ -50,22 +50,24 @@ Install the gem:
 
 Armed with the gem, we can begin diving into an example. [the-perfect-gem](http://github.com/technicalpickles/the-perfect-gem/tree) was setup as a simple example and showcase:
 
-<pre><code class="ruby">begin
+{% highlight ruby %}
+begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
-    s.name = &quot;jeweler&quot;
-    s.executables = &quot;jeweler&quot;
-    s.summary = &quot;Simple and opinionated helper for creating Rubygem projects on GitHub&quot;
-    s.email = &quot;josh@technicalpickles.com&quot;
-    s.homepage = &quot;http://github.com/technicalpickles/jeweler&quot;
-    s.description = &quot;Simple and opinionated helper for creating Rubygem projects on GitHub&quot;
-    s.authors = [&quot;Josh Nichols&quot;]
-    s.files =  FileList[&quot;[A-Z]*&quot;, &quot;{bin,generators,lib,test}/**/*&quot;, 'lib/jeweler/templates/.gitignore']
+    s.name = "jeweler"
+    s.executables = "jeweler"
+    s.summary = "Simple and opinionated helper for creating Rubygem projects on GitHub"
+    s.email = "josh@technicalpickles.com"
+    s.homepage = "http://github.com/technicalpickles/jeweler"
+    s.description = "Simple and opinionated helper for creating Rubygem projects on GitHub"
+    s.authors = ["Josh Nichols"]
+    s.files =  FileList["[A-Z]*", "{bin,generators,lib,test}/**/*", 'lib/jeweler/templates/.gitignore']
     s.add_dependency 'schacon-git'
   end
 rescue LoadError
-  puts &quot;Jeweler, or one of its dependencies, is not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com&quot;
-end</code></pre>
+  puts "Jeweler, or one of its dependencies, is not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+end
+{% endhighlight %}
 
 Here's a rundown of what's happening:
 
@@ -197,10 +199,10 @@ If it happens to be down, you can also check out the GitHub Gem repo's [list](ht
 
 #### Putting it all together
 
-    <hack, hack, hack, commit, etc>
+    # hack, hack, hack, commit, etc
     $ rake version:bump:patch release
 
-Now browse to http://gems.github.com/yourname/yourproject, and wait for it to be built.
+Now browse to http://hasmygembuiltyet.org/yourname/yourproject, and wait for it to be built.
 
 ### Finale
 

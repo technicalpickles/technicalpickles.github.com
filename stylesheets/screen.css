@@ -7,8 +7,8 @@ padding: 0px;
 body
 {
 background-color: #fff;
-color: #9f9f9f;
-font-size: 11px;
+color: #636363;
+font-size: 12px;
 font-family: "trebuchet ms", helvetica, sans-serif;
 }
 
@@ -64,7 +64,7 @@ letter-spacing: -2px;
 #header_inner h1 span
 {
 background: inherit;
-color: #DADADA;
+color: #85AC1E;
 }
 
 #slogan
@@ -73,7 +73,6 @@ background: inherit;
 position: absolute;
 right: 0px;
 bottom: 25px;
-color: #DADADA;
 text-transform: lowercase;
 font-size: 13px;
 }
@@ -82,7 +81,7 @@ font-size: 13px;
 {
 padding-top: 20px;
 position: relative;
-width: 680px;
+width: 960px;
 margin: 0px auto;
 padding-bottom: 10px;
 }
@@ -233,7 +232,7 @@ ul
 list-style: none;
 }
 
-li
+ul li
 {
 background: url('/images/x1.gif') no-repeat 0px 5px;
 padding-left: 15px;
@@ -259,7 +258,6 @@ margin-left: 6px;
 
 p
 {
-text-align: justify;
 line-height: 20px;
 }
 
@@ -306,7 +304,7 @@ background-position: 0px 5px;
 {
 position: relative;
 margin-left: 190px;
-width: 485px;
+width: 765px;
 background-image: url('/images/a2.gif');
 background-repeat: repeat-x;
 }
@@ -384,4 +382,12 @@ text-transform: lowercase;
 ul.comma-separated li {
 padding-left: 0px;
 background: none;
+}
+
+pre {
+	background-color: black;
+	color: white;
+	padding: 5px;
+	margin-left: 20px;
+	overflow: auto;
 }

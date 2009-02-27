@@ -111,20 +111,24 @@ Good so far.
 
 Now what do we want to do with the place? Those attributes should be required. Open the test, and see what we have so far:
 
-<pre><code class="ruby">class PlaceTest &lt; ActiveSupport::TestCase
+{% highlight ruby %}
+class PlaceTest < ActiveSupport::TestCase
   should_have_db_column :name
   should_have_db_column :address
   should_have_db_column :description
-end</code></pre>
+end
+{% endhighlight %}
 
 Oh, cool. The generated test already has a few `shoulds` in there. Now we want to add `should_require_attributes`.
 
-<pre><code class="ruby">class PlaceTest &lt; ActiveSupport::TestCase
+{% highlight ruby %}
+class PlaceTest < ActiveSupport::TestCase
   should_have_db_column :name
   should_have_db_column :address
   should_have_db_column :description
   should_require_attributes :name, :address, :description
-end</code></pre>
+end
+{% endhighlight %}
 
 And let's see how this does...
 
@@ -168,11 +172,13 @@ Place does not require name.
 
 Ok, this is to be expected. We didn't actually `validate_presence_of` the fields. Let's do that now:
 
-<pre><code class="ruby">class Place &lt; ActiveRecord::Base
+{% highlight ruby %}
+class Place &lt; ActiveRecord::Base
   validates_presence_of :name
   validates_presence_of :address
   validates_presence_of :description
-end</code></pre>
+end
+{% endhighlight %}
 
 If we try it again...
 
@@ -190,10 +196,12 @@ Test-driven, wooo!!! I think this is good enough to commit.
 
 We already have an `Event` model, so I figure a `Place` should be able to have events, and event would have could be at a particular place. Shall we test it?
 
-<pre><code class="ruby">class PlaceTest &lt; ActiveSupport::TestCase
+{% highlight ruby %}
+class PlaceTest < ActiveSupport::TestCase
   # omitted...
   should_have_many :events
-end</code></pre>
+end
+{% endhighlight %}
 
 We get a failure though:
 

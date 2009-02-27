@@ -42,7 +42,7 @@ You just need to update your `Rakefile` to include something like:
 {% highlight ruby %}
 require 'rcov/rcovtask'
 Rcov::RcovTask.new do |t|
-  t.libs &lt;&lt; &quot;test&quot;
+  t.libs << "test"
   t.test_files = FileList['test/*_test.rb']
   t.verbose = true
 end
@@ -56,7 +56,7 @@ Similarly, you just need to update your `Rakefile` to do:
 
 {% highlight ruby %}
 require 'rspec/spec_task'
-Spec::Rake::SpecTask.new(&quot;rcov_spec&quot;) do |t|
+Spec::Rake::SpecTask.new("rcov_spec") do |t|
   t.spec_files = FileList['spec/**/*_spec.rb']
   t.spec_opts = ['--color']
   t.rcov = true

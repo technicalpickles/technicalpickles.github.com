@@ -35,19 +35,23 @@ You do have one choice to make here... what framework do you want to use impleme
 
 It's also worth noting that `env.rb` is the cucumber-equivalent of `test_helper.rb` or `spec_helper.rb`, so do any configuration or `require`ing here. For example you probably want to require your main ruby file from the `lib` directory. For jeweler, I did:
 
-<pre><code class="ruby">$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
-require 'jeweler'</code></pre>
+{% highlight ruby %}
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
+require 'jeweler'
+{% endhighlight %}
 
 ### Rake configuration
 
 You do have a `Rakefile`, right? Given the file layout above, you can add this snippet:
 
-<pre><code class="ruby">begin
+{% highlight ruby %}
+begin
   require 'cucumber/rake/task'
   Cucumber::Rake::Task.new(:features)
 rescue LoadError
-  puts &quot;Cucumber is not available. In order to run features, you must: sudo gem install cucumber&quot;
-end</code></pre>
+  puts "Cucumber is not available. In order to run features, you must: sudo gem install cucumber"
+end
+{% endhighlight %}
 
 ### Summary
 

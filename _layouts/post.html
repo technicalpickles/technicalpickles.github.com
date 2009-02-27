@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="post">
-	<h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+	<h2 class="title"><a href="{{ page.url | strip_html_suffix }}">{{ page.title }}</a></h2>
 	<div class="metadata">
 		<div class="tags">
 			Tagged with
@@ -13,7 +13,7 @@ layout: default
 
 		<div class="published_at">Published on {{page.date | date: '%B %d, %Y'}}</div>
 
-		<a href="{{ page.url }}#disqus_thread">View Comments</a
+		<a href="{{ page.url | strip_html_suffix }}#disqus_thread">View Comments</a
 	<div class="content">
 		{{ content }}
 	</div>

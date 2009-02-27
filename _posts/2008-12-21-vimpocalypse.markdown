@@ -37,17 +37,21 @@ These are the plugins I'm using, and I'll include any tweaks or mappings I'm usi
 
 [NERD Commenter](http://www.vim.org/scripts/script.php?script_id=1218): Lets you easily comment out code. I made command-/ comment out code, kinda like in textmate.
 
-    " bind command-/ to toggle comment
-    " requires NERD Commenter to be installed: http://www.vim.org/scripts/script.php?script_id=1218
-    nmap <D-/> ,c<space>
-    vmap <D-/> ,c<space>
-    imap <D-/> <C-O>,c<space>
+{% highlight vim %}
+" bind command-/ to toggle comment
+" requires NERD Commenter to be installed: http://www.vim.org/scripts/script.php?script_id=1218
+nmap <D-/> ,c<space>
+vmap <D-/> ,c<space>
+imap <D-/> <C-O>,c<space>
+{% endhighlight %}
 
 [NERD Tree](http://www.vim.org/scripts/script.php?script_id=1658): File navigation using a directory tree. I setup \d to toggle it being visible.
 
-    " bind \d to toggle file browser
-    " requires NERDTree
-    nmap <leader>d :NERDTreeToggle<CR>
+{% highlight vim %}
+" bind \d to toggle file browser
+" requires NERDTree
+nmap <leader>d :NERDTreeToggle<CR>
+{% endhighlight %}
     
 [autoclose.vim](http://www.vim.org/scripts/download_script.php?src_id=7700): This will automatically close things like quotes, brackets, parantheses, etc. I've found it to be a little buggy at times, so I'm considering dropping it, or finding something else. YMMV.
  
@@ -57,10 +61,12 @@ These are the plugins I'm using, and I'll include any tweaks or mappings I'm usi
 
 [fuzzyfinder\_textmate](http://github.com/jamis/fuzzyfinder_textmate/tree/master): This is the texmate equivalent of 'Go to File'. Pull it up, and start typing a filename. I bind it to \t (command-t opens a tab in MacVim).
 
-    " binds \ t to textmate-style fuzzy finder
-    map <leader>t :FuzzyFinderTextMate<CR>
-    let g:fuzzy_matching_limit=60 " this seems to help performance
-    let g:fuzzy_ceiling=20000     " I have some projects with a lot of files...
+{% highlight vim %}
+" binds \ t to textmate-style fuzzy finder
+map <leader>t :FuzzyFinderTextMate<CR>
+let g:fuzzy_matching_limit=60 " this seems to help performance
+let g:fuzzy_ceiling=20000     " I have some projects with a lot of files...
+{% endhighlight %}
     
 [allml](http://www.vim.org/scripts/script.php?script_id=1896): Gives you some ways to interact with the various HTML-like code that various programming languages / frameworks provide, like shortcuts to create `<% %>` in ERB
 
@@ -74,17 +80,21 @@ These are the plugins I'm using, and I'll include any tweaks or mappings I'm usi
 
 [taglist.vim](http://www.vim.org/scripts/script.php?script_id=273): vim has [support for browsing by 'tags'](http://vim.wikia.com/wiki/Browsing_programs_with_tags), which is to say, by method name, class name, etc. taglist gives you a way of seeing tags in the current file. It brings up a new window, which you can browse to the tag you want, and then automatically navigate to it. I've tried to make it act like 'Go To Symbol' in textmate. \T toggles the taglist, it gets focus, and then goes away after you navigate to something.
 
-    " binds \ T to taglist (sorta like textmate apple-shift-t)
-    map <leader>T :TlistToggle<CR>
-    let Tlist_Show_Menu=1
-    let Tlist_GainFocus_On_ToggleOpen=1
-    let Tlist_Close_OnSelect=1
-    let Tlist_Compact_Format=1
+{% highlight vim %}
+" binds \ T to taglist (sorta like textmate apple-shift-t)
+map <leader>T :TlistToggle<CR>
+let Tlist_Show_Menu=1
+let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_Close_OnSelect=1
+let Tlist_Compact_Format=1
+{% endhighlight %}
  
 [ack](http://blog.ant0ine.com/2007/03/ack_and_vim_integration.html): Unfortunately not a packaged plugin, but you can just drop the code snippet (the second, updated one) in ~/.vim/plugin/ack.vim. This lets you search for stuff in your current directory, and gives you a way to browse the results. Kinda like textmate's 'Find in Project'. I made \F start the command off for you.
 
-    " \F to startup an ack search
-    map <leader>F :Ack<space>
+{% highlight vim %}
+" \F to startup an ack search
+map <leader>F :Ack<space>
+{% endhighlight %}
  
 ### Sagelike advice
 
@@ -98,62 +108,72 @@ If you have problems with fuzzfinder\_textmate being able to find the Ruby class
 
 Insert hashrockets (`=>`) while in insert-mode, just like in TextMate:
 
-    " bind control-l to hashrocket
-    imap <C-l> <Space>=><Space>
+{% highlight vim %}
+" bind control-l to hashrocket
+imap <C-l> <Space>=><Space>
+{% endhighlight %}
 
 Indent and unident with `command-[` and `command-]`:
 
-    " bind command-] to shift right
-    nmap <D-]> >>
-    vmap <D-]> >>
-    imap <D-]> <C-O>>>
+{% highlight vim %}
+" bind command-] to shift right
+nmap <D-]> >>
+vmap <D-]> >>
+imap <D-]> <C-O>>>
 
-    " bind command-[ to shift left
-    nmap <D-[> <<
-    vmap <D-[> <<
-    imap <D-[> <C-O><<
+" bind command-[ to shift left
+nmap <D-[> <<
+vmap <D-[> <<
+imap <D-[> <C-O><<
+{% endhighlight %}
     
 Switch to different tabs using command-1 through command-9:
 
-    " open tabs with command-<tab number>
-    map <D-1> :tabn 1<CR>
-    map <D-2> :tabn 2<CR>
-    map <D-3> :tabn 3<CR>
-    map <D-4> :tabn 4<CR>
-    map <D-5> :tabn 5<CR>
-    map <D-6> :tabn 6<CR>
-    map <D-7> :tabn 7<CR>
-    map <D-8> :tabn 8<CR>
-    map <D-9> :tabn 9<CR>
+{% highlight vim %}
+" open tabs with command-<tab number>
+map <D-1> :tabn 1<CR>
+map <D-2> :tabn 2<CR>
+map <D-3> :tabn 3<CR>
+map <D-4> :tabn 4<CR>
+map <D-5> :tabn 5<CR>
+map <D-6> :tabn 6<CR>
+map <D-7> :tabn 7<CR>
+map <D-8> :tabn 8<CR>
+map <D-9> :tabn 9<CR>
+{% endhighlight %}
 
 #### Simplify window navigation
 
 vim supports splitting a window vertically and horizontally, and then navigating between them. The default way kinda hurts my hands. Let's reduce it to \s to split horizontally, \v to split vertically, and \w to cycle to the next window.
 
-    " window splitting mappings
-    " split vertically with <leader> v
-    " split horizontally with <leader> s
-    nmap <leader>v :vsplit<CR> <C-w><C-w>
-    nmap <leader>s :split<CR> <C-w><C-w>
-    
-    " Make it way easier to switch windows (<leader>w)
-    nmap <leader>w <C-w><C-w>_
+{% highlight vim %}
+" window splitting mappings
+" split vertically with <leader> v
+" split horizontally with <leader> s
+nmap <leader>v :vsplit<CR> <C-w><C-w>
+nmap <leader>s :split<CR> <C-w><C-w>
+
+" Make it way easier to switch windows (<leader>w)
+nmap <leader>w <C-w><C-w>_
+{% endhighlight %}
     
 Gleefully stolen from [James Golick](http://jamesgolick.com/)'s [dotfiles](http://github.com/giraffesoft/dotfiles/tree/master).
     
 #### Other stuff, with less explanation
 
-    set nocompatible          " We're running Vim, not Vi!
-    syntax on                 " Enable syntax highlighting
-    filetype plugin indent on " Enable filetype-specific indenting and plugins
+{% highlight vim %}
+set nocompatible          " We're running Vim, not Vi!
+syntax on                 " Enable syntax highlighting
+filetype plugin indent on " Enable filetype-specific indenting and plugins
 
-    set incsearch             " Incremental searching
-    set hlsearch              " Highlight search results once found:
-                              " http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
-    set number                " can has line numbers?
-    set cursorline            " highlight the current line the cursor is on
-    set showmatch             "sm:    flashes matching brackets or parentheses
-    set smarttab              "sta:   helps with backspacing because of expandtab
+set incsearch             " Incremental searching
+set hlsearch              " Highlight search results once found:
+                          " http://vim.wikia.com/wiki/Highlight_all_search_pattern_matches
+set number                " can has line numbers?
+set cursorline            " highlight the current line the cursor is on
+set showmatch             "sm:    flashes matching brackets or parentheses
+set smarttab              "sta:   helps with backspacing because of expandtab
+{% endhighlight %}
 
 ### Fin
 

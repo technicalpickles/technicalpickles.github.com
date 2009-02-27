@@ -21,7 +21,8 @@ As I was moving and settling into my new apartment this past Sunday, it was amus
   * Instead of worrying too much, we set to start shuffling furniture around
  * Make lots of small changes, and get feedback along the way
   * Move some furniture, and see how it works. It was also a good excuse for a break. 
- * The first 80% is easy and quick. The last 20% takes a lot longer
+
+ * The first 80% is easy and quick. The last 20% takes a lot longer.
   * I had the majority of the boxes unpacked within the first day. But getting everything to its ultimate home will take quite a bit longer.
   
 With the move done and out of the way, I should be able to settle into a more regular blogging schedule now.
