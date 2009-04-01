@@ -17,23 +17,28 @@ p. I'm a big fan a "ruby-debug":http://www.datanoise.com/ruby-debug. To get star
 require 'ruby-debug'
 {% endhighlight %}
 
+
 p. Then, you can place @breakpoint@ anywhere in your code, such as in your application code, or somewhere in a step definition
 
+<notextile>
 {% highlight ruby %}
 Then /^the process should exit cleanly$/ do
   breakpoint
   assert @exited_cleanly, "Process did not exit cleanly: #{@stdout}"
 end
 {% endhighlight %}
+</notextile>
 
 p. Note, that if you put the breakpoint at the end of a block, you need to add another statement after @breakpoint@. If you don't, then ruby-debug will drop into the calling block, which can be very confusing.
 
+<notextile>
 {% highlight ruby %}
 Then /^the process should exit cleanly$/ do
   assert @exited_cleanly, "Process did not exit cleanly: #{@stdout}"
   breakpoint; 0
 end
 {% endhighlight %}
+</notextile>
 
 h4. Then I debug
 
@@ -66,6 +71,7 @@ end
 {% endhighlight %}
 
 
+
 p. This can get a little out of hand if you use this in a lot of places. Dozens of pages getting opened, even if things aren't failing.
 
 {% highlight ruby %}
@@ -78,6 +84,7 @@ When /^I follow "(.*)"$/ do |link|
   end  
 end
 {% endhighlight %}
+
 
 This will only open the page if something actually went wrong.
 
