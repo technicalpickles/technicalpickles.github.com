@@ -1,5 +1,5 @@
 ---
-title: Ruby mocking, stubbing, and more with rr
+title: Ruby stubbing and mocking with rr
 layout: post
 ---
 
