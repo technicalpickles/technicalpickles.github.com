@@ -1,0 +1,248 @@
+---
+title: Ruby mocking, stubbing, and more with rr
+layout: post
+---
+
+"Double Ruby, or rr for short,":http://github.com/btakita/rr/tree/master is a "test double framework" for Ruby. According to the "rr README":http://github.com/btakita/rr/blob/master/README.rdoc, "A Test Double is a generalization of something that replaces a real object to make it easier to test another object. It's like a stunt double for tests. The following are test doubles: Mocks, Stubs, Fakes, Spies, Proxies". It is in the same niche as frameworks like "mocha":http://mocha.rubyforge.org/, "flexmock":http://flexmock.rubyforge.org/, and the "mocking support built into RSpec":http://rspec.info/documentation/mocks/.
+
+So why bother with another framework when the others have been well established and work well? I have two main reasons:
+
+ * Terser syntax that's more rubyish (you call the methods you want to mock, with the parameters you want)
+ * More advanced functionality (test spies are my particular favorite)
+
+I'm going go over the functionality I've been using, with a few asides when it's much different than mocha and RSpec.
+
+h3. Installation
+
+The rr gem is, well, rr:
+
+ <pre><code>
+    sudo gem install rr
+ </code></pre>
+
+Then you must update your helper to use rr. In test/unit, you'd update @test/test_helper.rb@ to include:
+
+{% highlight ruby %}
+require 'rr'
+
+class Test::Unit::TestCase
+  include RR::Adapters::TestUnit
+end
+{% endhighlight %}
+
+For RSpec, you'd want to update @spec/spec_helper.rb@ to include:
+
+{% highlight ruby %}
+require 'rr'
+
+Spec::Runner.configure do |config|
+  config.mock_with RR::Adapters::Rspec
+end
+{% endhighlight %}
+
+h4. Gotchas
+
+If after installing RR, you get errors like "stack level too deep (SystemStackError)" coming from inside RR, there's a good chance your helper is being loaded multiple times from different paths.
+
+For example, @test/test_foo.rb@ does @require File.join(File.dirname(__FILE__), 'test_helper')@, and @test/foo/test_bar.rb@ does @require File.join(File.dirname(__FILE__), '..', 'test_helper')@. This means that @test/test_helper@ and @test/bar/../test_helper@ are both being required. They have have different paths even though they refer to same file because the ruby interpreter isn't smart enough to normalize it.
+
+Doing a proper fix for this multiple-require problem in your project is beyond the scope of this article, but here's a quick fix:
+
+{% highlight ruby %}
+class Test::Unit::TestCase
+  include RR::Adapters::TestUnit unless include?(RR::Adapters::TestUnit)
+end
+{% endhighlight %}
+
+h3. Stubbing
+
+Stubbing lets you replace the implementation of an object, no strings attached.
+
+This will stub away any all calls to @trogdor.burninate@, regardless of the values and number of arguments.
+
+{% highlight ruby %}
+stub(trogdor).burninate
+{% endhighlight %}
+
+You'll often want to make a stub return a specific value. You can specify this with a block or @returns@. I've generally found the former to be more readable.
+
+{% highlight ruby %}
+stub(countryside).burninated? { true }
+stub(peasants).burninated?.returns(true) 
+{% endhighlight %}
+
+If you need to stub a method to raise an exception, you can use the same mechanic for returning a value. Just use a block to define a return value, @raise@ something instead of returning.
+
+{% highlight ruby %}
+stub(trogdor).come_in_the_day { raise "the Trogdor comes in the NIIIIIIIIIIIIGHT!!!!!" }
+{% endhighlight %}
+
+As I mentioned, all these examples will match any invocation of stubbed method. You can be pickier though, and give the arguments you expected it to be called with. You can just pass the values you want to the stub. You can also fallback to using @with@:
+
+{% highlight ruby %}
+stub(trogdor).burninate(countryside)
+stub(trogdor).burninate.with(peasants)
+{% endhighlight %}
+
+h3. Mocking
+
+Mocking is similar to stubbing, except it adds an expectation. If you mock something, and it isn't called, then your test will fail.
+
+You can mostly take the examples above, and replace @stub@ with @mock@, and away you go.
+
+{% highlight ruby %}
+mock(trogdor).burninate
+mock(countryside).burninated? { true }
+{% endhighlight %}
+
+There is one difference that I've seen though. If you mock a method without any arguments... it will only match being called without any arguments. This is different than how mocha/rspec work.
+
+{% highlight ruby %}
+mock(inbox).from_a_female? { false }
+inbox.from_a_female?(email) # ERROR! expected no args, but got one arg!
+{% endhighlight %}
+
+One way around this is to use rr's wildcard matchers. I'm not going to detail all the possibilities, but I'll just say we can use @anything@ to match any argument passed to it. Check the "README":http://github.com/btakita/rr/blob/master/README.rdoc for other matchers.
+
+{% highlight ruby %}
+mock(inbox).from_a_female?(anything) { false }
+inbox.from_a_female?(email) # No error, but still not from a female
+{% endhighlight %}
+
+h3. Don't allow method calls
+
+rr lets you indicate a method should never be called, and will raise an error if it does. You can use the same style above for specifying argument.
+
+{% highlight ruby %}
+dont_allow(strong_sad).improve_on_methods_of(strong_bad)
+{% endhighlight %}
+
+h3. Mock and stub objects
+
+Sometimes you might want to make a pure mock object, without using a specific implementation. rr doesn't support this as well as mocha or rspec. You can create bare @Object@s, and stub or mock as necessary.
+
+{% highlight ruby %}
+cottage = Object.new
+stub(cottage).burninated? { true }
+{% endhighlight %}
+
+(There is a @mock!@ helper for making pure mock objects, but I haven't had consistently good experiences with it.)
+
+h3. Instances of
+
+Want all your peasants to be burninated in one fell swoop?
+
+{% highlight ruby %}
+stub.instance_of(Peasant).burninated? { true }
+{% endhighlight %}
+
+You can @mock@ it as well, and specify arguments.
+
+h3. Test spies
+
+Test spies let you stub a method, and then latter assert the values it was called with.
+
+{% highlight ruby %}
+stub(trogdor).burninate(countryside)
+stub(trogdor).burninate(peasant)
+
+trogdor.come_in_the_night
+
+assert_received(trogdor) {|trogdor| trogdor.burninate(countryside) } # test/unit
+trogdor.should have_received.burninate(countryside) # rspec
+trogdor.should have_received(:burninate).with(countryside) # rspec, same thing
+{% endhighlight %}
+
+h4. A more detailed example
+
+I have found this extremely useful with rspec and shoulda, where you might stub in a before/setup block, and then have tests that add expectations on those being called. Consider this example using shoulda and mocha:
+
+{% highlight ruby %}
+context "coming in the night" do
+  setup do
+    trogdor.stubs(:burninate).with(countryside).returns(true)
+    trogdor.stubs(:burninate).with(peasants).returns(true)
+    
+    trogdor.come_in_the_night
+  end
+
+  before_should "burninate the countryside" do
+    trogdor.expects(:burninate).with(countryside).returns(true)
+  end
+
+  before_should "burninate the peasants" do
+    trogdor.expects(:burninate).with(countryside).returns(true)
+  end
+end
+{% endhighlight %}
+
+@before_should@ is used to set an expectation before the setup block actually gets called. This is kind of annoying because you have specify the return values each time. We're able to express this with RR much more concisely, and without having to rely on @before_should@:
+
+{% highlight ruby %}
+context "coming in the night" do
+  setup do
+    stub(trogdor).burninate { true }
+    
+    trogdor.come_in_the_night
+  end
+
+  should "burninate the countryside" do
+    assert_received(trogdor) {|trogdor| trogdor.burninate(countryside) } 
+  end
+
+  should "burninate the peasants" do
+    assert_received(trogdor) {|trogdor| trogdor.burninate(peasants) } 
+  end
+end
+{% endhighlight %}
+
+
+h3. Rails
+
+There's nothing special about using rr for Rails. If you're using rspec, though, you may want to checkout "rspec-rr":http://github.com/josephwilk/rspec-rr/tree/master which provides an rr-ified @mock_model@ and @stub_model@. It does not seem to support @:null_object => true@ though.
+
+h3. Gotchas
+
+h4. Method missing
+
+rr doesn't always play nice with stubbing/mocking methods that are provided  by @method_missing@. I've had particularly bad times with @ActionMailer::Base@ subclasses.
+
+The issue is that rr works by doing alias_method down in its inner bowls, and you can't alias a method that doesn't exist. rr works around this by trying to @send@ to the non-existent method, hoping that the act of sending will define it before trying to send again. It does so without any arguments, so if you are stubbing a method that has any arguments, you are going to see some funky @ArgumentError@s.
+
+One work around for this is to stub out method missing itself, and pass it the name of the method you care about. I found the slightly alternative syntax works best:
+
+{% highlight ruby %}
+stub(PeasantMailer, :deliver_burnination).with(peasant)
+{% endhighlight %}
+
+You should be able to use test spies on this too:
+
+{% highlight ruby %}
+PeasantMailer.should have_received.method_missing.with(:deliver_burnination, peasant)
+{% endhighlight %}
+
+h4. Test spies for assignment
+
+There's a possibility you would want to use test spies for while testing assignments:
+
+{% highlight ruby %}
+stub(trogdor).species = 'dragon'
+{% endhighlight %}
+
+If you were using test/unit, you'd verify it like:
+
+{% highlight ruby %}
+assert_received(trogdor) {|trogdor| trogdor.species = 'dragon' }
+{% endhighlight %}
+
+There's a good chance you'll get a message to the effect @call@ isn't defined on the String 'dragon'. This is caused because inside the block, rr is doing some trickery with @method_missing@ to record what methods you call on @trogdor@. I'm told that when you do assignment, the ruby interpreter will always return the assigned value, so rr gets confused when it gets a string, rather than it's own objects to track method calls.
+
+The ugly fix for this is to use it's method_missing more directly. 
+
+{% highlight ruby %}
+assert_received(trogdor) {|trogdor| trogdor.method_missing(:species=, 'dragon') }
+{% endhighlight %}
+
+h3. Anything else?
+
+I came In reality, I'm only beginning to scratch the surface of rr. The terse syntax and test spies are the things that got me hook, but there are other features that look promising, like proxying and stubbing method chains.
