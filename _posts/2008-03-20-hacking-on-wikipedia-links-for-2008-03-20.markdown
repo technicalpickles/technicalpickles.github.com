@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/hacking-on-wikipedia-links-for-2008-03-20.html
 title: "Hacking on Wikipedia: links for 2008-03-20"
 tags: 
 - api

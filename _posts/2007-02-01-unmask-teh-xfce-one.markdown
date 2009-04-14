@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/unmask-teh-xfce-one.html
 title: unmask teh Xfce!!!one
 tags: 
 - gentoo

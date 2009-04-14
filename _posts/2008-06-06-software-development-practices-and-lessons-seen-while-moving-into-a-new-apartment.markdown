@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/software-development-practices-and-lessons-seen-while-moving-into-a-new-apartment.html
 title: Software development practices and lessons seen while moving into a new apartment
 tags: 
 - software development

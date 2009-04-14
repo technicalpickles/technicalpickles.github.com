@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/eclipse-3-1-2.html
 title: Eclipse 3.1.2
 tags: 
 - eclipse

@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/shoulda-can-automatically-load-custom-macros.html
 title: Shoulda can automatically load custom macros
 tags: 
 - rails

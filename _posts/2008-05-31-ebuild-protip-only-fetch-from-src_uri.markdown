@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/ebuild-protip-only-fetch-from-src_uri.html
 title: "Ebuild Protip: Only fetch from SRC_URI "
 tags: 
 - ebuild

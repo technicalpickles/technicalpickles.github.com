@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/making-factory_girl-even-easier-on-rails.html
 title: Making factory_girl even easier on Rails
 tags: 
 - factories

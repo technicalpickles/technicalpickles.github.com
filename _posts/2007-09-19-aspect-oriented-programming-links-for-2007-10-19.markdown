@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/aspect-oriented-programming-links-for-2007-10-19.html
 title: "Aspect Oriented Programming: Links for 2007-10-19"
 tags: 
 - aop

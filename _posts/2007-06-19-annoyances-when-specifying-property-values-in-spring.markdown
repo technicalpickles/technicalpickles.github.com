@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/annoyances-when-specifying-property-values-in-spring.html
 title: Annoyances when specifying property values in Spring
 tags: 
 - acegi

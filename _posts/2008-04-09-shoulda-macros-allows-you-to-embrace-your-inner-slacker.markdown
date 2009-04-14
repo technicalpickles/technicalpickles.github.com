@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/shoulda-macros-allows-you-to-embrace-your-inner-slacker.html
 title: Shoulda macros allows you to embrace your inner slacker
 tags: 
 - rails

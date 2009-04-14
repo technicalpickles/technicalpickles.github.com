@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/aiding-and-abetting-the-enemy-rails-1-2-2-and-gentoo-ruby.html
 title: "Aiding and abetting the enemy, rails 1.2.2, and #gentoo-ruby"
 tags: 
 - gentoo

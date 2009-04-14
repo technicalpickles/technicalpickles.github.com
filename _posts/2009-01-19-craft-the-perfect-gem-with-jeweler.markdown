@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/craft-the-perfect-gem-with-jeweler.html
 title: Craft the perfect gem with Jeweler
 tags: 
 - bacon

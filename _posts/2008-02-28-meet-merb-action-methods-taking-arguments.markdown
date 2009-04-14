@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/meet-merb-action-methods-taking-arguments.html
 title: "Meet Merb: Action methods taking arguments"
 tags: 
 - merb

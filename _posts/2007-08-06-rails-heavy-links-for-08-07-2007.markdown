@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/rails-heavy-links-for-08-07-2007.html
 title: "Rails Heavy: Links for 08-07-2007"
 tags: 
 - del.icio.us

@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/guide-to-gentoo-announcements.html
 title: Guide to Gentoo Announcements
 tags: 
 - announcements

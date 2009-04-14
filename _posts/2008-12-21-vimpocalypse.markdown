@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/vimpocalypse.html
 title: vimpocalypse
 tags: 
 - rails

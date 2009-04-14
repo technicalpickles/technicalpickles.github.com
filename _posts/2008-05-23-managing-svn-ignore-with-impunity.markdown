@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/managing-svn-ignore-with-impunity.html
 title: Managing svn:ignore with impunity
 tags: 
 - rails

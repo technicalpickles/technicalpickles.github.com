@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/site-updates.html
 title: Site updates
 tags: []
 

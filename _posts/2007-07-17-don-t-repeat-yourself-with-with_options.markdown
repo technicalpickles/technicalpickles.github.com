@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/don-t-repeat-yourself-with-with_options.html
 title: Don't Repeat Yourself with with_options
 tags: 
 - named routes

@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/adding-cucumber-to-a-ruby-project.html
 title: Adding Cucumber to a Ruby project
 tags: 
 - cucumber

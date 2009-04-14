@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/autoloading-factory_girl-definitions.html
 title: Autoloading factory_girl definitions
 tags: 
 - factory_girl

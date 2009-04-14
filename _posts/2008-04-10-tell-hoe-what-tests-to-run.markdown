@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/tell-hoe-what-tests-to-run.html
 title: Tell Hoe what tests to run
 tags: 
 - hoe

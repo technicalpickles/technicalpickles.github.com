@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/of-java-1-5-and-gentoo.html
 title: Of Java 1.5 and Gentoo
 tags: 
 - gentoo

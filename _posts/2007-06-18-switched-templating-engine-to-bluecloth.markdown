@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/switched-templating-engine-to-bluecloth.html
 title: Switched templating engine to BlueCloth
 tags: 
 - bluecloth

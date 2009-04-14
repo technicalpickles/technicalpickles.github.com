@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/gentoo-prefix-as-an-alternative-to-macports-fink.html
 title: Gentoo Prefix as an alternative to MacPorts, Fink
 tags: 
 - cvs

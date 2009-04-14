@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/manage-your-markup-with-has_markup.html
 title: Manage your markup with has_markup
 tags: 
 - markdown

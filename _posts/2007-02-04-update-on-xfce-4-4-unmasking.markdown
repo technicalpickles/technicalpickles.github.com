@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/update-on-xfce-4-4-unmasking.html
 title: Update on Xfce 4.4 unmasking
 tags: 
 - gentoo

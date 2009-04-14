@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/managing-rubygems-on-gentoo.html
 title: Managing RubyGems on Gentoo
 tags: 
 - gems

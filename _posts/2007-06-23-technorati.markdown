@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/technorati.html
 title: Technorati
 tags: 
 - technorati

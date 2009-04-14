@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/fixing-the-routes-for-tags.html
 title: Fixing the routes for tags
 tags: 
 - acts_as_taggable_on_steroids

@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/dry-controllers-and-helpers-using-forwardable.html
 title: DRY Controllers and Helpers using Forwardable
 tags: 
 - authentication

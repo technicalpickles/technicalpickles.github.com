@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/ebuild-protip-know-when-to-not-define-your-own-src_unpack.html
 title: "Ebuild Protip: Know when to NOT define your own src_unpack"
 tags: 
 - ebuild

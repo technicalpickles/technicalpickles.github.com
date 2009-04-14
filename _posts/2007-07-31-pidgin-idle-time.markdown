@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/pidgin-idle-time.html
 title: Pidgin idle time
 tags: 
 - gentoo

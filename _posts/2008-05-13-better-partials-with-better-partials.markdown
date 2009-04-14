@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/better-partials-with-better-partials.html
 title: Better partials with better-partials
 tags: 
 - better-partials

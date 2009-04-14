@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/jeweler-now-with-support-for-test-unit-minitest-rspec-and-cucumber.html
 title: Jeweler, now with support for test/unit, minitest, rspec, and cucumber
 tags: 
 - jeweler

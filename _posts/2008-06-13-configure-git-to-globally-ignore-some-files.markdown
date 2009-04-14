@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/configure-git-to-globally-ignore-some-files.html
 title: Configure git to globally ignore some files
 tags: 
 - gentoo

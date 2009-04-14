@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/meet-merb.html
 title: Meet Merb
 tags: 
 - merb

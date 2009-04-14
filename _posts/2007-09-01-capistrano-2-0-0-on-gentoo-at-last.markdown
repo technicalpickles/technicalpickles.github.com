@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/capistrano-2-0-0-on-gentoo-at-last.html
 title: Capistrano 2.0.0 on Gentoo at last
 tags: 
 - capistrano

@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/java_home-pointing-to-generation-1-system-vm.html
 title: JAVA_HOME pointing to generation-1 system vm
 tags: 
 - gentoo

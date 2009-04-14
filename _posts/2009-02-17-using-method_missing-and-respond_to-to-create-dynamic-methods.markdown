@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/using-method_missing-and-respond_to-to-create-dynamic-methods.html
 title: Using method_missing and respond_to? to create dynamic methods
 tags: 
 - metaprogramming

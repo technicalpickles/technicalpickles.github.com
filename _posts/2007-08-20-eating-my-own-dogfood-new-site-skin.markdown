@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/eating-my-own-dogfood-new-site-skin.html
 title: "Eating My Own Dogfood: New Site Skin"
 tags: 
 - css

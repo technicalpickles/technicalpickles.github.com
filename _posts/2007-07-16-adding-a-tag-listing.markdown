@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/adding-a-tag-listing.html
 title: Adding a tag listing
 tags: 
 - acts_as_taggable_on_steroids

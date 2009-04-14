@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/hello-world.html
 title: Hello World
 tags: 
 - gentoo

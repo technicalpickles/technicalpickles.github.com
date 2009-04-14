@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/notes-from-barcampboston3.html
 title: Notes from BarCampBoston3
 tags: 
 - barcamp

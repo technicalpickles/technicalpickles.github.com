@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/getting-back-to-my-vim-roots-with-macvim.html
 title: Getting back to my vim roots with MacVim
 tags: 
 - macvim

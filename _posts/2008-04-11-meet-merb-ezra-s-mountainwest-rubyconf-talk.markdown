@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/meet-merb-ezra-s-mountainwest-rubyconf-talk.html
 title: "Meet Merb: Ezra's MountainWest RubyConf Talk"
 tags: 
 - merb

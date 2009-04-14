@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/first-post.html
 title: First Post!
 tags: []
 

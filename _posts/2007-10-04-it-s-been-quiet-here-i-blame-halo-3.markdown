@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/it-s-been-quiet-here-i-blame-halo-3.html
 title: It's been quiet here... I blame Halo 3
 tags: 
 - gaming

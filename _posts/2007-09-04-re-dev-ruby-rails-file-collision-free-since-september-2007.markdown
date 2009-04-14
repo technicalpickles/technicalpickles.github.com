@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/re-dev-ruby-rails-file-collision-free-since-september-2007.html
 title: "RE: dev-ruby/rails: File Collision Free Since September 2007!"
 tags: 
 - eselect

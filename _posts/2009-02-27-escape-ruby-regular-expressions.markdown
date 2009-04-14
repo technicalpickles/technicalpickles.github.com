@@ -1,5 +1,4 @@
 ---
-permalink: /posts/escape-ruby-regular-expressions.html
 layout: post
 title: Escape Ruby Regular Expressions
 ---

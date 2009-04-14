@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/using-markdown-in-vim.html
 title: Using Markdown in vim
 tags: 
 - bluecloth

@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/up-and-running-with-rails-and-yui-css.html
 title: Up and running with Rails and YUI CSS
 tags: 
 - css

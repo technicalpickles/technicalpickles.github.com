@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/use-actioncontroller-testcase.html
 title: Use ActionController::TestCase
 tags: 
 - rails

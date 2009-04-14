@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/stop-net-http-dead-in-its-tracks-with-fakeweb.html
 title: Stop Net::HTTP dead in its tracks with fakeweb
 tags: 
 - net::http

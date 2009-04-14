@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/dealing-with-libraries-that-like-breaking-their-apis.html
 title: Dealing with libraries that like breaking their APIs
 tags: 
 - groovy

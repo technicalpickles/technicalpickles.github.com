@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/test-or-die-validates-uniqueness-of-shoulda-and-factory-girl-edition.html
 title: " Test Or Die: Validates Uniqueness Of, Shoulda and Factory Girl Edition"
 tags: 
 - model

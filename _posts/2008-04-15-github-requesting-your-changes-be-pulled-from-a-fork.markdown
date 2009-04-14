@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/github-requesting-your-changes-be-pulled-from-a-fork.html
 title: "GitHub: Requesting your changes be pulled from a fork"
 tags: 
 - git

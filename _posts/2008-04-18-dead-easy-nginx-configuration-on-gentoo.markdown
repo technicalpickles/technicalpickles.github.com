@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/dead-easy-nginx-configuration-on-gentoo.html
 title: Dead easy nginx configuration on Gentoo
 tags: 
 - gentoo

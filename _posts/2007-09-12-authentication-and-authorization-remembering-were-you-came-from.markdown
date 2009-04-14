@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/authentication-and-authorization-remembering-were-you-came-from.html
 title: "Authentication and authorization: Remembering were you came from"
 tags: 
 - authentication

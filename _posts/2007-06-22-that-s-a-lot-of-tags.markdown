@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/that-s-a-lot-of-tags.html
 title: That's a lot of tags!!
 tags: 
 - acts_as_taggable_on_steroids

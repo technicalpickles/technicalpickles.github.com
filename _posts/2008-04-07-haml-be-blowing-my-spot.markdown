@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/haml-be-blowing-my-spot.html
 title: Haml be blowing my spot
 tags: 
 - haml

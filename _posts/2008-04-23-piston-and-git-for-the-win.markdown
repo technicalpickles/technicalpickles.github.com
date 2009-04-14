@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/piston-and-git-for-the-win.html
 title: piston and git for the win
 tags: 
 - git

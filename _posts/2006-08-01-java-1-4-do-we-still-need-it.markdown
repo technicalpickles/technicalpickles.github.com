@@ -1,5 +1,4 @@
 --- 
-permalink: /posts/java-1-4-do-we-still-need-it.html
 title: "Java 1.4: Do we still need it?"
 tags: 
 - gentoo
