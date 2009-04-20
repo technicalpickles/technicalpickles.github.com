@@ -3,20 +3,25 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+	<title>technical.pickles - josh on technical stuff</title>
+
 	<link href="/posts.atom" rel="self" type="application/atom+xml"/>
 	<link href="/posts.html" type="text/html"/>
-	<id>tag:technicalpickles.com,2005:/posts</id>
+
+	<updated>{{ site.posts.first.date | date_to_xml_schema }}</updated>
 	<author>
 		<name>Josh Nichols</name>
 		<email>josh@technicalpickles.com</email>
 	</author>
 
-	{% for post in site.rss_posts %}
+	<id>tag:technicalpickles.com,2005:/posts</id>
+
+	{% for post in site.posts %}
 	<entry>
+		<title>{{ post.title }}</title>
+		<link href="http://technicalpickles.com{{post.url}}" rel="self" type="text/html"/>
 		<id>http://technicalpickles.com{{post.id}}</id>
 		<updated>{{ post.date | date_to_xml_schema }}</updated>
-		<link href="http://technicalpickles.com{{post.url}}" rel="self" type="text/html"/>
-		<title>{{ post.title }}</title>
 		<content type="html">{{ post.content | xml_escape }}</content>
 	</entry>
 	{% endfor %}
