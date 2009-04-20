@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'rake'
-require 'jekyll/tasks'
+#require 'jekyll/tasks'
 
-Jekyll::Tasks.new do |jekyll|
+#Jekyll::Tasks.new do |jekyll|
   #jekyll.rdiscount = true
-  jekyll.pygments = true
-end
+  #jekyll.pygments = true
+#end
 
 require 'vlad'
 
