@@ -1,0 +1,10 @@
+---
+layout: post
+title: Tumbling away
+---
+
+Blog posts are hard. Tweets are easy. Tumblr is somewhere in between.
+
+I've began a new tumblr, "Technical Pickle Jar":http://technicalpicklejar.tumblr.com/. The general intent is that it captures my current softwarey thoughts, that haven't quite matured to full blog post status.
+
+So, if you're dying to know what's on my mind, "check it out":http://technicalpicklejar.tumblr.com/

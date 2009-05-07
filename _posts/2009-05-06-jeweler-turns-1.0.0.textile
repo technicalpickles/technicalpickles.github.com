@@ -1,0 +1,103 @@
+---
+title: Jeweler turns 1.0.0
+layout: post
+---
+
+There's always a certain amount of stigma, fear, and uncertainty around the doing the big 1.0 release. I finally got over that for "Jeweler":http://technicalpickles.github.com/jeweler/. So, be hold! Jeweler 1.0.0.
+
+For the uninitiated, Jeweler is a tool for creating and managing RubyGems projects. It lets you quickly go from 0 to released gem. It also simplifies managing your gem after you create it.
+
+There are two main components to jeweler: the generator for creating an initial project, and the rake tasks for managing versioning and releases.
+
+h3. Install it
+
+ <pre><code>
+    sudo gem install jeweler
+ </code></pre>
+
+h3. The generator
+
+The simplest incantation of the jeweler is this:
+
+ <pre><code>
+    jeweler your-awesome-gem
+ </code></pre>
+
+This creates a local git repository with a basic skeleton for your project. It includes things like a Rakefile, a template to put your gem's code in, a test helper, a failing test case, and a LICENSE. It also setup to be pushed to "GitHub":http://github.com and includes a reasonable gitignore file.
+
+By default, you'll get Shoulda flavored tests, but you can opt to go with test/unit, minitest, rspec, bacon, or micronaut. For example:
+
+ <pre><code>
+    jeweler --micronaut your-awesome-gem
+ </code></pre>
+
+If you want to use cucumber, you can have that too. It'll be setup for whichever testing framework you choose:
+
+ <pre><code>
+   jeweler --micronaut --cucumber your-awesome-gem
+ </code></pre>
+
+You can also choose to have a repository created for you on GitHub, with RubyGem creation enabled:
+
+ <pre><code>
+   jeweler --create-repo your-awesome-gem
+ </code></pre>
+
+While originally intended specifically to work with GitHub's gem support, it eventually was realized that it'd be nice to release to "RubyForge":http://rubyforge.org too. You can add support to your project:
+
+ <pre><code>
+   jeweler --rubyforge your-awesome-gem
+ </code></pre>
+
+If you look at your Rakefile, you'll notice that a number of tasks were generated for you. Jeweler itself provides a number of tasks, as mentioned, but it also tasks for rdoc, test or spec, and rcov. However, your Rakefile doesn't depend specifically on jeweler. This means that someone randomly cloning your project, and messing around with patching/testing it, then they don't need to have jeweler installed.
+
+h3. The tasks
+
+When you are ready to do a release, you first create the version. It is stored in VERSION (formerly VERSION.yml, but both work). This only updates what jeweler thinks the version is, and doesn't actually release anything. It defaults to 0.0.0, but you can choose to specify your own:
+
+ <pre><code>
+    rake version:write
+    rake version:write MAJOR=1 MINOR=5 PATCH=3
+ </code></pre>
+
+You'd typically release after this initial version created. Releasing involves generating a gemspec based on your version, and pushing it to GitHub, and tagging the release:
+
+ <pre><code>
+    rake release
+ </code></pre>
+
+After your initial release, you can bump the version easily. You can choose to do the major, minor, or patch version. For 1.5.3, 1 is the major, 5 is the minor, and 3 is the patch:
+
+ <pre><code>
+   rake version:bump:patch
+   rake version:bump:minor
+   rake version:bump:major
+ </code></pre>
+
+Version bumping only updates what version jeweler thinks you are using. You'll need to do a release to actually release:
+
+ <pre><code>
+    rake release
+ </code></pre>
+
+If you've configured your project for releasing to RubyForge, and you've registered your project, you can prepare RubyForge for it:
+
+ <pre><code>
+   rake rubyforge:setup
+ </code></pre>
+
+Then you can release the docs and gem:
+
+ <pre><code>
+   rake rubyforge:release
+ </code></pre>
+
+h3. More resources
+
+This has been a pretty high level overview and scant on details, so you might want to check out:
+
+* The "README":http://github.com/technicalpickles/jeweler/blob/master/README.markdown
+* The "Wiki":http://wiki.github.com/technicalpickles/jeweler
+* The "RDoc":http://rdoc.info/projects/technicalpickles/jeweler
+* The "Issues":http://github.com/technicalpickles/jeweler/issues
+* The "Source":http://github.com/technicalpickles/jeweler
