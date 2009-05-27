@@ -8,7 +8,7 @@ layout: nil
 	<link href="http://technicalpickles.com/posts.atom" rel="self" type="application/atom+xml"/>
 	<link href="http://technicalpickles.com/posts.html" type="text/html"/>
 
-	<updated>{{ site.posts.first.date | date_to_xml_schema }}</updated>
+	<updated>{{ site.posts.first.date | date_to_xmlschema }}</updated>
 	<author>
 		<name>Josh Nichols</name>
 		<email>josh@technicalpickles.com</email>
@@ -16,12 +16,12 @@ layout: nil
 
 	<id>tag:technicalpickles.com,2005:/posts</id>
 
-	{% for post in site.posts %}
+	{% for post in site.posts limit:10 %}
 	<entry>
 		<title>{{ post.title }}</title>
 		<link href="http://technicalpickles.com{{post.url}}" rel="alternate" type="text/html"/>
 		<id>http://technicalpickles.com{{post.id}}</id>
-		<updated>{{ post.date | date_to_xml_schema }}</updated>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<content type="html">{{ post.content | xml_escape }}</content>
 	</entry>
 	{% endfor %}
