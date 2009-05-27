@@ -21,7 +21,7 @@ This summary follows the format of the agenda.
 related ebuilds, it produced following list:</p>
 
   <ul>
-   <li><p>betelgeuse (Petteri Räty)</p></li>
+   <li><p>betelgeuse (Petteri Raty)</p></li>
    <li>caster (Vlastimil Babka)</li>
    <li>gurligebis (Bjarke Istrup Pedersen)</li>
    <li>nelchael (Krzysiek Pawlik)</li>
