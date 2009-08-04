@@ -25,7 +25,7 @@ If you were to say a few things about his programmer lifestyle, they might inclu
  * He is unafraid of code spelunking in foreign codebases to better understand them, or sometimes just for fun.
  * He has an acute sense of [code smell](http://martinfowler.com/bliki/CodeSmell.html).
  * He lives and breathes [open source software](http://github.com/technicalpickles).
- * He believes in testing, continuous integration, and contantly refactoring to improve code quality.
+ * He believes in testing, continuous integration, and constantly refactoring to improve code quality.
 
 Currently, Josh is job hunting, organizing the budding [Boston Ruby Group](http://bostonrb.org), among many other things.
 
