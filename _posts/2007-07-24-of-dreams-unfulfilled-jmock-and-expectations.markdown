@@ -9,34 +9,38 @@ layout: post
 I just had an observation about the pattern of setting up expectations 
 of our [jmock](http://www.jmock.org/) tests. So here's a typical code block for setting it up:
 
-    final List<UserGroup> groups = this.groups;
-    final List<User> users = this.users;
-    final User user = users.get(0);
+{% highlight java %}
+final List<UserGroup> groups = this.groups;
+final List<User> users = this.users;
+final User user = users.get(0);
 
-    final UserService userService = this.userService;
-    this.jmockCtx.checking(new Expectations()
-    {{
-      // first, rehydrate
-      allowing(userService).findAllGroups();
-      will(returnValue(groups));
-      allowing(userService).findAllUsers();
-      will(returnValue(users));
-      will(returnValue(true));
-      // now, save
-      one(userService).createUser(user);
-      one(userService).findAllUsers();
-      will(returnValue(users));
-    }});
+final UserService userService = this.userService;
+this.jmockCtx.checking(new Expectations()
+\{\{
+  // first, rehydrate
+  allowing(userService).findAllGroups();
+  will(returnValue(groups));
+  allowing(userService).findAllUsers();
+  will(returnValue(users));
+  will(returnValue(true));
+  // now, save
+  one(userService).createUser(user);
+  one(userService).findAllUsers();
+  will(returnValue(users));
+\}\});
+{% endhighlight %}
 
 I was thinking, hey, why not just use this.groups, this.users, etc, 
 directly in the expectations, instead of making new references to them? It might look like:
 
-    this.jmockCtx.checking(new Expectations()
-    {{
-      // first, rehydrate
-      allowing(this.userService).findAllGroups();
-      ...
-    }});
+{% highlight java %}
+this.jmockCtx.checking(new Expectations()
+\{\{
+  // first, rehydrate
+  allowing(this.userService).findAllGroups();
+  ...
+\}\});
+{% endhighlight %}
 
 This ends up being an error because 'userService' cannot be resolved or 
 is not a field. Unexpected behavior, right? Almost.
