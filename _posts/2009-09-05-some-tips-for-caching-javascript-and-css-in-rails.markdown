@@ -35,7 +35,7 @@ Note: you'll need to have all the files you want cached to be part of a single `
     
 I'm going to have this cached into a `javascripts/cached/all.js`. I like keeping them in a cached directory, because it makes cleanup a bit easier. Here's the cached version:
 
-    = javascript_include_tag 'jquery.js', 'jquery-ui.js', 'jrails.js', 'application.js', :cache => 'cache/all'
+    = javascript_include_tag 'jquery.js', 'jquery-ui.js', 'jrails.js', 'application.js', :cache => 'cached/all'
 
 Now try clicking around your site. Take a gander at the generate HTML, and you should now see only one script tag for `/javascripts/cached/all.js`.
 
