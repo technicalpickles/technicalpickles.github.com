@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some jeweler resources you probably'
+title: "Some jeweler resources you probably didn't know about"
 ---
 
 If you've been using [jeweler](http://technicalpickles) for awhile or are just starting out, there are a few resources you should be aware of. I admit, maybe I've been a little undervocal about their existence. Anyways, here they are:
