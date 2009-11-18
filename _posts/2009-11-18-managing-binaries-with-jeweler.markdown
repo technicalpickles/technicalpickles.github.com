@@ -46,6 +46,6 @@ Maybe you don't like there automatically being stuff. Perhaps there's stuff that
 {% highlight ruby %}
 Jeweler::Tasks.new do |gem|
   # The plebs aren't ready for super-jeweler yet...
-  s.executables = ["jeweler"] # note, this is just the file name, not the full path inside of bin
+  gem.executables = ["jeweler"] # note, this is just the file name, not the full path inside of bin
 end
 {% endhighlight %}
