@@ -69,11 +69,3 @@ body#resume ul,
 body#resume dl {
 	margin-top: 0.125em;
 }
-
-body#resume .role h4,
-body#resume .role p {
-  margin-left: 0.75em;
-}
-body#resume .role ul {
-  margin-left: 2em;
-}
