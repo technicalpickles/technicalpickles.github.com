@@ -27,7 +27,7 @@ If you were to say a few things about his programmer lifestyle, they might inclu
  * He lives and breathes [open source software](http://github.com/technicalpickles).
  * He believes in testing, continuous integration, and constantly refactoring to improve code quality.
 
-Currently, Josh is working at [Rails Machine](http://railsmachine.com), organizing the budding [Boston Ruby Group](http://bostonrb.org), among many other things.
+Currently, Josh is working at [Rails Machine](http://railsmachine.com), among many other things.
 
 ## Some random facts about Josh
 
