@@ -1,5 +1,5 @@
 ---
-title: Crosspost: Developing and testing system automation with capistrano-cowboy 
+title: 'Crosspost: Developing and testing system automation with capistrano-cowboy'
 layout: post
 tags:
 - capistrano
