@@ -9,9 +9,9 @@ tags:
 - subdomain-fu
 ---
 
-While hacking on a new application, it took a good few weeks to find out how to, using [cucumber](http://cukes.info/), interact with domains that weren't localhost. Consider this a note to my future self :)
+While hacking on a new application, it took a good few weeks to find out how to, using [cucumber](http://cukes.info/) and [Capybara](https://github.com/jnicklas/capybara), interact with domains that weren't localhost. Consider this a note to my future self :)
 
-Let's imagine your Rails application has a parimary domain and allows users to have subdomains (as if, granted by the power of [subdomain-fu](https://github.com/jnicklas/capybara)). By default, everything is hitting localhost, for example:
+Let's imagine your Rails application has a parimary domain and allows users to have subdomains (as if, granted by the power of [subdomain-fu](https://github.com/mbleigh/subdomain-fu)). By default, everything is hitting localhost, for example:
 
 {% highlight ruby %}
 visit "/about" # => http://localhost/about
