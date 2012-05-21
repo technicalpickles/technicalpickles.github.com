@@ -26,16 +26,11 @@ title: home
 </div>
 
 
-<dl class="archive">
-	<h1>Older posts</h1>
-	{% for post in site.posts %}
-		{% if post != first_post %}
-		<dt>
-		    <a href="{{ post.url }}">{{ post.title }}</a>
-		</dt>
-		<dd>
-		    {{ post.date | date: '%B %d, %Y' }}
-		</dd>
+<h1>Older posts</h1>
+<ul class="archive">
+{% for post in site.posts %}
+  {% if post != first_post %}
+    <li>{{ post.date | date: '%B %d, %Y' }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
 		{% endif %}
 	{% endfor %}
 </ul>
