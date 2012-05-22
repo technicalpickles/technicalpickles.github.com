@@ -1,10 +1,7 @@
 ---
 title: Rsync an iTunes Library like a boss
 layout: post
-tags:
-- mac
-- itunes
-- rsync
+tags: mac,itunes,rsync
 ---
 
 Motivation

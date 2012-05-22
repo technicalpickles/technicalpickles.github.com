@@ -2,35 +2,12 @@
 layout: default
 title: home
 ---
-{% assign first_post = site.posts.first %}
-<h1>Latest post</h1>
-<div class="post">
-	<h2 class="title"><a href="{{ first_post.url }}">{{ first_post.title}}</a></h2>
-	<div class="metadata">
-		{% if first_post.tags %}
-		<div class="tags">
-			Tagged with
-			{% for tag in first_post.tags %}
-			{{ tag }}
-			{% endfor %}
-		</div>
-		{% endif %}
 
-		<div class="published_at">Published on {{ first_post.date | date: '%B %d, %Y'}}</div>
+<p>Home to Josh Nichols, a.k.a. Pickles, a.k.a. technicalpickles, a.k.a. <a href="http://twitter.com/techpickles">@techpickles</a>.</p>
 
-		<a href="{{ first_post.url }}#disqus_thread">View Comments</a>
-	</div>
-	<div class="content">
-		{{ first_post.content }}
-	</div>
-</div>
-
-
-<h1>Older posts</h1>
+<h2>Blog Posts</h2>
 <ul class="archive">
 {% for post in site.posts %}
-  {% if post != first_post %}
-    <li>{{ post.date | date: '%B %d, %Y' }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endif %}
-	{% endfor %}
+  <li>{{ post.date | date: '%b %d, %Y' }} - <a href="{{ post.url }}">{{ post.title }}</a> </li>
+{% endfor %}
 </ul>
