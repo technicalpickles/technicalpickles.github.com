@@ -2,3 +2,5 @@ safe:        true
 pygments:    true
 markdown:    maruku
 permalink:   /posts/:title
+destination: public
+exclude: ["CNAME", "Rakefile", "README.md", "public"]
