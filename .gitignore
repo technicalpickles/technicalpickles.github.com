@@ -1,3 +1,5 @@
 _site
 _pkg
 tmp
+bin
+.bundle

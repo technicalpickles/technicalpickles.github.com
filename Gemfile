@@ -6,3 +6,4 @@ gem 'bluecloth'
 gem 'RedCloth'
 gem 'rack-jekyll'
 gem 'liquid', '2.2.2' # lock to fix crazy errors: https://github.com/imathis/octopress/issues/243
+gem 'powder'
