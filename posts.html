@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Thoughts - Josh Nichols on the Internet
+title: Where I Sometimes Write Things - Josh Nichols on the Internet
 ---
 
-<h1>Random Things I Typed Out</h1>
+<h1>Where I Sometimes Write Things</h1>
 <hr/>
 
 {% for post in site.posts %}
-  <small>{{ post.date | date_to_string }}</small>
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <section class="post">
+    <time>{{ post.date | date_to_string }}</time>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </section>
 {% endfor %}
