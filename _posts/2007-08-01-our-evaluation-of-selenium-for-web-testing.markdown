@@ -19,11 +19,11 @@ Given its maturity, [Selenium](http://www.openqa.org/selenium/) seemed like the 
 
 Here's some things we liked:
 
-  * An IDE, as a Firefox Extension, for building unit tests
-  * Support for testing in a many languages, such as Java, Ruby, their own Selenese (basically glorified HTML)
-  * The IDE generates Selenese, which can easily be converted to one of the above mentioned languages
-  * Support for running in multiple browsers across multiple platforms
-  * Support for running selenese tests using ant
+* An IDE, as a Firefox Extension, for building unit tests
+* Support for testing in a many languages, such as Java, Ruby, their own Selenese (basically glorified HTML)
+* The IDE generates Selenese, which can easily be converted to one of the above mentioned languages
+* Support for running in multiple browsers across multiple platforms
+* Support for running selenese tests using ant
 
 All in all, pretty cool stuff.
 

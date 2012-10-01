@@ -6,9 +6,9 @@ tags:
 - ruby
 layout: post
 ---
-<p>I must admit, I've been experimenting with Ruby on Rails with increased frequency of late. Being heavily invested both in Java on the Gentoo and professional fronts, this seems almost like... treachery <img src="http://planet.gentoo.org/developers/rsc/smilies/icon_twisted.gif" alt=":&gt;" class="middle"></p>
+<p>I must admit, I've been experimenting with Ruby on Rails with increased frequency of late. Being heavily invested both in Java on the Gentoo and professional fronts, this seems almost like... treachery</p>
 
-<p>I must say, it has been quite refreshing. It is quite a lovely development platform. I won't go into details about a comparison to developing on the typical Java platform, as I'm sure there are plenty of those on the interblarg already <img src="http://planet.gentoo.org/developers/rsc/smilies/icon_smile.gif" alt=":)" class="middle"></p>
+<p>I must say, it has been quite refreshing. It is quite a lovely development platform. I won't go into details about a comparison to developing on the typical Java platform, as I'm sure there are plenty of those on the interblarg already :)</p>
 
 <p>I decided this past weekend that would try to help out with Ruby on Gentoo, and so joined the ruby herd.</p>
 

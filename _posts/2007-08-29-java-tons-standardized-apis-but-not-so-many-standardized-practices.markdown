@@ -19,11 +19,11 @@ I'll illustrate with the example of building a developer environment.
 
 Setting up developer environments typically sucks. Does this sound familar?
 
-  * Download a JDK, install it somewhere
-  * Download [Tomcat](http://tomcat.apache.org/), extract it somewhere else
-  * Download [Eclipse](http://www.eclipse.org/), extract it somewhere random
-  * Download [Ant](http://ant.apache.org), extract it somewhere completely different
-  * Hack together a `.bash_profile`, and update the PATH to point at all these random paths you've put together
+* Download a JDK, install it somewhere
+* Download [Tomcat](http://tomcat.apache.org/), extract it somewhere else
+* Download [Eclipse](http://www.eclipse.org/), extract it somewhere random
+* Download [Ant](http://ant.apache.org), extract it somewhere completely different
+* Hack together a `.bash_profile`, and update the PATH to point at all these random paths you've put together
 
 If you are lucky, there might be scripts to automate this, or maybe a tarball with everything you need and the appropriate shell files to get a sane shell environment.
 
@@ -42,10 +42,9 @@ In the last scenario, we're entirely leveraging tools that are already out there
 
 So what exactly are the tools doing here?
 
-  * Making your life easier
-  * Creating de facto standards
+* Making your life easier
+* Creating de facto standards
 
 ## Summary
 
 Build a better future through superior tools. Yeah, I like the ring of that.
-

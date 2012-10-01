@@ -10,6 +10,6 @@ Here's you latest dose of link action. I have been told that del.icio.us and oth
 
 Anyways, today's links are looking pretty Rails heavy.
 
-  * [So, You Want Your Own Counter, Huh?](http://errtheblog.com/post/8444) From time to time, I find myself remembering some of the fads of yesteryear. Blink tags, Java applets, Guest Books, Counters. An article over at [Err the Blog](http://errtheblog.com) takes the idea of a counter, and redoes it in a Rails-y, Ruby-ish way.
-  * [Quotes and Notes from DHH's RailsConf 2007 Keynote](http://gilesbowkett.blogspot.com/2007/05/quotes-and-notes-from-dhhs-railsconf.html) Based on some of the quotes/notes, there's a lot of great work being done to make life better in the Rails world.
-  * [Quotes and Notes from DHH's RailsConf 2007 Keynote](http://ryandaigle.com/) Came across this by way of the previous link. This is the blog of one of the core Rails developers, and among other things, Ryan posts the latest and greatest features going on in Rails edge.
+* [So, You Want Your Own Counter, Huh?](http://errtheblog.com/post/8444) From time to time, I find myself remembering some of the fads of yesteryear. Blink tags, Java applets, Guest Books, Counters. An article over at [Err the Blog](http://errtheblog.com) takes the idea of a counter, and redoes it in a Rails-y, Ruby-ish way.
+* [Quotes and Notes from DHH's RailsConf 2007 Keynote](http://gilesbowkett.blogspot.com/2007/05/quotes-and-notes-from-dhhs-railsconf.html) Based on some of the quotes/notes, there's a lot of great work being done to make life better in the Rails world.
+* [Quotes and Notes from DHH's RailsConf 2007 Keynote](http://ryandaigle.com/) Came across this by way of the previous link. This is the blog of one of the core Rails developers, and among other things, Ryan posts the latest and greatest features going on in Rails edge.

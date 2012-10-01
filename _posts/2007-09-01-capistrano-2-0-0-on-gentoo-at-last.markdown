@@ -28,5 +28,5 @@ I also had to do a slotmove of the existing versions, putting 1.4.x in SLOT=1 an
 
 Without further ado, make with the emerging.
 
-	emerge -atv =capistrano-1* =capistrano-2* # get both versions
-	emerge -atv capistrano # or just the latest
+    emerge -atv =capistrano-1* =capistrano-2* # get both versions
+    emerge -atv capistrano # or just the latest

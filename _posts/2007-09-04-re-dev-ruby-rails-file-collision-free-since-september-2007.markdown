@@ -28,7 +28,7 @@ And in 1.2.0, 1.2.1, 1.2.2, and 1.2.3, we have:
 
     DEPEND=">=dev-lang/ruby-1.8.5
     		-snip-
-            !&lt;dev-ruby/rails-1.1.6-r1"
+            !<dev-ruby/rails-1.1.6-r1"
 
 I then removed the blockers in eselect-rails, so now it just depends on eselect.
 

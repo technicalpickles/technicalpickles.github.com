@@ -6,13 +6,13 @@ tags:
 layout: post
 ---
 
-			<p>[Note: I'm actually referring to open source Java software and libraries, not Java itself]</p>
+<p>[Note: I'm actually referring to open source Java software and libraries, not Java itself]</p>
 
 <p>I've been maintaining and working with Java packages for pretty close to a year and a half now. And I hate to say it, but it is only becoming more apparent that things are less than ideal.</p>
 
 <p>Sure, there are a multitude of projects out there, great projects. Eclipse, Tomcat, Netbeans, Azureus, all of the Apache Jakarta project, and many more. For a developer, it's great.</p>
 
-<p>For a packager... it's not so nice of a picture. Builds packages vary from project to project with some kind of unholy glow. While there are some defactor standards out ther e, ie using ant or maven, it ain't pretty.</p>
+<p>For a packager... it's not so nice of a picture. Builds packages vary from project to project with some kind of unholy glow. While there are some defactor standards out there, ie using ant or maven, it ain't pretty.</p>
 
 <p>How do you build your javadocs? Is the target named doc, docs, javadocs, javadoc, or api?<br>
 How do you manage your dependencies on third party libraries? Include every jar under the sun, bundle the source in with your own, or download the from the interweb?</p>

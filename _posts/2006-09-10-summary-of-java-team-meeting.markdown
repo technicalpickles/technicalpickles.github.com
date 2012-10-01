@@ -6,13 +6,9 @@ tags:
 layout: post
 ---
 
-<p><i>Cross posted to gentoo-dev and gentoo-java mailing list.</i>
-</p>
-<p>
-Yesterday, the Java team held a meeting.
-The agenda for the meeting is available at <a href="http://overlays.gentoo.org/proj/java/wiki/September_2006_Meeting_Outline">here</a>.
-This summary follows the format of the agenda.
-</p>
+*Cross posted to gentoo-dev and gentoo-java mailing list.*
+
+Yesterday, the Java team held a meeting.  The agenda for the meeting is available at <a href="http://overlays.gentoo.org/proj/java/wiki/September_2006_Meeting_Outline">here</a>.  This summary follows the format of the agenda.
 
 <ol>
 <li><p><b>Personel updates</b></p>
@@ -21,7 +17,7 @@ This summary follows the format of the agenda.
 related ebuilds, it produced following list:</p>
 
   <ul>
-   <li><p>betelgeuse (Petteri Raty)</p></li>
+   <li>betelgeuse (Petteri Raty)</li>
    <li>caster (Vlastimil Babka)</li>
    <li>gurligebis (Bjarke Istrup Pedersen)</li>
    <li>nelchael (Krzysiek Pawlik)</li>
@@ -79,7 +75,7 @@ selected VM.</p>
 available at <a href="http://dev.gentoo.org/%7Enelchael/java-generation-2/">status
 page</a> along with 'current' state at <a href="http://dev.gentoo.org/%7Enelchael/java-generation-2/not-migrated-current">not-migrated-current</a>.</p></li>
 
-<li><p><b>Feature requests</b><br><br></p>
+<li><p><b>Feature requests</b></p>
 
 <p>Only one point made it's way into "Feature requests": virtuals for several Java
 packages: javamail, jaf and others. To better understand the problem lets take a
@@ -102,27 +98,27 @@ Java system is stablized.</p>
 list possible upgrade paths. Additionally following documents need work:</p>
 
   <ul>
-   <li><p><a href="http://www.gentoo.org/proj/en/java/tomcat-guide.xml">Tomcat Guide</a></p></li>
+   <li><a href="http://www.gentoo.org/proj/en/java/tomcat-guide.xml">Tomcat Guide</a></li>
    <li><a href="http://overlays.gentoo.org/proj/java/browser/docs/resin-guide.xml">Resin
 Guide (not published yet)</a></li>
    <li><a href="http://overlays.gentoo.org/proj/java/wiki/Common_Problems">Common
 Problems</a></li>
    <li><a href="http://overlays.gentoo.org/proj/java/wiki/How_to_be_a_good_upstream">How
 to be a good upstream</a></li>
-  <p></p></ul><br>
+  </ul>
 
- <p>Following documents need to be created:<br><br></p>
+ <p>Following documents need to be created:</p>
 
 <ol>
    <li>How to be a good downstream - document decribing best practices about
 handling Java</li>
    <li>Guide to using maven in ebuilds - this document is currently blocked by
-not complete maven ebuilds (see 'Future plans')</li></ol><p><br></p>
+not complete maven ebuilds (see 'Future plans')</li></ol>
 
- <p>We are also looking for articles that cover Java support on Gentoo.<br><br>
+ <p>We are also looking for articles that cover Java support on Gentoo.
 </p>
 
-</li><li><p><b>QA / static analysis tools</b><br><br></p>
+</li><li><p><b>QA / static analysis tools</b></p>
 
 <p>Using die after eant in ebuilds has been deprecated: eant dies on it's own,
 so:</p><pre>eant ... || die "eant failed"</pre>
@@ -138,7 +134,6 @@ but current state of this effort is unknown. Developer wltjr suggested making
 such plugin also for Netbeans. One possible way of creating such plugin (aside
 from implementing syntax highlighting) is to use Jython to use checks from
 repoman.</p>
-<p></p>
 
 </li><li><p><b>Future plans</b></p>
 
@@ -167,8 +162,8 @@ Java 1.7 has been postponed until 1.6 comes out.</p></li>
 <p>Following topics were mentioned that were not on agenda:</p>
 
  <ul>
-  <li><p>Estimated EOL (end of life) for generation 1: until all ebuilds are<br>
-migrated to generation 2 and stabilized we have to keep generation 1 alive in<br>
+  <li><p>Estimated EOL (end of life) for generation 1: until all ebuilds are
+migrated to generation 2 and stabilized we have to keep generation 1 alive in
 tree</p></li>
   <li>packages that break due to generation 2:
    <ul>
@@ -185,4 +180,4 @@ example <a href="http://java.sun.com/webservices/jwsdp/">Sun JWSDP</a>, JAF,
 Javamail</li>
  </ul>
 </li>
-</ol>					
+</ol>

@@ -6,9 +6,9 @@ tags:
 layout: post
 ---
 
-			<p>The question of when Xfce 4.4 will be unmasked has been coming up with increasing frequency.</p>
+<p>The question of when Xfce 4.4 will be unmasked has been coming up with increasing frequency.</p>
 
-<p>The default answer is... wait, for it, when it's ready <img src="http://planet.gentoo.org/developers/rsc/smilies/icon_mrgreen.gif" alt=":&gt;&gt;" class="middle"></p>
+<p>The default answer is... wait, for it, when it's ready :)</p>
 
 <p>A more elaborate answer follows:</p>
 

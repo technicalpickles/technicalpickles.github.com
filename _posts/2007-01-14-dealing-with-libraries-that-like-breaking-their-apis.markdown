@@ -7,7 +7,7 @@ tags:
 layout: post
 ---
 
-			<p>I'm currently working on making use of a <a href="http://groovy.codehaus.org/">Groovy</a> on a project of mine which uses <a href="http://www.hibernate.org">Hibernate</a> and <a href="http://www.springframework.org">Spring</a> among other things.</p>
+<p>I'm currently working on making use of a <a href="http://groovy.codehaus.org/">Groovy</a> on a project of mine which uses <a href="http://www.hibernate.org">Hibernate</a> and <a href="http://www.springframework.org">Spring</a> among other things.</p>
 
 <p>My code wasn't particularly well tested in terms of unit tests. By this, of course, I mean there were no unit tests.</p>
 

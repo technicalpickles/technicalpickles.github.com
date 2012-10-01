@@ -37,10 +37,10 @@ Extract the file somewhere convienent for you to get at, and you'll get a 'yui' 
 
 The files we care about are (relative to yui directory):
 
-  * build/reset/reset.css
-  * build/fonts/fonts.css
-  * build/grids/grids.css
-  * build/base/base.css
+* build/reset/reset.css
+* build/fonts/fonts.css
+* build/grids/grids.css
+* build/base/base.css
 
 In your rails app, create the directory 'public/stylesheets/yui'. The specific directory doesn't matter, but it should be somewhere under 'public/stylesheets'.
 

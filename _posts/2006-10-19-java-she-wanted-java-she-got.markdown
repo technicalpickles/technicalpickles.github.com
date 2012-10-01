@@ -6,7 +6,7 @@ tags:
 layout: post
 ---
 
-			<p>It is with great pride that I am able to announce the 'new' Java system is now stable on all archs where we support Java! That means amd64, ia64, ppc, ppc64, and x86.</p>
+It is with great pride that I am able to announce the 'new' Java system is now stable on all archs where we support Java! That means amd64, ia64, ppc, ppc64, and x86.
 
 <p>In case you've been stuck in a cave somewhere, and hadn't heard anything about the new system, here are some features highlights:</p>
 
@@ -32,4 +32,4 @@ On a side note, if you have been using the new system for a while, there are a f
   <li>Remove the package.keywords entries if you had used them</li>
 </ul>
 
-<p>In other news... I've been always been a bit quiet on the blogging... but, I hope to change that, at least a little bit. I have some ideas for some writeups to show off Gentoo as a Java development platform... so stay tuned <img src="http://planet.gentoo.org/developers/rsc/smilies/icon_biggrin.gif" alt=":D" class="middle"></p>					
+<p>In other news... I've been always been a bit quiet on the blogging... but, I hope to change that, at least a little bit. I have some ideas for some writeups to show off Gentoo as a Java development platform... so stay tuned</p>					

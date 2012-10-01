@@ -17,7 +17,7 @@ After entering the loving embrace of [named routes](/blog/permalink/name-your-ro
     map.connect 'blog/permalink/:permalink.:format', :controller => 'blog',
       :action => 'permalink', :format => nil
 
-Yick. Seems like there's a bit of repeated code here. Fortunate for us, Ruby does have mechanisms for dealing with this, `with_options`. Essentially, it does some magic, such that you give it some options, and inside the block you provide it, you're able to indicate you want ot use those options in addition to any other options you may need. That's a bit wordy, so let the code speak for itself:
+Yick. Seems like there's a bit of repeated code here. Fortunate for us, Rails does have mechanisms for dealing with this, `with_options`. Essentially, it does some magic, such that you give it some options, and inside the block you provide it, you're able to indicate you want ot use those options in addition to any other options you may need. That's a bit wordy, so let the code speak for itself:
 
     map.with_options :controller => 'blog' do |blog|
       blog.with_options :action => 'by_tag' do |blog_by_tag|

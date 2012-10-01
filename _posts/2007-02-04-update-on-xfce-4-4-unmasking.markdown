@@ -6,7 +6,7 @@ tags:
 layout: post
 ---
 
-			<p>To follow up my previous post about unmasking Xfce 4.4...</p>
+<p>To follow up my previous post about unmasking Xfce 4.4...</p>
 
 <p>Since then, I went through the process of upgrading from 4.2 to 4.4. Found a few kinks, mostly with files collisions caused by files moving from one package to another. These have been since worked out.</p>
 

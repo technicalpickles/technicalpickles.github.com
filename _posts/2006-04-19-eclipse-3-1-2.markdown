@@ -6,6 +6,7 @@ tags:
 - java
 layout: post
 ---
+
 So, I've recently joined the dev-tools team in order to help maintain dev-util/eclipse-sdk. The ebuilds themselves haven't been touched much lately, aside from the occasional version bumps, and so have been in need of a little love.
 
 I've just added 3.1.2 to the tree recently. In terms of upstream changes since 3.1.1, there isn't too much to write home about. In terms of the ebuilds, I've manage clean up a number of things that would make mere mortals tremble. This isn't to say the ebuilds are quite ideal yet, but it is certainly a step in the right direction.

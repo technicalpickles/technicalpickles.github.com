@@ -8,13 +8,15 @@ tags:
 - ultraviolet
 layout: post
 ---
-Originally, I had implemented the main data entry using [TinyMCE](http://tinymce.moxiecode.com/). TinyMCE itself is a pretty cool piece of software. I mean, it gives you a full WYSIWYG (mostly) form, and the output is actual HTML. But in the end, it felt like a bit too much
+
+Originally, I had implemented the main data entry using [TinyMCE](http://tinymce.moxiecode.com/). TinyMCE itself is a pretty cool piece of software. I mean, it gives you a full WYSIWYG (mostly) form, and the output is actual HTML. But in the end, it felt like a bit too much.
 
 So, the issues I had were:
- * It was more like WYSISWYG (what you see is sort of what you get)
- * Icky markup
- * A bit of overhead from the extra javascript files loading
- * Not any way to do code highlighting. This was the breaking point, since I plan on having lots of these
+
+* It was more like WYSISWYG (what you see is sort of what you get)
+* Icky markup
+* A bit of overhead from the extra javascript files loading
+* Not any way to do code highlighting. This was the breaking point, since I plan on having lots of these
 
 After deciding to ditch TinyMCE, the next step was to figure out what to replace it with. There are a few out there for rails:
 
@@ -31,21 +33,21 @@ So I went with BlueCloth.
 
 Changes to my code were pretty trivial. I added this to my BlogPost model:
 
-          def to_html
-            BlueCloth.new(self.body).to_html
-          end
+    def to_html
+      BlueCloth.new(self.body).to_html
+    end
 
 And in my view, I changed the following bit:
 
-          <div class="blogbody">
-            <%= blog_post.body %>
-          </div>
+    <div class="blogbody">
+      <%= blog_post.body %>
+    </div>
 
 to...
 
-          <div class="blogbody">
-            <%= blog_post.to_html %>
-          </div>
+    <div class="blogbody">
+      <%= blog_post.to_html %>
+    </div>
 
 Easy peezy.
 

@@ -7,7 +7,7 @@ tags:
 layout: post
 ---
 
-			<p>This news is a bit belated by a few days but.... over the weekend, I spent some time getting the recently released <a href="http://groovy.codehaus.org">Groovy 1.0</a> into the tree.</p>
+<p>This news is a bit belated by a few days but.... over the weekend, I spent some time getting the recently released <a href="http://groovy.codehaus.org">Groovy 1.0</a> into the tree.</p>
 
 <p>In case you hadn't heard about it, Groovy is, among other things, a dynamic language that runs on the the Java VM. Some interesting data points about it:</p>
 
