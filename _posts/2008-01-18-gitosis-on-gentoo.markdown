@@ -111,4 +111,3 @@ Congratulations, you are now all set to manage and play with git on urserver unt
 ## Update Jan 22, 2008
 
 Robin Johnson aka robbat2, who maintains the ebuilds for gitosis, posted [some important notes about our gitosis package](http://robbat2.livejournal.com/217665.html). Mostly, there are some differences between our package and the upstream version of gitosis.
-

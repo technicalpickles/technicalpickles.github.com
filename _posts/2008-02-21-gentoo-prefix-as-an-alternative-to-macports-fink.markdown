@@ -15,15 +15,15 @@ Personally, I just use it to install all those command line tools and utilities 
 
 Here's my development-centric laundry list of things I've used it to install:
 
-  * version control  
-    * cvs
-    * darcs
-    * git
-  * Java stuff (yep, it supports Java using Apple's SDK)
-    * ant
-    * maven
-  * Others
-    * nmap
-    * keychain
+* version control  
+  * cvs
+  * darcs
+  * git
+* Java stuff (yep, it supports Java using Apple's SDK)
+  * ant
+  * maven
+* Others
+  * nmap
+  * keychain
 
 So remember kiddies, [Gentoo works on Mac OS X too](http://www.gentoo.org/proj/en/gentoo-alt/prefix/bootstrap-macos.xml)!

@@ -12,11 +12,11 @@ Let's use this opportunity to using git and [GitHub](http://github.com) to contr
 
 Here's a sky high view of the process:
  
- * Create a fix branch
- * Make changes
- * Push fix branch to GitHub
- * Browse to branch in browser
- * Submit a 'pull request' to the maintainer for review
+* Create a fix branch
+* Make changes
+* Push fix branch to GitHub
+* Browse to branch in browser
+* Submit a 'pull request' to the maintainer for review
  
 After the maintainer gets the request, they are free to do as they see fit. Accept it, tweak it, kick it, and so on.
  

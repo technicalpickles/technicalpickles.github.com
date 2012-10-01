@@ -20,7 +20,7 @@ Some random thoughts/observations from the trek:
 
  * I immediately regret not bringing gloves today.
  * Only a few other people were crazy enough to walk across the Longfellow bridge in this weather.
- * I don't envy people with stuck in traffic in the snow.
+ * I don't envy people stuck in traffic in the snow.
   * You can see a turquoise sedan in several shots. I'm pretty sure I was pacing it most of the ways, except I was stopping to take pictures
  * The iPhone interface isn't particularly fond of the cold, or wet snow
   * At times, I had to try a few times to unlock it. Not sure if this was my hands freezing, the iPhone freezing or being wet.
