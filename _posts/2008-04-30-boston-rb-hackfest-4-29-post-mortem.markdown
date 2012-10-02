@@ -12,21 +12,22 @@ tags:
 - sass
 layout: post
 ---
+
 So, we were just kidding about working on the recommendable plugin. We actually worked on the bostonrb.org website some more.
 
 The crew tonight was:
 
- * [Dan Croak](http://dancroak.com)
- * Wyatt Greene
- * Brian Underwood
- * [Josh Nichols](http://technicalpickles.com)
- * Steve Morss
+* [Dan Croak](http://dancroak.com)
+* Wyatt Greene
+* Brian Underwood
+* [Josh Nichols](http://technicalpickles.com)
+* Steve Morss
 
 The significant things we worked on were:
 
- * Projects have descriptions now
- * Events now have a location
- * Reorganized events page
+* Projects have descriptions now
+* Events now have a location
+* Reorganized events page
   * left side has all upcoming events
   * center has next event with google map
   * right side has nothing now, but we're thinking to put a calendar type view

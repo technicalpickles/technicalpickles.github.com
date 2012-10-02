@@ -70,28 +70,28 @@ end
 
 Here's a rundown of what's happening:
 
- * Wrap everything in a begin block, and rescue from LoadError
-  * This lets us degrade gracefully if jeweler isn't installed
- * Create an instance of `Jeweler::Tasks`
-   * It gets yielded a new `Gem::Specification`
-   * This is where all the configuration happens
-    * Things you definitely need to specify:
-      * `name`
-    * Things you probably want to specify:
-      * `summary`
-      * `email`
-      * `homepage`
-      * `description`
-      * `authors`
-    * Things you can specify, but have defaults
-     * `files`, defaults to `FileList["[A-Z]*.*", "{bin,generators,lib,test,spec}/**/*"]`
-    * Things you shouldn't specify:
-     * `version`, because Jeweler takes care of this for you
-    * Other things of interest
-     * `executables`, if you have any scripts
-     * `add_dependency`, if you have any dependencies
-    * Keep in mind that this is a `Gem::Specification`, so you can do whatever you would need to do to get your gem in shape. See the [reference](http://www.rubygems.org/read/chapter/20#page85) for more details.
-    
+* Wrap everything in a begin block, and rescue from LoadError
+ * This lets us degrade gracefully if jeweler isn't installed
+* Create an instance of `Jeweler::Tasks`
+  * It gets yielded a new `Gem::Specification`
+  * This is where all the configuration happens
+   * Things you definitely need to specify:
+     * `name`
+   * Things you probably want to specify:
+     * `summary`
+     * `email`
+     * `homepage`
+     * `description`
+     * `authors`
+   * Things you can specify, but have defaults
+    * `files`, defaults to `FileList["[A-Z]*.*", "{bin,generators,lib,test,spec}/**/*"]`
+   * Things you shouldn't specify:
+    * `version`, because Jeweler takes care of this for you
+   * Other things of interest
+    * `executables`, if you have any scripts
+    * `add_dependency`, if you have any dependencies
+   * Keep in mind that this is a `Gem::Specification`, so you can do whatever you would need to do to get your gem in shape. See the [reference](http://www.rubygems.org/read/chapter/20#page85) for more details.
+
 ### Bootstrap a new project
 
 Before proceeding, take a minute to setup your git environment, specifically [setup your name and email for git](http://github.com/guides/tell-git-your-user-name-and-email-address) and [your username and token for GitHub](http://github.com/guides/local-github-config):

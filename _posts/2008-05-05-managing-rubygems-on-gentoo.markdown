@@ -50,7 +50,7 @@ If you're a Ruby developer, the most natural way would be using RubyGem directly
  
 Of course, not without their drawbacks:
 
- * If a gem uses native extensions, it can be tricky to determine what the it's dependencies are
+ * If a gem uses native extensions, it can be tricky to determine what its dependencies are
  * Problematic when other (non-ruby) packages need to depend on gems
  
 ## My current practices
@@ -61,7 +61,7 @@ Here are the practices I've taken to using for my Ruby and Rails development and
 
 ### In development
 
-On my development machine (4 MacBook running Leopard with Gentoo/Prefix), I've using RubyGems directly.
+On my development machine (a MacBook running Leopard with Gentoo/Prefix), I've using RubyGems directly.
 
 If I'm working on a Rails app, and it needs any gems, I've taken to [vendoring everything](http://errtheblog.com/posts/50-vendor-everything). This type of thing will be [supported out of the box for Rails 2.1](http://ryandaigle.com/articles/2008/4/1/what-s-new-in-edge-rails-gem-dependencies).
 

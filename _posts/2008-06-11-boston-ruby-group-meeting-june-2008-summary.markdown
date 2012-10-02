@@ -27,4 +27,3 @@ There was a backchannel going during the meeting. Here are some notes and links 
   * [MacPorts](http://www.macports.org/)
   * [Gentoo Prefix](http://www.gentoo.org/proj/en/gentoo-alt/prefix/bootstrap-macos.xml)
  * [Faker](http://www.rubyinside.com/faker-quick-fake-data-generation-in-ruby-665.html) for generation of fake data
-  

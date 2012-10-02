@@ -43,8 +43,7 @@ class Post < ActiveRecord::Base
 end
 {% endhighlight %}
 
- * `validates_markdown` really doesn't belong here
- * Nothing particularly interesting is happening, but the lines of code start to add up
+`validates_markdown` really doesn't belong here, and nothing interesting is happening, but the lines of code start to add up.
     
 Let's look at the partial for `Post`.
 
@@ -54,7 +53,7 @@ Let's look at the partial for `Post`.
   .content~ post.cached_content
 {% endhighlight %}
   
- * Eh, nothing particuarly interesting
+Eh, nothing particuarly interesting.
  
 ### Goals
 

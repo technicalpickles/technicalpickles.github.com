@@ -20,7 +20,7 @@ One thing I'm going to omit from the walkthrough is that a chunk of time was spe
 
 Struck awake by inspiration at 5am the next day, I took fate into my own hands...
 
-[__BEHOLD!__](http://github.com/technicalpickles/shoulda_generator/tree/master)
+[BEHOLD!](http://github.com/technicalpickles/shoulda_generator/tree/master)
 
 It is available as a plugin for now, but I'll try to gemify it sometime.
 

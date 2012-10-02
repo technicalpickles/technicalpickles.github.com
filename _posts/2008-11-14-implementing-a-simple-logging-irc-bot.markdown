@@ -8,9 +8,9 @@ layout: post
 ---
 For [Boston.rb](http://bostonrb.org), we've been using a public [Campfire](http://www.campfirenow.com/) provided by [thoughtbot](http://thoughtbot.com) as a backchannel during meetings. It's nice and all, except it doesn't provide proper logging. For example:
 
-  * If you come into the channel, there's no way to see what had been previously said.
-  * If you lose your connection at some point, like if you close your laptop and take it home, all the discussion you see goes away
-  * If you were to try to save the conversation by copy and pasting, you have to massage the copied text a bit to make it less whitespacy
+* If you come into the channel, there's no way to see what had been previously said.
+* If you lose your connection at some point, like if you close your laptop and take it home, all the discussion you see goes away
+* If you were to try to save the conversation by copy and pasting, you have to massage the copied text a bit to make it less whitespacy
 
 Little known is that there's actually a protocol out there dedicated to chatting across the series of tubes. It's called [internet relay chat](http://en.wikipedia.org/wiki/Internet_Relay_Chat) (aka IRC).
 

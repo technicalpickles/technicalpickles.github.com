@@ -13,7 +13,7 @@ layout: post
 
 If you look at the code for testing `validates_uniqueness_of` of your model, and think about how often you might use it in your projects, it starts to be repetitive very quickly. John has this to say about this style of testing in his comments:
 
-> "_The thing that I have noticed when teaching people testing though is they have to learn this first. If they start with the macros, mocking and stubbing, they never quite understand the underpinnings. Also, when they start new project, I often watch them stumble, trying to do things with all the macros, but not having their test environment setup. I think it is good for people to see that they are repeating themselves and think, well, how can I fix this? I kind of think it is good to feel the repetition pain as it helps people understand why we switch to macros and start to stub and mock things so that you don't require hitting the database or using fixtures._"
+> "The thing that I have noticed when teaching people testing though is they have to learn this first. If they start with the macros, mocking and stubbing, they never quite understand the underpinnings. Also, when they start new project, I often watch them stumble, trying to do things with all the macros, but not having their test environment setup. I think it is good for people to see that they are repeating themselves and think, well, how can I fix this? I kind of think it is good to feel the repetition pain as it helps people understand why we switch to macros and start to stub and mock things so that you don't require hitting the database or using fixtures."
 
 Now, I'm assuming you've learned these valuable lessons, and want to more succinctly test your code.
 
