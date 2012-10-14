@@ -1,7 +1,6 @@
 safe:        true
 pygments:    true
 lsi:         false
-markdown:    maruku
 permalink:   /posts/:title
 destination: public
 exclude:
