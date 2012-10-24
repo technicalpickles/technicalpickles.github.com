@@ -101,7 +101,7 @@ These are bits and pieces I've picked up along the way.
 
 #### TextMate-like functionality
 
-Not textmate specific, but you can map stuff to the command key in MacVim using M. For example, `<M-/>` would be command-/
+Not textmate specific, but you can map stuff to the command key in MacVim using M. For example, `<D-/>` would be command-/
 
 If you have problems with fuzzfinder\_textmate being able to find the Ruby classes, I found just placing `fuzzy_file_finder.rb` in `~/.vim/ruby` fixed the problem.
 
