@@ -1,9 +1,11 @@
 source :rubygems
+gem 'foreman'
 
 # check http://pages.github.com/ for current version being used
-gem 'jekyll', '0.11.0'
-gem 'bluecloth'
-gem 'RedCloth'
-gem 'liquid', '2.2.2' # lock to fix crazy errors: https://github.com/imathis/octopress/issues/243
-gem 'powder'
-gem 'foreman'
+gem 'jekyll',     '=0.12.0'
+gem 'liquid',     '=2.4.1'
+gem 'redcarpet',  '=2.1.1'
+gem 'maruku',     '=0.6.0'
+gem 'rdiscount',  '=1.6.8'
+gem 'RedCloth',   '=4.2.9'
+
