@@ -164,6 +164,176 @@ title: Resume
     </div>
     <div class="cto role">
       <h4>Chief Technology Officer, July 2012 through Present</h4>
+
+      <ul>
+        <li>
+        <p>I have extensive knowledge of the &#8216;Rails Machine Stack&#8217;, in the sense of all the tools and services that enable day-to-day work to happen:</p>
+
+        <ul>
+          <li>I built everythingisawful, an application to help periodically review &amp; audit the monitoring systems. I use this to find alerts that have been outstanding to track why they were left unattended and get them fixed, as well as used it as a source of inspiration to refactor &amp; improve what we monitor, and the process we use to handle them</li>
+
+          <li>I periodically review the status of support tickets. I added some heuristics to identify when tickets are in a &#8216;weird&#8217; state, such as missing a deadline, missing a description, older than a week. For open tickets, etc. I look for ways to close the loops, unblock tickets that have been languishing open. I also have been slowly but steadily improving how we use HelpSpot, including adding and removing filters as they become apparent, customizing statuses, adding custom fields, adding automated responses, and generally improving the day to day experience of HelpSpot.</li>
+
+          <li>I periodically review backups, including fixing backups on hosts that that are failing, calculating capacity, reallocating, and improving visibility.</li>
+
+          <li>I am the primary maintainer and contributor of all Rails Machine open source projects.</li>
+
+          <li>I made massive improvements to moonshine &amp; many plugins, to significantly reduce the amount of manual work that has to happen for managed deploys.</li>
+
+          <li>I built beanmachine, an application to help automate billing. It has logic to automatically calculate Credit Hours from Application Management fees to apply if they haven&#8217;t been used this billing period. It pulls time entries from HelpSpot tickets to add as line items to invoices. For BaseCamp-managed projects, it reduces work even more, with only a few clicks needed to invoice for the previous month&#8217;s logged time across all BaseCamp projects. A side effect of this work is that OurCustomers now tracks FreshBook and Ubersmith client IDs, BaseCamp project IDs, and Authorize.net Ids, which could be used for the foundation of further billing improvements.</li>
+
+          <li>I overhauled how we track &amp; allocate IP addresses. It previously was managed via DNS of managedmachine.com for the &#8216;managed subnets&#8217;, and plain text files for the self-managed subnets. The problem was we ran out of IPs in the &#8216;managed subnets&#8217;, that led to double-allocating IPs, and in addition to generally being time consuming. IPD already modeled IP addresses, but they were treated as artifacts of servers, rather than a first class object themselves. I refactored this modeling such that we model all our Subnets, which has many IP addresses, and a Guest has many IP address assignments, and allow multiple guests to be intentionally assigned the same IP address (ie heartbeat or mmm). As part of rolling this out, I audited our IP assignments to make sure there weren&#8217;t duplicates, and that any IP address that was pingable is assigned to a server.</li>
+
+          <li>I added support to IPD for tracking bare metal hosts. Previously, our HelpSpot/OurCustomers livelookup service wasn&#8217;t able to work for bare metal hosts, because they simply didn&#8217;t exist. This addition meant that livelookup would work as expected, and baremetal servers could be treated like any other server, in the context of using our internal tools.</li>
+
+          <li>I automated large parts of the weekly report we generate for our VIP customers. Among other things, it puts together a list of tickets, abuse reports, monitoring alerts, and open GitHub pull requests. The work to do it manually wasn&#8217;t hard, but it was time consuming and easy to miss something. This made it trivial to do each week, and also opened the door for applying this to other customers. A side effect of this work is that OurCustomers now tracks GitHub information about account/applications/users.</li>
+
+          <li>Most day-to-day work relies heavily on systems and tools I&#8217;ve built, managed, or improved.</li>
+        </ul>
+        </li>
+
+        <li>
+        <p>I implemented ChatOps. As part of that, I dove into learning CoffeeScript and understanding how Hubot worked. I re-implemented our bot using hubot, and re-implemented most of our campfire functionality in hubot. I also began making improvements to hubot and hubot-scripts, and soon was asked to be a hubot maintainer. Since then, I have continued to keep an eye out for things that can either be done directly from Campfire with ChatOps, or at the very least provide additional context for getting work done. Some examples of improvements I&#8217;ve made in this vein:</p>
+
+        <ul>
+          <li><code>claptrap alerts</code> for showing monitoring alerts in helpspot for a specific guest (used for striking)</li>
+
+          <li><code>claptrap pmta</code> for showing metrics from PMTA, and <code>claptrap autopmta</code> for displaying those metrics every N minutes</li>
+
+          <li><code>claptrap backup critical</code> for showing hosts needing backups fixed</li>
+
+          <li><code>claptrap billing</code> for linking to correct billing system for a particular guest/account</li>
+
+          <li><code>claptrap basecamp</code> for linking to the basecamp project for a particular guest/account</li>
+
+          <li><code>claptrap authorize.net</code> for linking to the authorize.net page for a particular guest/account</li>
+
+          <li><code>claptrap dns</code> for linking to the DNS Admin interface for a specific guest</li>
+
+          <li><code>claptrap free ip</code> for finding list of anassigned IP addresses</li>
+
+          <li><code>claptrap guests</code> for finding guests in IPD</li>
+
+          <li><code>claptrap github</code> for linking to the github repo for a guest&#8217;s application</li>
+
+          <li><code>claptrap hostip</code> for geocoding IP addresses/domains, for cases when a guest is getting slammed by specific IPs, to find out if they are coming from somewhere suspicious</li>
+
+          <li><code>claptrap hosts</code> for finding hosts in IPD</li>
+
+          <li><code>claptrap moonshine me</code> for linking to moonshine &amp; plugins</li>
+
+          <li><code>claptrap newrelic</code> for showing all accounts with NewRelic, or linking to newrelic for a particualr guest, which is super useful while handling extended outages.</li>
+
+          <li><code>claptrap page</code> for paging specific people easily from Campfire</li>
+
+          <li><code>claptrap papertrail</code> for dumping logs from papertrail into campfire</li>
+
+          <li><code>claptrap puppet</code> for linking to Puppet&#8217;s Type Reference for a particualr resource, ie file. saves googling</li>
+
+          <li><code>claptrap raid</code> for showing hosts with raid warnings</li>
+
+          <li><code>claptrap redis</code> for linking to redis command reference</li>
+
+          <li><code>claptrap scout</code> for linking to the scout page for a particular guest</li>
+
+          <li><code>claptrap teach me</code> for accumulating links for referenec, such as documentation about Rails Machine&#8217;s inner workings</li>
+
+          <li><code>claptrap who&#39;s on call</code> for showing who is on call, also announces it on shift changes</li>
+        </ul>
+        </li>
+
+        <li>
+        <p>I spoke at Rocky Mountain Ruby about ChatOps, and received a surprising amount of good feedback on the process I used, as well as the story I told on the road to ChatOps. I also gave the same talk at Geekend, but I don&#8217;t think they were quite as ready for it.</p>
+        </li>
+
+        <li>
+        <p>I act as the Curator of the Rails Machine Way of Support, and work to improve the team&#8217;s quality of customer interactions. This spans a lot of things, including:</p>
+
+        <ul>
+          <li>optimizing ticket language for readability</li>
+
+          <li>wordsmithing ticket &amp; responses to create the right tone of awesomeness</li>
+
+          <li>rectify the differences between what a customer says, and what a customer wants, and giving them that</li>
+
+          <li>close ticket loops, and trending ticket towards done</li>
+
+          <li>practicing inbox zero</li>
+
+          <li>optimizing handling of tickets to provide great support, while minimizing the number of back &amp; forth responses with customer</li>
+        </ul>
+        </li>
+
+        <li>
+        <p>I provide expert operational consulting for our customers customers. Based on some rough scripting, easily paid for my salary in consulting alone. In addition, this consulting has supported a 1000% growth of monthly revenue for a VIP customer, as well as moderate growth for a number of our other customers</p>
+        </li>
+
+        <li>
+        <p>I provided support to a VIP customer for the months leading up to their peak traffic for the year, allowing them to have smooth sailing during their most important time of year, further building their confidence in us.</p>
+        </li>
+
+        <li>
+        <p>I act as an escalation points for for difficult, critical, and extended outages. Some of the types of issues I&#8217;ve worked with in this case:</p>
+
+        <ul>
+          <li>help customers deal with a large influx of traffic</li>
+
+          <li>diagnose guests not booting</li>
+
+          <li>diagnose &amp; fix mysql replication failing</li>
+
+          <li>diagnose &amp; fix heartbeat suffering split brain</li>
+
+          <li>fix application errors after a ruby upgrade</li>
+
+          <li>debug large memory increases in application servers</li>
+
+          <li>debug request queue backing up due to riak issues</li>
+
+          <li>investigate &amp; fix 503 errors caused by slow customer backup processes</li>
+
+          <li>blocked evil IP addresses flooding a server with traffic</li>
+
+          <li>investigate mmm processes with large memory</li>
+
+          <li>investigate &amp; mitigate application performance issues during peak traffic loads</li>
+        </ul>
+        </li>
+
+        <li>
+        <p>I&#8217;ve written and collected extensive documentation covering a wide range of topics of topics. This includes the tools we use day to day, to details on the operation of different tools &amp; services, to information about the company. Some examples:</p>
+
+        <ul>
+          <li>haproxy</li>
+          <li>heartbeat</li>
+          <li>mysql</li>
+          <li>mysql mmm</li>
+          <li>memcached</li>
+          <li>redis</li>
+          <li>mongodb</li>
+          <li>xfs</li>
+          <li>caching</li>
+          <li>lvm</li>
+          <li>sidekiq</li>
+          <li>ntp</li>
+          <li>sphinx</li>
+          <li>pagerduty</li>
+          <li>postfix</li>
+          <li>ssl</li>
+          <li>postgresql</li>
+          <li>denyhosts</li>
+          <li>delayed_job</li>
+          <li>solr</li>
+          <li>xsendfile</li>
+          <li>screen</li>
+          <li>resque</li>
+        </ul>
+        </li>
+
+        <li>
+        <p>I am a training resources for onboarding new hires. This includes generating documentation, syllabuses, and schedules, as well as directly teaching, pairing, and providing feedback on code &amp; support.</p>
+        </li>
+      </ul>
     </div>
   </div>
   <div id="versustech" class="organization">
