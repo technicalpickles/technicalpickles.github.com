@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{% if page.title %}{{ page.title }} - {% endif %}Josh Nichols on the Internet</title>
 
-    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css">
-    <style>
+    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css" media="screen">
+    <style type="text/css" media="screen">
       h1, h2, h3, h4, h5, h6 { color: #556270; }
       a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #C44D58; }
       body, a small {
@@ -50,6 +50,13 @@
       .clear-fix {
         clear: both;
       }
+    </style>
+
+    <style type="text/css" media="print">
+      header, footer {
+        display: none;
+      }
+
     </style>
     <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
