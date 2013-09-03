@@ -19,7 +19,6 @@ Imagine we have some data in CSV:
 
 Now as a Ruby developer, particularly that has been infected by Rails, you'd be able to imagine this as an array of hashes, with keys/values using the column header, as the keys symbolized, and the values converted to numerics and blank ones converted to nil:
 
-
     [
       {:year => 1997, :make => 'Ford', :model => 'E350', :description => 'ac, abs, moon', :price => 3000.00},
       {:year => 1999, :make => 'Chevy', :model => 'Venture "Extended Edition"', :description => nil, :price => 4900.00},
@@ -35,7 +34,7 @@ A closer look at [#new](http://ruby-doc.org/stdlib-2.0/libdoc/csv/rdoc/CSV.html#
 
     csv = CSV.new(body)
 
-With this csv loaded, you can use `to_a` to get the array of data on it. This is a convenience method for [read](http://ruby-doc.org/stdlib-2.0/libdoc/csv/rdoc/CSV.html#method-i-read) and [readlines](http://ruby-doc.org/stdlib-2.0/libdoc/csv/rdoc/CSV.html#method-i-readlines). This reads the remaining data in the string or IO you passed in, so any subsequent calls ends up returning an empty array.
+With this csv loaded, you can use `to_a` to get the array of data on it. This is a convenience method for [#read](http://ruby-doc.org/stdlib-2.0/libdoc/csv/rdoc/CSV.html#method-i-read) and [#readlines](http://ruby-doc.org/stdlib-2.0/libdoc/csv/rdoc/CSV.html#method-i-readlines). This reads the remaining data in the string or IO you passed in, so any subsequent calls ends up returning an empty array.
 
     csv.to_a
     # => [["Year", "Make", "Model", "Description", "Price"], ["1997", "Ford", "E350", "ac, abs, moon", "3000.00"], ["1999", "Chevy", "Venture \"Extended Edition\"", "", "4900.00"], ["1999", "Chevy", "Venture \"Extended Edition, Very Large\"", nil, "5000.00"], ["1996", "Jeep", "Grand Cherokee", "MUST SELL!\nair, moon roof, loaded", "4799.00"]]
