@@ -67,8 +67,6 @@ Even warmer! The hash keys are now symoblized, but we still have some wonky data
 
 SO WARM! The only thing I can complain about is that there's blank strings (""). While there's nothing else built in to help us, there is support for adding your own custom converters. You can add your own converts to `CSV::Converters` and `CSV::HeaderConverters` as you want. These are just hashes, with the key being the name, and the value being a lambda that takes  a string and should return the converted value. You can then pass an array of converters to use to `#new`.
 
-<a name="final-solution"></a>
-
     CSV::Converters[:blank_to_nil] = lambda do |field|
       field && field.empty? ? nil : field
     end
