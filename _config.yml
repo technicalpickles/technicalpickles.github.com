@@ -13,3 +13,11 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - Procfile
+
+gems:
+- powered-by-pages
+- jekyll-redirect-from
+- jekyll-last-modified-at
+- jemoji
+- jekyll-mentions
+- jekyll-time-to-read 

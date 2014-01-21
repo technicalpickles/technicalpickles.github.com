@@ -1,1 +1,1 @@
-jekyll: bundle exec jekyll --auto
+jekyll: bundle exec jekyll serve --watch
